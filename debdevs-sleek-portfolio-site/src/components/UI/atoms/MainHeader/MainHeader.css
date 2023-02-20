@@ -1,0 +1,19 @@
+.main_header{
+    width: 418px;
+    height: 72px;
+
+    font-family: 'Modern Prestige DEMO';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 72px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+    font-family: "ModernPrestige";
+    color: white;
+}

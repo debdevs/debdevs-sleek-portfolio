@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: "ModernPrestige";
+  src: local("ModernPrestige"),
+   url("./assets/fonts/ModernPrestige.otf") format("opentype");
+  
+  }
