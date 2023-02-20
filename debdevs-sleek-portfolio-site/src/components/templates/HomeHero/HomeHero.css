@@ -1,0 +1,13 @@
+.home_hero_section{
+    background-color: black;
+    height:100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home_hero_contents{
+    width: 1000px;
+    height: 826px;
+}
