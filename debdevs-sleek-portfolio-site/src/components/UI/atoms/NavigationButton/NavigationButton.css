@@ -1,0 +1,25 @@
+.navigation_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 19px 3px 19px;
+    gap: 10px;
+    width: 108px;
+    height: 30px; 
+    background: rgba(4, 18, 39, 0.35);
+    border-radius: 23.0682px;
+    color: white;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+}
+
+
+.navigation_button:hover{
+    background-color: white;
+    color: black;
+}
+
+.button_icon{
+    height: 24px;
+    width: 24px;
+}
