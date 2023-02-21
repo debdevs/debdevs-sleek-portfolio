@@ -1,0 +1,29 @@
+.main_theme_button{
+
+    box-sizing: border-box;
+    cursor: pointer;
+    /* Auto layout */
+   
+    padding: 6px 23px;
+    gap: 10px;  
+    height: 27px;
+
+    /* top: calc(50% - 27px/2 + 140px); */
+    transition: all .15s ease-in-out;
+    background: linear-gradient(111.03deg, #0C4BED 15.71%, #0CD2ED 198.24%);
+    border: 0.431829px solid #1673FF;
+    border-radius: 3px;
+    display: block;
+    color:white;
+}
+
+
+.main_theme_button:hover{
+    background: white;
+    color: black;
+}
+
+.button_icon{
+    height: 24px;
+    width: 24px;
+}

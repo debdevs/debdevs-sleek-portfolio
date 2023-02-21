@@ -8,10 +8,12 @@ const HomeHero = () => {
   return (
     <div className='home_hero_section'>
        <div className='home_hero_contents'>
+        <div className='home_hero_left_items'>
         <ProjectCard/>
-       
+        </div>
+        <div className='home_hero_right_items'>
         <MainInfoContainer/>
-       
+        </div>   
        </div>
     </div>
   )

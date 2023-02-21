@@ -1,9 +1,19 @@
 .nav_bar{
     position: absolute;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+
+}
+
+
+.nav_bar_contents{
     width: 313px;
     height: 30px;
-    left: 189px;
-    top: 44px;
+    /* left: 189px;
+    top: 44px; */
     display: flex;
     gap: 15px;
 }
