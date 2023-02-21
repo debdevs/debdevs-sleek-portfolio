@@ -1,6 +1,12 @@
 .texts_info_box_parent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 25px;
     width: 418px;
     height: 72px;
     left: 785px;
     top: 203px;
+  
 }
