@@ -7,7 +7,7 @@ const HomeHero = () => {
     <div className='home_hero_section'>
        <div className='home_hero_contents'>
         <MainHeader/>
-        <NavigationButton/>
+       
        </div>
     </div>
   )

@@ -1,0 +1,9 @@
+.nav_bar{
+    position: absolute;
+    width: 313px;
+    height: 30px;
+    left: 189px;
+    top: 44px;
+    display: flex;
+    gap: 15px;
+}
