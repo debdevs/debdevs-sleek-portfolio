@@ -1,0 +1,18 @@
+.paragraph_text{
+
+    width: 436px;
+    height: 140px;
+    left: 803px;
+    top: 333px;
+
+    font-family: 'Qualion';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 146.3%;
+    /* or 20px */
+
+    text-align: left;
+    color: #FFFFFF;
+
+}

@@ -11,4 +11,7 @@
 .home_hero_contents{
     width: 1000px;
     height: 826px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
