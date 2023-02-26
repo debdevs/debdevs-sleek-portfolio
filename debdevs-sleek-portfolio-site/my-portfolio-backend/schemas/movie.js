@@ -67,6 +67,12 @@ export default defineType({
       type: 'array',
       of: [{type: 'projectDescriptionSectionItem'}],
     }),
+    defineField({
+      title: 'Video file',
+      name: 'video',
+      type: 'mux.video',
+      
+    }),
   ],
   preview: {
     select: {
