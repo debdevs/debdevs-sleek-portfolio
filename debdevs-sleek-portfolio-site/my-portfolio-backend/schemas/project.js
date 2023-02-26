@@ -2,14 +2,19 @@ import {defineField, defineType} from 'sanity'
 import {MdLocalMovies as icon} from 'react-icons/md'
 
 export default defineType({
-  name: 'movie',
-  title: 'Movie',
+  name: 'project',
+  title: 'Project',
   type: 'document',
   icon,
   fields: [
     defineField({
       name: 'title',
       title: 'Title',
+      type: 'string',
+    }),
+    defineField({
+      name: 'shortDescription',
+      title: 'Short Description',
       type: 'string',
     }),
     defineField({
@@ -20,6 +25,11 @@ export default defineType({
         source: 'title',
         maxLength: 100,
       },
+    }),
+    defineField({
+      name: 'tagline',
+      title: 'Tagline',
+      type: 'string',
     }),
     defineField({
       name: 'overview',
@@ -39,15 +49,32 @@ export default defineType({
         hotspot: true,
       },
     }),
+
     defineField({
       name: 'externalId',
       title: 'External ID',
       type: 'number',
     }),
     defineField({
+      name: 'imageWithExplanation',
+      title: 'Image item with explanation',
+      type: 'reference',
+      to: [{type: 'imageWithExplanation'}],
+    }), 
+    defineField({
       name: 'popularity',
       title: 'Popularity',
       type: 'number',
+    }),
+    defineField({
+      name: 'github',
+      title: 'Github',
+      type: 'string',
+    }),
+    defineField({
+      name: 'liveLink',
+      title: 'Live Link',
+      type: 'string',
     }),
     defineField({
       name: 'techStackItems',
@@ -78,6 +105,21 @@ export default defineType({
       type: 'array',
       of: [{type: 'image'}],
     }),
+    defineField({
+      name: 'videoGallery',
+      title: 'Video Gallery',
+      type: 'array',
+      of: [{type: 'videoWithExplanationItem'}],
+    }),
+    defineField({
+      name: 'color',
+      title: 'Color',
+      type: 'string',
+    }),
+
+ 
+
+
   ],
   preview: {
     select: {
