@@ -56,10 +56,16 @@ export default defineType({
       of: [{type: 'techStackItem'}],
     }),
     defineField({
-      name: 'crewMembers',
-      title: 'Crew Members',
+      name: 'projectTypes',
+      title: 'Project Types',
       type: 'array',
-      of: [{type: 'crewMember'}],
+      of: [{type: 'projectTypeItem'}],
+    }),
+    defineField({
+      name: 'projectDescriptionSection',
+      title: 'Project Description Sections',
+      type: 'array',
+      of: [{type: 'projectDescriptionSectionItem'}],
     }),
   ],
   preview: {
