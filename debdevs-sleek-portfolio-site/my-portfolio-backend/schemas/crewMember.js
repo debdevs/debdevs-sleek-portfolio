@@ -17,10 +17,10 @@ export default defineType({
       type: 'string',
     }),
     defineField({
-      name: 'person',
-      title: 'Person',
+      name: 'tech',
+      title: 'Tech',
       type: 'reference',
-      to: [{type: 'person'}],
+      to: [{type: 'tech'}],
     }),
     defineField({
       name: 'externalId',
@@ -35,10 +35,10 @@ export default defineType({
   ],
   preview: {
     select: {
-      name: 'person.name',
+      name: 'tech.name',
       job: 'job',
       department: 'department',
-      media: 'person.image',
+      media: 'tech.image',
     },
     prepare(selection) {
       const {name, job, department, media} = selection

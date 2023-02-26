@@ -1,9 +1,9 @@
 import {defineField, defineType} from 'sanity'
-import {MdPerson as icon} from 'react-icons/md'
+import {MdBook as icon} from 'react-icons/md'
 
 export default defineType({
-  name: 'person',
-  title: 'Person',
+  name: 'projectType',
+  title: 'Project Type',
   type: 'document',
   icon,
   fields: [

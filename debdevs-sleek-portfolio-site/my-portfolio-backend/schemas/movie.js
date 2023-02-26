@@ -50,10 +50,10 @@ export default defineType({
       type: 'number',
     }),
     defineField({
-      name: 'castMembers',
-      title: 'Cast Members',
+      name: 'techStackItems',
+      title: 'Tech Stack',
       type: 'array',
-      of: [{type: 'castMember'}],
+      of: [{type: 'techStackItem'}],
     }),
     defineField({
       name: 'crewMembers',
@@ -67,8 +67,8 @@ export default defineType({
       title: 'title',
       date: 'releaseDate',
       media: 'poster',
-      castName0: 'castMembers.0.person.name',
-      castName1: 'castMembers.1.person.name',
+      castName0: 'techStackItems.0.tech.name',
+      castName1: 'techStackItems.1.tech.name',
     },
     prepare(selection) {
       const year = selection.date && selection.date.split('-')[0]
