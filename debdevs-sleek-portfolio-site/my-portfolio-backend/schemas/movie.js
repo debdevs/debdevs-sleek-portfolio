@@ -71,7 +71,12 @@ export default defineType({
       title: 'Video file',
       name: 'video',
       type: 'mux.video',
-      
+    }),
+    defineField({
+      name: 'imageItems',
+      title: 'Images',
+      type: 'array',
+      of: [{type: 'image'}],
     }),
   ],
   preview: {
