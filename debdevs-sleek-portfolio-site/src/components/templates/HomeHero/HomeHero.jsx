@@ -4,12 +4,17 @@ import MainHeader from '../../UI/atoms/MainHeader/MainHeader'
 import NavigationButton from '../../UI/atoms/NavigationButton/NavigationButton'
 import MainInfoContainer from '../../UI/molecules/MainInfoContainer/MainInfoContainer'
 import ProjectCard from '../../UI/molecules/ProjectCard/ProjectCard'
-const HomeHero = () => {
+import ProjectCarousel from '../../UI/organisms/ProjectCarousel/ProjectCarousel'
+import { HomeContext } from '../../../HomeContext'
+import { useContext } from 'react'
+const HomeHero = ({projects_data}) => {
+  const { isData, setIsData } = useContext(HomeContext);
   return (
     <div className='home_hero_section'>
        <div className='home_hero_contents'>
         <div className='home_hero_left_items'>
-        <ProjectCard/>
+          {projects_data ? <ProjectCarousel projects_input={projects_data}/>: console.log("carousel not displayed")}
+ 
         </div>
         <div className='home_hero_right_items'>
         <MainInfoContainer/>

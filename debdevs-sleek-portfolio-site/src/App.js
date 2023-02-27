@@ -4,10 +4,11 @@ import HomeHero from './components/templates/HomeHero/HomeHero';
 import Navbar from './components/UI/organisms/Navbar/Navbar';
 import { useState, useEffect } from 'react';
 import sanityClient from "./client"
-
+import { useContext } from 'react';
+import { HomeContext } from './HomeContext.js'
 function App() {
-  const [projects, setProjects] = useState(null);
-  useEffect(() => {
+  const [projects, setProjects] = useState([]);
+  let data1 = useEffect(() => {
     sanityClient
       .fetch(
         `*[_type == "project"]{
@@ -37,15 +38,34 @@ function App() {
   }, []);
   
 
+  const [isActive, setIsActive] = useState(false);
+  const { isData, setIsData } = useContext(HomeContext);
 
   return (
+    <HomeContext.Provider
+    value={{
+      isActive,
+      setIsActive,
+
+    }}
+  >
     <div className="App">
-      <h1>{console.log(projects)}</h1>
+    {() => {
+    setIsData(projects);
+    setIsData(projects);
+  }}
+      {console.log(projects)}
+      {console.log(projects[0]?.title)}
+      <h1>{projects[1]?.title}</h1>
+      <h1>{JSON.stringify(projects)
+}</h1>
       <Navbar/>
-      <HomeHero />
+      <HomeHero projects_data={projects} />
     
     </div>
+    </HomeContext.Provider>
   );
+  
 }
 
 export default App;
