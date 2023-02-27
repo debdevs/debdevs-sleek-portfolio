@@ -1,6 +1,22 @@
 .tech_stack_array_container{
     height: 24px;
     width: 80.00279998779297px;
-    background-color: rgba(240, 248, 255, 0.068);
+    background-color: rgba(240, 248, 255, 0.0);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2%;
       
+}
+.tech_image_parent{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tech_image{
+    width:auto;
+    height: inherit;
+
 }

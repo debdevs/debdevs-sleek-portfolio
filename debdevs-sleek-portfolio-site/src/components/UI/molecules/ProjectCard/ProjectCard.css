@@ -10,6 +10,7 @@
     /* BLUE_SHADOW */
     filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22));
     border-radius: 5px;
+    cursor: pointer;
 }
 .project_card_contents{
     display: flex;
@@ -34,7 +35,7 @@
     border: 1px solid #7795FF;
     /* BLUE_SHADOW */
 
-    filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22));
+    /* filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22)); */
     border-radius: 5px;
 }
 
@@ -70,7 +71,7 @@
     font-size: 12px;
     line-height: 19px;
     letter-spacing: 0.005em;
-    
+    text-align: left;
     color: #CDE0F1;
     
 }

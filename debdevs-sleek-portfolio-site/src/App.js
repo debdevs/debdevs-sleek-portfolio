@@ -12,6 +12,12 @@ function App() {
     sanityClient
       .fetch(
         `*[_type == "project"]{
+          ...,
+          
+          "techStackItems": techStackItems[]{
+            ...
+            tech->
+          },
           title,
           shortDescription,
           slug,
@@ -24,7 +30,7 @@ function App() {
           popularity,
           github,
           liveLink,
-          techStackItems,
+ 
           projectTypes,
           projectDescriptionSection,
           video,
@@ -50,15 +56,7 @@ function App() {
     }}
   >
     <div className="App">
-    {() => {
-    setIsData(projects);
-    setIsData(projects);
-  }}
-      {console.log(projects)}
-      {console.log(projects[0]?.title)}
-      <h1>{projects[1]?.title}</h1>
-      <h1>{JSON.stringify(projects)
-}</h1>
+
       <Navbar/>
       <HomeHero projects_data={projects} />
     

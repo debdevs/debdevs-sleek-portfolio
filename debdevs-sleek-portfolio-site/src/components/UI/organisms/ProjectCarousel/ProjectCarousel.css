@@ -1,5 +1,8 @@
 .project_carousel_parent{
-    height: 100vh;
+    height: 80vh;
     width: 500px;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    gap:45px;
+ 
 }
