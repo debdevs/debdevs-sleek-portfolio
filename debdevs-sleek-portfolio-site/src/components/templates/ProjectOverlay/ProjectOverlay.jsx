@@ -2,6 +2,8 @@ import React from 'react'
 import ProjectDisplay from '../../UI/molecules/ProjectDisplay/ProjectDisplay'
 import './ProjectOverlay.css'
 import { motion, AnimatePresence } from 'framer-motion';
+import ProjectTextsInfoBox from '../../UI/atoms/ProjectTextsInfoBox/ProjectTextsInfoBox';
+import {AiFillCloseCircle} from 'react-icons/ai'
 const ProjectOverlay = ({project, display_value, button_function}) => {
   return (
     <motion.div
@@ -19,9 +21,18 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
   >     
 <div className="project_overlay_contents">
 
-    <ProjectDisplay project_source={project}/>
+            <div className='project_display_card_left_items'>
+            <ProjectDisplay project_source={project}/>
+                
+            </div>
+            <div className='project_display_card_right_items'>
+            <ProjectTextsInfoBox title={project.title} description = {project.overview[0].children[0].text}/>
+                
+            </div>
+      
+            {console.log(project.overview[0].children[0].text)}
 
-    <div className='project_overlay_close_button' onClick={button_function}>X</div>
+    <div className='project_overlay_close_button' onClick={button_function}><AiFillCloseCircle/></div>
   </div>
   
   </motion.div>

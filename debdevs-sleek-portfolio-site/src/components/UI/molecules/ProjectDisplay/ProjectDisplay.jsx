@@ -13,8 +13,9 @@ function urlFor(source) {
 const ProjectDisplay = ({project_source}) => {
   return (
     <div className='project_display_card_parent'>
+
         <motion.div 
-            initial={{  translateY: -25, scaleX: 1, opacity: 0 }}
+            initial={{  translateY: 25, scaleX: 1, opacity: 0 }}
             animate={{ translateY: 0, scaleX: 1, opacity: .25 }}
             exit={{
               scaleX: 0.97,
@@ -25,8 +26,9 @@ const ProjectDisplay = ({project_source}) => {
             transition={{ delay: .15, duration: .5}}
     
         className='project_display_card_background'  style={{border: '1px solid' + project_source.color, opacity: '.25'}}/>
+        
         <motion.div 
-            initial={{  translateY: 55, scaleX: 1, opacity: 0 }}
+            initial={{  translateY: -55, scaleX: 1, opacity: 0 }}
             animate={{ translateY: 0, scaleX: 1, opacity: 1}}
             exit={{
               scaleX: 0.97,
@@ -34,7 +36,7 @@ const ProjectDisplay = ({project_source}) => {
               opacity: 0,
               transition: { type: 'linear', stiffness: 50 },
             }}
-            transition={{ delay: .15, duration: .5}} className='project_display_card_image_container' style={{border: '1px solid' + project_source.color}}>
+            transition={{ delay: .25, duration: .5}} className='project_display_card_image_container' style={{border: '1px solid' + project_source.color}}>
             <img className='project_display_card_image' src ={urlFor(project_source.poster).url()} />
         </motion.div>
         <motion.div 

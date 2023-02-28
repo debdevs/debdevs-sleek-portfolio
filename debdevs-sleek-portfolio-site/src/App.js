@@ -21,6 +21,8 @@ function App() {
             ...
             tech->
           },
+         
+ 
           title,
           shortDescription,
           slug,

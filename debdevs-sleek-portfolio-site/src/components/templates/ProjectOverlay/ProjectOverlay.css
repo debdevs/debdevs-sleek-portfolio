@@ -3,7 +3,9 @@
     background-color: black;
     width: 100vw;
     height: 100vh;
- 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project_overlay_contents{
@@ -12,6 +14,7 @@
     align-items: center;
     width:80vw;
     height: 80vh;
+    gap:15%;
 }
 
 .project_overlay_close_button{
@@ -19,5 +22,11 @@
     cursor: pointer;
     align-self: flex-start;
     justify-self: flex-end;
-    background-color: beige;
+    font-size: 45px;
+    position: absolute;
+  
+}
+
+.project_overlay_close_button:hover{
+    color:var(--accent-color-2);
 }
