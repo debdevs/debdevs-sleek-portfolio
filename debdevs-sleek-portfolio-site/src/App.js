@@ -46,13 +46,15 @@ function App() {
   
 
   const [isActive, setIsActive] = useState(false);
-  const { isData, setIsData } = useContext(HomeContext);
-
+  const [ isData, setIsData ] = useState(false);
+  const [ isOpen, setIsOpen ] = useState(false);
   return (
     <HomeContext.Provider
     value={{
       isActive,
       setIsActive,
+      isData, setIsData,
+      isOpen, setIsOpen 
 
     }}
   >
@@ -60,8 +62,9 @@ function App() {
 
       <Navbar/>
       <HomeHero projects_data={projects} />
-      <ProjectOverlay/>
-    
+      {isOpen?  <ProjectOverlay project={isData}/> : null
+    }
+     
     </div>
     </HomeContext.Provider>
   );
