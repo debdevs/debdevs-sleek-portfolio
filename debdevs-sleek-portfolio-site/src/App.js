@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import sanityClient from "./client"
 import { useContext } from 'react';
 import { HomeContext } from './HomeContext.js'
+import ProjectOverlay from './components/templates/ProjectOverlay/ProjectOverlay';
 function App() {
   const [projects, setProjects] = useState([]);
   let data1 = useEffect(() => {
@@ -59,6 +60,7 @@ function App() {
 
       <Navbar/>
       <HomeHero projects_data={projects} />
+      <ProjectOverlay/>
     
     </div>
     </HomeContext.Provider>

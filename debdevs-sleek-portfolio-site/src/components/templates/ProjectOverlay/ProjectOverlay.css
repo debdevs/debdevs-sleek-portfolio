@@ -1,0 +1,15 @@
+.project_overlay_parent{
+    position: absolute;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+}
+
+.project_overlay_contents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80vw;
+    height: 80vh;
+}

@@ -1,4 +1,6 @@
 .main_info_container_parent{
     display: flex;
+    flex-direction: column;
+    gap: 22px;
  
 }

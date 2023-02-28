@@ -1,0 +1,41 @@
+.project_display_card_parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    height: 551px;
+    width: 416px;
+    left: 20px;
+    top: 20px;
+    border-radius: 0px;
+    background-color: rgba(71, 50, 50, 0);       
+}
+.project_display_card_background{
+    
+    box-sizing: border-box;
+    position: absolute;
+    width: 416px;
+    height: 510px;
+    border: 1px solid rgba(162, 89, 255, 0.25);
+    border-radius: 5px;
+}
+
+.project_display_card_image_container{
+    box-sizing: border-box;
+    position: absolute;
+    width: 379px;
+    height: 470px;
+    border: 1px solid #A259FF;
+    border-radius: 5px;
+}
+
+.project_display_card_shadow{
+    position: absolute;
+    width: 306px;
+    height: 15px;
+    background: #401760;
+    filter: blur(17.5px);
+    align-self: flex-end;
+    margin-bottom: -35px;
+    
+}
+
