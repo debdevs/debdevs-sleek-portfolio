@@ -13,3 +13,11 @@
     width:80vw;
     height: 80vh;
 }
+
+.project_overlay_close_button{
+    color: white;
+    cursor: pointer;
+    align-self: flex-start;
+    justify-self: flex-end;
+    background-color: beige;
+}

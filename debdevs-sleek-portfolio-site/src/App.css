@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	overflow: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -66,4 +67,9 @@ table {
 .large_heading_mp {
   font-family: "ModernPrestige";
  
+ }
+
+ .overlay_holder{
+	position: absolute;
+	left: 0px;
  }

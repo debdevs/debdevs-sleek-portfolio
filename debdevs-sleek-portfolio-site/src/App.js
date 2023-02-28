@@ -6,6 +6,8 @@ import { useState, useEffect } from 'react';
 import sanityClient from "./client"
 import { useContext } from 'react';
 import { HomeContext } from './HomeContext.js'
+import { motion, AnimatePresence } from 'framer-motion';
+
 import ProjectOverlay from './components/templates/ProjectOverlay/ProjectOverlay';
 function App() {
   const [projects, setProjects] = useState([]);
@@ -48,6 +50,12 @@ function App() {
   const [isActive, setIsActive] = useState(false);
   const [ isData, setIsData ] = useState(false);
   const [ isOpen, setIsOpen ] = useState(false);
+  function setClose(){
+    if (setIsOpen == true){
+      setIsOpen(false)
+      console.log(setIsOpen)
+    }
+  }
   return (
     <HomeContext.Provider
     value={{
@@ -62,10 +70,15 @@ function App() {
 
       <Navbar/>
       <HomeHero projects_data={projects} />
-      {isOpen?  <ProjectOverlay project={isData}/> : null
+
+      <AnimatePresence initial={false} className = "overlay_holder">
+
+      {isOpen == true?  <ProjectOverlay project={isData} button_function = {() => setIsOpen(false)}/> : null
     }
-     
+   
+    </AnimatePresence>   
     </div>
+    
     </HomeContext.Provider>
   );
   
