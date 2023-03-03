@@ -7,7 +7,7 @@ export default defineType({
   fields: [
 
     defineField({
-      name: 'desc',
+      name: 'projectDescriptionSection',
       title: 'Desc',
       type: 'reference',
       to: [{type: 'projectDescriptionSection'}],
@@ -16,6 +16,12 @@ export default defineType({
       name: 'externalId',
       title: 'External ID',
       type: 'number',
+    }),
+
+    defineField({
+      name: 'projectRoleDescription',
+      title: 'Project Role Description',
+      type: 'string',
     }),
 
   ],

@@ -21,10 +21,17 @@ function App() {
             ...
             tech->
           },
-         
- 
+      
+          "roleDescriptionSections": roleDescriptionSections[]{
+            ...,
+            roleDescriptionSection->
+          
+          },
+                   
+
           title,
           shortDescription,
+ 
           slug,
           tagline,
           overview,

@@ -3,14 +3,17 @@ import blockContent from './blockContent'
 import techStackItem from './techStackItem'
 import project from './project'
 import tech from './tech'
-import projectType from './projectType'
 import projectTypeItem from './projectTypeItem'
-import projectDescriptionSection from './projectDescriptionSection'
+import projectType from './projectType'
 import projectDescriptionSectionItem from './projectDescriptionSectionItem'
-import imageWithExplanation from './imageWithExplanation'
+import projectDescriptionSection from './projectDescriptionSection'
 import imageWithExplanationItem from './imageWithExplanationItem'
-import videoWithExplanation from './videoWithExplanation'
+import imageWithExplanation from './imageWithExplanation'
 import videoWithExplanationItem from './videoWithExplanationItem'
+import videoWithExplanation from './videoWithExplanation'
+import roleDescriptionSectionItem from './roleDescriptionSectionItem'
+import roleDescriptionSection from './roleDescriptionSection'
+
 export const schemaTypes = [
   // Document types
   project,
@@ -19,12 +22,14 @@ export const schemaTypes = [
   videoWithExplanation,
   projectType,
   projectDescriptionSection,
+  roleDescriptionSection,
   // Other types
   blockContent,
 
   techStackItem,
   projectTypeItem,
   projectDescriptionSectionItem,
+  roleDescriptionSectionItem,
   imageWithExplanationItem,
   videoWithExplanationItem
  

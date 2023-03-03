@@ -89,7 +89,7 @@ export default defineType({
       of: [{type: 'projectTypeItem'}],
     }),
     defineField({
-      name: 'projectDescriptionSection',
+      name: 'projectDescriptionSections',
       title: 'Project Description Sections',
       type: 'array',
       of: [{type: 'projectDescriptionSectionItem'}],
@@ -117,7 +117,12 @@ export default defineType({
       type: 'string',
     }),
 
- 
+    defineField({
+      name: 'roleDescriptionSections',
+      title: 'Role Description Sections',
+      type: 'array',
+      of: [{type: 'roleDescriptionSectionItem'}],
+    }),
 
 
   ],

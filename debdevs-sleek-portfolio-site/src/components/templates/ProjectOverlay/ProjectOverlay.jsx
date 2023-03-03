@@ -27,8 +27,26 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
             </div>
             <div className='project_display_card_right_items'>
             <ProjectTextsInfoBox title={project.title} description = {project.overview[0].children[0].text}/>
+      
+            {/* <p  className='project_display_accent_header'>
+              {project?.roleDescriptionSections[0].roleDescriptionSection.name.toString()}
+            </p> */}
+            <div className='roles_container'>
             <h3 className='project_display_accent_header'>Responsibilities:</h3>
-                
+            <p className='project_display_accent_roles'>
+            {Object.keys(project?.roleDescriptionSections).map((item, i) => (
+
+              
+            <span className='project_display_accent_roles'>
+            {project?.roleDescriptionSections[i].roleDescriptionSection.name.toString()} ● </span>
+))
+}  
+            </p>
+
+
+            </div>
+
+
             </div>
       
             {console.log(project.overview[0].children[0].text)}

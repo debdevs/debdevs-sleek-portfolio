@@ -38,7 +38,11 @@
     margin-left: -32px;
    
 }
-
+.roles_container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .project_display_accent_header{
     font-weight: 400;
     font-size: 15px;
@@ -47,4 +51,15 @@
     color: #7FA5BA;
     font-family: "MBFLigioneRegular";
     text-align: left;
+}
+
+.project_display_accent_roles{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: .02em;
+    color: #ffffff;
+    font-family: "MBFLigioneRegular";
+    text-align: left;
+    max-width: 388px;
 }

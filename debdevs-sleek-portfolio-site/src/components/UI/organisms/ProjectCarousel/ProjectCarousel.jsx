@@ -22,6 +22,9 @@ function clickFunction(input) {
     setIsData(input);
     setIsOpen(true);
     console.log(input);
+    console.log(input.roleDescriptionSections[0].children[1]);
+    console.log(input.overview[0].children[0].text)
+
     
   }
 
