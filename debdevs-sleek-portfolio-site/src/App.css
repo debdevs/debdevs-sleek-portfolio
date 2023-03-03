@@ -69,6 +69,16 @@ table {
  
  }
 
+ .alternate_heading_mp {
+	font-family: "Qualion";
+   
+   }
+
+   .alternate_heading_mp {
+	font-family: "MBFLigioneRegular";
+   
+   }
+  
  .overlay_holder{
 	position: absolute;
 	left: 0px;

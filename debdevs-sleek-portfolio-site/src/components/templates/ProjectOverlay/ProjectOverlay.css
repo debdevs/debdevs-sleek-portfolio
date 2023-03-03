@@ -41,10 +41,10 @@
 
 .project_display_accent_header{
     font-weight: 400;
-    font-size: 12px;
+    font-size: 15px;
     line-height: 13px;
-    
+    letter-spacing: .02em;
     color: #7FA5BA;
-    
+    font-family: "MBFLigioneRegular";
     text-align: left;
 }

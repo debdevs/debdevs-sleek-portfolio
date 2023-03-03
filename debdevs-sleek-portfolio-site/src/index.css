@@ -19,3 +19,18 @@ code {
    url("./assets/fonts/ModernPrestige.otf") format("opentype");
   
   }
+
+@font-face {
+  font-family: "Qualion";
+  src: local("Qualion"),
+    url("./assets/fonts/Qualion-Regular.ttf") format("truetype");
+  
+  }
+
+  @font-face {
+    font-family: "MBFLigioneRegular";
+    src: local("MBFLigioneRegular"),
+      url("./assets/fonts/MBFLigioneRegular.ttf") format("truetype");
+    
+    }
+  
