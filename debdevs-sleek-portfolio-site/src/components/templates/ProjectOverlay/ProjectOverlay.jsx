@@ -27,6 +27,7 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
             </div>
             <div className='project_display_card_right_items'>
             <ProjectTextsInfoBox title={project.title} description = {project.overview[0].children[0].text}/>
+            <h3 className='project_display_accent_header'>Responsibilities:</h3>
                 
             </div>
       

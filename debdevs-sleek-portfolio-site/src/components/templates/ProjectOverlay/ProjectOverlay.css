@@ -15,6 +15,7 @@
     width:80vw;
     height: 80vh;
     gap:15%;
+    gap:102px;
 }
 
 .project_overlay_close_button{
@@ -29,4 +30,21 @@
 
 .project_overlay_close_button:hover{
     color:var(--accent-color-2);
+}
+
+.project_display_card_right_items .project_texts_info_box_parent .main_header {
+    text-align: left;
+    width: 318px;
+    margin-left: -32px;
+   
+}
+
+.project_display_accent_header{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    
+    color: #7FA5BA;
+    
+    text-align: left;
 }
