@@ -4,9 +4,11 @@ import './ProjectOverlay.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import ProjectTextsInfoBox from '../../UI/atoms/ProjectTextsInfoBox/ProjectTextsInfoBox';
 import MainHeader from '../../UI/atoms/MainHeader/MainHeader';
-import {AiFillCloseCircle} from 'react-icons/ai'
+import {AiFillCloseCircle, AiOutlineGlobal} from 'react-icons/ai'
 import TechStackArray from '../../UI/atoms/TechStackArray/TechStackArray';
 import ProjectOverlayButton from '../../UI/atoms/ProjectOverlayButton/ProjectOverlayButton';
+
+
 const ProjectOverlay = ({project, display_value, button_function}) => {
   return (
     <motion.div
@@ -55,10 +57,11 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
               <h3 className='project_display_accent_header'>Tech Stack:</h3>
               <TechStackArray image = {project.techStackItems}/>
             </div>
-            </div>
             <div className='project_buttons_container'>
-            <ProjectOverlayButton/>
+            <ProjectOverlayButton text='Live Project' icon={<AiOutlineGlobal className='button_icon'/>}/>
             </div>
+            </div>
+
             </div>
             
             {console.log(project.overview[0].children[0].text)}

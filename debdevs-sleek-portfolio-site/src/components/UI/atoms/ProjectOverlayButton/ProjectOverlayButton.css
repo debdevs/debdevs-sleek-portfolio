@@ -4,14 +4,25 @@
     justify-content: center;
     padding: 3px 19px 3px 19px;
     gap: 10px;
-    width: 108px;
-    height: 30px; 
+
     background: rgba(4, 18, 39, 0.35);
-    border-radius: 23.0682px;
+ 
     color: white;
     cursor: pointer;
     transition: all .15s ease-in-out;
     border: 0px solid white;
+
+
+    padding: 3px 10px 8px 19px;
+    gap: 10px;
+
+    position: relative;
+    width: 140px;
+    height: 30px;
+
+    font-family: 'Qualion';
+    background: linear-gradient(256.31deg, rgba(12, 75, 237, 0.15) -6.18%, rgba(12, 210, 237, 0.15) 113.91%);
+    border-radius: 23.0682px;
 }
 
 
@@ -21,6 +32,6 @@
 }
 
 .button_icon{
-    height: 24px;
-    width: 24px;
+    height: 21px;
+    width: 21px;
 }
