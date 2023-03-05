@@ -114,3 +114,117 @@
     width: 21px;
     height: 21px;
 }
+
+@media only screen and (max-width:1050px){
+    .project_overlay_contents{
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .project_display_card_parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        width: 416px;
+        left: 20px;
+        top: 20px;
+        border-radius: 0px;
+        background-color: rgba(71, 50, 50, 0);
+    }
+
+
+    .project_display_card_background {
+        box-sizing: border-box;
+        position: absolute;
+        width: 27%;
+        height: 37%;
+        border: 1px solid rgba(162, 89, 255, 0.25);
+        border-radius: 5px;
+        min-width: 270px;
+    }
+
+    .project_display_card_image_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        position: absolute;
+        width: 25%;
+        height: 35%;
+        border: 1px solid #A259FF;
+        border-radius: 5px;
+        object-fit: cover;
+        overflow: hidden;
+        min-width: 250px;
+    }
+
+
+    .project_display_card_image {
+        width: auto;
+        height: 100%;
+    }
+
+    .project_display_card_shadow {
+        position: absolute;
+        width: 306px;
+        height: 15px;
+        background: #401760;
+        filter: blur(17.5px);
+        align-self: flex-end;
+        margin-bottom: -2px;
+        opacity: .35;
+    }
+
+
+
+    .project_display_card_right_items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project_display_card_right_items .main_header {
+        text-align: left;
+        width: 318px;
+        margin-left: -32px;
+        line-height: 58px;
+        text-align: center;
+    }
+
+
+    .project_display_accent_header {
+
+        text-align: center;
+    }
+    .project_display_accent_roles {
+
+        text-align: center;
+
+    }
+    .project_display_description {
+
+        text-align: center;
+
+    }
+
+    .tech_container .tech_stack_array_container {
+        height: -moz-fit-content;
+        height: fit-content;
+        width: auto;
+        gap: 1%;
+        justify-content: center;
+    }
+
+
+    .project_overlay_close_button {
+        color: white;
+        cursor: pointer;
+        align-self: flex-start;
+        justify-self: flex-end;
+        font-size: 45px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+}
