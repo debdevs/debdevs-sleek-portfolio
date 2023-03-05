@@ -7,7 +7,11 @@ const MainInfoContainer = ({image_data}) => {
   return (
     <div className='main_info_container_parent'>
         <TextsInfoBox/>
+        <div className='info_tech_items'>
+        <h3 className='project_display_accent_header'>Skills:</h3>
         <TechStackArray image = {image_data}/>
+        </div>
+       
         <SecondaryThemeButton/>
 
 

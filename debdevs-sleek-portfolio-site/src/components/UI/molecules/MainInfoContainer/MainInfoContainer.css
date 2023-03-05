@@ -4,3 +4,21 @@
     gap: 22px;
  
 }
+
+
+
+
+.info_tech_items{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.info_tech_items .tech_stack_array_container{
+    height:fit-content;
+    width: auto;
+    gap:2%
+}
+.info_tech_items .tech_stack_array_container .tech_image_parent{
+    width: 22px;
+    height: 22px;
+}
