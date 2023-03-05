@@ -33,19 +33,11 @@ let data1 = useEffect(() => {
       {/* {console.log(techItems, "tech qyer")} */}
 
       {    Object.keys(image).map((item, i) => (
-        // <img src = {urlFor(image[item].tech._ref.image).url()}/>
-            // console.log(image[item].name, "hello")
+
             <div className='tech_image_parent'>
             <img className='tech_image' src = {urlFor(image[item].image).url()}/>
             </div>
-  //           Object.keys(item).map((itm, x) => (
-
-  //         console.log(image[item].tech._ref)
-  
-  // ))
-  
-
-))}
+      ))}
 
     </div>
   )

@@ -17,7 +17,10 @@
     gap:15%;
     gap:102px;
 }
-
+.project_display_card_right_items{
+    display: flex;
+    flex-direction: column;
+}
 .project_overlay_close_button{
     color: white;
     cursor: pointer;
@@ -32,11 +35,19 @@
     color:var(--accent-color-2);
 }
 
-.project_display_card_right_items .project_texts_info_box_parent .main_header {
+.project_display_card_right_items .main_header {
     text-align: left;
     width: 318px;
     margin-left: -32px;
+    line-height: 58px;
    
+}
+
+.sections_parent{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 20px;
 }
 .roles_container{
     display: flex;
@@ -55,6 +66,17 @@
 
 .project_display_accent_roles{
     font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: .02em;
+    color: #ffffff;
+    font-family: "MBFLigioneRegular";
+    text-align: left;
+    max-width: 388px;
+}
+
+.project_display_description{
+    font-weight: 400;
     font-size: 15px;
     line-height: 19px;
     letter-spacing: .02em;
@@ -62,4 +84,18 @@
     font-family: "MBFLigioneRegular";
     text-align: left;
     max-width: 388px;
+}
+.tech_container{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.tech_container .tech_stack_array_container{
+    height:fit-content;
+    width: auto;
+    gap:1%
+}
+.tech_container .tech_stack_array_container .tech_image_parent{
+    width: 21px;
+    height: 21px;
 }

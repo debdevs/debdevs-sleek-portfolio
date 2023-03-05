@@ -3,7 +3,10 @@ import ProjectDisplay from '../../UI/molecules/ProjectDisplay/ProjectDisplay'
 import './ProjectOverlay.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import ProjectTextsInfoBox from '../../UI/atoms/ProjectTextsInfoBox/ProjectTextsInfoBox';
+import MainHeader from '../../UI/atoms/MainHeader/MainHeader';
 import {AiFillCloseCircle} from 'react-icons/ai'
+import TechStackArray from '../../UI/atoms/TechStackArray/TechStackArray';
+import ProjectOverlayButton from '../../UI/atoms/ProjectOverlayButton/ProjectOverlayButton';
 const ProjectOverlay = ({project, display_value, button_function}) => {
   return (
     <motion.div
@@ -26,11 +29,9 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
                 
             </div>
             <div className='project_display_card_right_items'>
-            <ProjectTextsInfoBox title={project.title} description = {project.overview[0].children[0].text}/>
+            <MainHeader text={project.title} description = {project.overview[0].children[0].text}/>
       
-            {/* <p  className='project_display_accent_header'>
-              {project?.roleDescriptionSections[0].roleDescriptionSection.name.toString()}
-            </p> */}
+            <div className='sections_parent'>
             <div className='roles_container'>
             <h3 className='project_display_accent_header'>Responsibilities:</h3>
             <p className='project_display_accent_roles'>
@@ -46,9 +47,20 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
 
             </div>
 
-
+            <div className='description_container'>
+              <h3 className='project_display_accent_header'></h3>
+              <p className='project_display_description'>{project.overview[0].children[0].text}</p>
             </div>
-      
+            <div className='tech_container'>
+              <h3 className='project_display_accent_header'>Tech Stack:</h3>
+              <TechStackArray image = {project.techStackItems}/>
+            </div>
+            </div>
+            <div className='project_buttons_container'>
+            <ProjectOverlayButton/>
+            </div>
+            </div>
+            
             {console.log(project.overview[0].children[0].text)}
 
     <div className='project_overlay_close_button' onClick={button_function}><AiFillCloseCircle/></div>
