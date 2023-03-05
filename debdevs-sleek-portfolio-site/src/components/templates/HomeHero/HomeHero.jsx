@@ -7,7 +7,7 @@ import ProjectCard from '../../UI/molecules/ProjectCard/ProjectCard'
 import ProjectCarousel from '../../UI/organisms/ProjectCarousel/ProjectCarousel'
 import { HomeContext } from '../../../HomeContext'
 import { useContext } from 'react'
-const HomeHero = ({projects_data}) => {
+const HomeHero = ({projects_data, tech_data}) => {
   const { isData, setIsData } = useContext(HomeContext);
   return (
     <div className='home_hero_section'>
@@ -17,7 +17,7 @@ const HomeHero = ({projects_data}) => {
  
         </div>
         <div className='home_hero_right_items'>
-        <MainInfoContainer/>
+        <MainInfoContainer image_data = {tech_data}/>
         </div>   
        </div>
     </div>

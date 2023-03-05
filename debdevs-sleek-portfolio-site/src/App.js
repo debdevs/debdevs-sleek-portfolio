@@ -55,7 +55,19 @@ function App() {
       .catch(console.error);
   }, []);
   
+  const [tech, setTech] = useState([]);
+  let data2 = useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "tech"]{
+          name,
+          image
 
+    }`
+      )
+      .then((data) => setTech(data))
+      .catch(console.error);
+  }, []);
   const [isActive, setIsActive] = useState(false);
   const [ isData, setIsData ] = useState(false);
   const [ isOpen, setIsOpen ] = useState(false);
@@ -78,7 +90,7 @@ function App() {
     <div className="App">
 
       <Navbar/>
-      <HomeHero projects_data={projects} />
+      <HomeHero projects_data={projects} tech_data = {tech} />
 
       <AnimatePresence initial={false} className = "overlay_holder">
 
