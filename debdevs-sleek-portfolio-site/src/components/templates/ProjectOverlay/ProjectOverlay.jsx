@@ -82,6 +82,14 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
             </div>
             <div className='project_buttons_container'>
             <ProjectOverlayButton text='Live Project' icon={<AiOutlineGlobal className='button_icon'/>}/>
+
+            {Object.keys(project?.buttonItems).map((item, i) => (
+
+              
+      // <ProjectOverlayButton text={project?.buttonItems[i].button.name.toString()} icon={<AiOutlineGlobal className='button_icon'/>}/> 
+      <ProjectOverlayButton text={project?.buttonItems[i].button.name.toString()} icon={<img className='button_icon' src = {urlFor(project?.buttonItems[i].button.image).url()}/>}/> 
+              ))
+              }  
             </div>
             </div>
 

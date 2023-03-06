@@ -115,6 +115,15 @@
     height: 21px;
 }
 
+
+.project_buttons_container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+    gap:10px;
+}
+
+
 @media only screen and (max-width:1050px){
     .project_overlay_contents{
         flex-direction: column;

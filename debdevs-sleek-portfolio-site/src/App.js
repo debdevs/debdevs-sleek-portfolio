@@ -28,7 +28,14 @@ function App() {
           
           },
                    
-
+          "buttonItems": buttonItems[]{
+            
+            ...,
+         
+            button->
+          },
+    
+          
           title,
           shortDescription,
  

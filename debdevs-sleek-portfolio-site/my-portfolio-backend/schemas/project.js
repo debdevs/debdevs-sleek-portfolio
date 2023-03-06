@@ -77,6 +77,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'buttonItems',
+      title: 'Button Stack',
+      type: 'array',
+      of: [{type: 'buttonItem'}],
+    }),
+    defineField({
       name: 'techStackItems',
       title: 'Tech Stack',
       type: 'array',

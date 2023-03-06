@@ -13,7 +13,8 @@ import videoWithExplanationItem from './videoWithExplanationItem'
 import videoWithExplanation from './videoWithExplanation'
 import roleDescriptionSectionItem from './roleDescriptionSectionItem'
 import roleDescriptionSection from './roleDescriptionSection'
-
+import buttonItem from './buttonItem'
+import button from './button'
 export const schemaTypes = [
   // Document types
   project,
@@ -23,6 +24,7 @@ export const schemaTypes = [
   projectType,
   projectDescriptionSection,
   roleDescriptionSection,
+  button,
   // Other types
   blockContent,
 
@@ -31,6 +33,7 @@ export const schemaTypes = [
   projectDescriptionSectionItem,
   roleDescriptionSectionItem,
   imageWithExplanationItem,
-  videoWithExplanationItem
+  videoWithExplanationItem,
+  buttonItem 
  
 ]
