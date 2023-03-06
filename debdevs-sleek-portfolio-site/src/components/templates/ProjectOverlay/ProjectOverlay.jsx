@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ProjectDisplay from '../../UI/molecules/ProjectDisplay/ProjectDisplay'
 import './ProjectOverlay.css'
 import { motion, AnimatePresence } from 'framer-motion';
@@ -22,6 +22,7 @@ function hexToRgb(hex) {
     b: parseInt(result[3], 16)
   } : null;
 }
+
 
 const ProjectOverlay = ({project, display_value, button_function}) => {
   return (

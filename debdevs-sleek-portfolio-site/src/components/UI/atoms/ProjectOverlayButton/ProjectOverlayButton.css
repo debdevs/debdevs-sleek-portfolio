@@ -32,6 +32,12 @@
 }
 
 .button_icon{
+    color: white;
     height: 21px;
     width: 21px;
+}
+
+.project_overlay_button:hover .button_icon{
+
+    color: black;
 }
