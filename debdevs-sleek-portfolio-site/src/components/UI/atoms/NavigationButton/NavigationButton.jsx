@@ -1,8 +1,9 @@
 import React from 'react'
 import './NavigationButton.css'
 import {AiOutlineGithub} from 'react-icons/ai'
-const NavigationButton = ({text = 'Home',icon = ''}) => {
+const NavigationButton = ({text = 'Home',icon = '', link = ""}) => {
   return (
+    
     <button className='navigation_button'>{text}{icon}</button>
   )
 }

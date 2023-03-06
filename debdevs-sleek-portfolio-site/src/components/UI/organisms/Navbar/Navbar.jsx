@@ -6,8 +6,13 @@ const Navbar = () => {
   return (
     <div className='nav_bar'>
         <div className='nav_bar_contents'>
-        <NavigationButton text='Home'/>
-        <NavigationButton text = 'Github' icon = {<AiOutlineGithub className = 'button_icon'/>} />
+          <a href = "/">
+          <NavigationButton text='Home'/>
+          </a>
+          <a href = "https://github.com/debdevs">
+          <NavigationButton text = 'Github' icon = {<AiOutlineGithub className = 'button_icon'/>} />
+          </a>
+        
         <NavigationButton text = 'Contact'/>
         </div>
     </div>

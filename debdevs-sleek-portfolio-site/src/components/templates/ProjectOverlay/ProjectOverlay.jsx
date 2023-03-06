@@ -9,6 +9,7 @@ import TechStackArray from '../../UI/atoms/TechStackArray/TechStackArray';
 import ProjectOverlayButton from '../../UI/atoms/ProjectOverlayButton/ProjectOverlayButton';
 import myConfiguredSanityClient from '../../../client'
 import imageUrlBuilder from '@sanity/image-url'
+import { ReactSVG } from "react-svg";
 const builder = imageUrlBuilder(myConfiguredSanityClient)
 
 function urlFor(source) {
@@ -22,6 +23,7 @@ function hexToRgb(hex) {
     b: parseInt(result[3], 16)
   } : null;
 }
+
 
 
 const ProjectOverlay = ({project, display_value, button_function}) => {
@@ -97,10 +99,8 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
   
               <ProjectOverlayButton 
               text={project?.buttonItems[i].button.name.toString()} 
+              button_direct_link = {project?.buttonItems[i].buttonLink}
               color_data = { project?.buttonItems[i].button.name == "Video Overview" ? 
-              
-              // `(111.03deg, rgba(${hexToRgb(project?.color).r}, ${hexToRgb(project?.color).g}, ${hexToRgb(project?.color).b}, 0.25) 15.71%, rgba(12, 210, 237, 0.25) 198.24%)`
-              // project?.color
               `linear-gradient(111.03deg, rgba(${hexToRgb(project?.color).r}, ${hexToRgb(project?.color).g}, ${hexToRgb(project?.color).b}, 0.25) 15.71%, rgba(12, 210, 237, 0.25) 198.24%)`
               : 
               
@@ -115,7 +115,8 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
             
             
             }
-              icon={<img className='button_icon' 
+         
+              icon={<ReactSVG className='button_icon'   
               src = {urlFor(project?.buttonItems[i].button.image).url()}/>}/> 
               
               ))

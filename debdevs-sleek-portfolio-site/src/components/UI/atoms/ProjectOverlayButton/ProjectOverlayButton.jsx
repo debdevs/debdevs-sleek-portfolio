@@ -5,7 +5,7 @@ import { useState } from 'react'
 
 
 
-const ProjectOverlayButton = ({text = 'Home',icon = '', color_data = null}) => {
+const ProjectOverlayButton = ({text = 'Home',icon = '', color_data = null, button_direct_link = "google.com"}) => {
   const [isHover, setIsHover] = useState(false);
 
 const handleMouseEnter = () => {
@@ -20,13 +20,20 @@ const boxStyle = {
 };
 
   return (
-    <button className='project_overlay_button' style={{background: isHover == false ? color_data : null}}
-    onMouseEnter={handleMouseEnter}
-    onMouseLeave={handleMouseLeave}    
-    
-    
-    >{text}{icon}</button>
-  )
+    <a   href = {button_direct_link}>
+
+<button className='project_overlay_button' style={{background: isHover == false ? color_data : null}}
+  
+  onMouseEnter={handleMouseEnter}
+  onMouseLeave={handleMouseLeave}    
+
+  
+  
+  >{text}{icon}</button>
+
+    </a>
+    )
+
 }
 
 export default ProjectOverlayButton

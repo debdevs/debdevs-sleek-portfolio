@@ -32,12 +32,20 @@
 }
 
 .button_icon{
-    color: white;
-    height: 21px;
-    width: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.project_overlay_button:hover .button_icon{
-
+.button_icon div svg{
     color: black;
+    height: 21px;
+    width: 21px;
+    padding-top: 3px;
+}
+
+
+.project_overlay_button:hover .button_icon div svg *{
+
+    fill: black;
 }
