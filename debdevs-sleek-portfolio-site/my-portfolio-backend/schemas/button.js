@@ -14,13 +14,9 @@ export default defineType({
       description: 'Please use "Firstname Lastname" format',
     }),
     defineField({
-      name: 'slug',
-      title: 'Slug',
-      type: 'slug',
-      options: {
-        source: 'name',
-        maxLength: 100,
-      },
+      name: 'color',
+      title: 'Color',
+      type: 'string',
     }),
     defineField({
       name: 'image',

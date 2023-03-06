@@ -5,7 +5,7 @@
     padding: 3px 19px 3px 19px;
     gap: 10px;
 
-    background: rgba(4, 18, 39, 0.35);
+ 
  
     color: white;
     cursor: pointer;
@@ -17,7 +17,7 @@
     gap: 10px;
 
     position: relative;
-    width: 140px;
+
     height: 30px;
 
     font-family: 'Qualion';
