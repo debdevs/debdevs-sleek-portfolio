@@ -14,6 +14,14 @@ const builder = imageUrlBuilder(myConfiguredSanityClient)
 function urlFor(source) {
   return builder.image(source)
 }
+function hexToRgb(hex) {
+  var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+  return result ? {
+    r: parseInt(result[1], 16),
+    g: parseInt(result[2], 16),
+    b: parseInt(result[3], 16)
+  } : null;
+}
 
 const ProjectOverlay = ({project, display_value, button_function}) => {
   return (
@@ -88,7 +96,24 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
   
               <ProjectOverlayButton 
               text={project?.buttonItems[i].button.name.toString()} 
-              color_data = {project?.buttonItems[i].button.color}
+              color_data = { project?.buttonItems[i].button.name == "Video Overview" ? 
+              
+              // `(111.03deg, rgba(${hexToRgb(project?.color).r}, ${hexToRgb(project?.color).g}, ${hexToRgb(project?.color).b}, 0.25) 15.71%, rgba(12, 210, 237, 0.25) 198.24%)`
+              // project?.color
+              `linear-gradient(111.03deg, rgba(${hexToRgb(project?.color).r}, ${hexToRgb(project?.color).g}, ${hexToRgb(project?.color).b}, 0.25) 15.71%, rgba(12, 210, 237, 0.25) 198.24%)`
+              : 
+              
+              project?.buttonItems[i].button.color
+              
+              
+              
+              
+             
+            
+            
+            
+            
+            }
               icon={<img className='button_icon' 
               src = {urlFor(project?.buttonItems[i].button.image).url()}/>}/> 
               
