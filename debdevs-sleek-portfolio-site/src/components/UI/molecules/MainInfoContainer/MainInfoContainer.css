@@ -28,3 +28,13 @@
     display: flex;
     gap: 12px;
 }
+
+@media only screen and (max-width:1050px){
+    .main_info_container_parent {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+}

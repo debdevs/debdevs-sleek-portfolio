@@ -20,5 +20,7 @@
 @media only screen and (max-width:1050px){
     .home_hero_contents{
         overflow: hidden;
+        flex-direction: column-reverse;
+        margin-top: 255px;
     }
 }
