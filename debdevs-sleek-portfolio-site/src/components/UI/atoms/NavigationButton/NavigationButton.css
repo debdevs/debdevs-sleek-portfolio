@@ -14,7 +14,8 @@
     border-radius: 23.0682px;
     color: white;
     cursor: pointer;
-    transition: all .15s ease-in-out;
+
+    transition: all.25s ease-in-out;
     border: 0px solid white;
     text-align: center;
 }
