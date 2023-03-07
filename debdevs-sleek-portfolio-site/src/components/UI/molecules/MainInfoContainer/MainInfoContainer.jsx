@@ -3,6 +3,7 @@ import './MainInfoContainer.css'
 import TextsInfoBox from '../../atoms/TextsInfoBox/TextsInfoBox'
 import SecondaryThemeButton from '../../atoms/SecondaryThemeButton/SecondaryThemeButton'
 import TechStackArray from '../../atoms/TechStackArray/TechStackArray'
+import TertiaryThemeButton from '../../atoms/TertiaryThemeButton/TertiaryThemeButton'
 const MainInfoContainer = ({image_data}) => {
   return (
     <div className='main_info_container_parent'>
@@ -11,8 +12,13 @@ const MainInfoContainer = ({image_data}) => {
         <h3 className='project_display_accent_header'>Skills:</h3>
         <TechStackArray image = {image_data}/>
         </div>
-       
-        <SecondaryThemeButton/>
+       <div className='main_info_button_rows'>
+
+       <SecondaryThemeButton/>
+        <TertiaryThemeButton/>
+
+       </div>
+
 
 
 

@@ -22,3 +22,9 @@
     width: 22px;
     height: 22px;
 }
+
+
+.main_info_button_rows{
+    display: flex;
+    gap: 12px;
+}

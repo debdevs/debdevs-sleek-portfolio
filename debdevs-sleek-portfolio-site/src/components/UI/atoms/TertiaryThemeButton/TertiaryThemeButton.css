@@ -1,19 +1,22 @@
-.secondary_theme_button{
+.tertiary_theme_button{
 
     box-sizing: border-box;
     cursor: pointer;
     /* Auto layout */
-    width: 132px;
+   
     height: 40px;
 
     font-family: 'Qualion';
     font-size: 15px;
     line-height: 24px;
     padding-bottom: 3px;
-    
-    background: linear-gradient(256.31deg, #0C4BED -6.18%, #0CD2ED 113.91%);
-    border: 0.5px solid #1673FF;
+    padding-left: 25px;
+    padding-right: 25px;
+    background: linear-gradient(256.31deg, rgba(12, 75, 237, 0.05) -6.18%, rgba(12, 210, 237, 0.05) 113.91%);
+    border: 0.5px solid rgba(22, 115, 255, 0.05);
     border-radius: 3px;
+
+    
 
     display: flex;
     align-items: center;
@@ -23,7 +26,7 @@
 }
 
 
-.secondary_theme_button:hover{
+.tertiary_theme_button:hover{
     background: white;
     color: black;
 }
