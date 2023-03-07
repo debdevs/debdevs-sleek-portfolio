@@ -17,7 +17,13 @@
     justify-content: space-between;
 }
 
-
+.home_hero_right_items{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 45px;
+}
 @media only screen and (max-width:1050px){
     .home_hero_contents{
         overflow: hidden;

@@ -7,7 +7,7 @@
     /* padding-left:18px;
     padding-bottom:8px;
    */
-    gap: 10px;
+    gap: 8px;
  
     height: 30px; 
     background: rgba(4, 18, 39, 0.35);
@@ -16,6 +16,7 @@
     cursor: pointer;
     transition: all .15s ease-in-out;
     border: 0px solid white;
+    text-align: center;
 }
 
 
@@ -27,5 +28,5 @@
 .navigation_button .button_icon{
     min-height: 24px;
     min-width: 24px;
-    padding-bottom: 2px;
+    padding-bottom: 3px;
 }

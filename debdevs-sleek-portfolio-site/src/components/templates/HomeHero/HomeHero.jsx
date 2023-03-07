@@ -8,6 +8,7 @@ import ProjectCarousel from '../../UI/organisms/ProjectCarousel/ProjectCarousel'
 import { HomeContext } from '../../../HomeContext'
 import { useContext } from 'react'
 import HomeScrollButton from '../../UI/atoms/HomeScrollButton/HomeScrollButton'
+import MiniProjectCarousel from '../../UI/organisms/MiniProjectCarousel/MiniProjectCarousel'
 const HomeHero = ({projects_data, tech_data}) => {
   const { isData, setIsData } = useContext(HomeContext);
   return (
@@ -25,6 +26,7 @@ const HomeHero = ({projects_data, tech_data}) => {
         </div>
         <div className='home_hero_right_items'>
         <MainInfoContainer image_data = {tech_data}/>
+        <MiniProjectCarousel projects_input={projects_data}/>
         </div>   
        </div>
     </div>

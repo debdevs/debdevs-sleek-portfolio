@@ -1,0 +1,37 @@
+.mini_project_carousel_parent{
+   
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:17.8px;
+
+ 
+}
+
+
+.mini_project_carousel_parent .mini_project_card_parent:first-of-type{
+    opacity: 1;
+}
+
+@media only screen and (max-width:1050px){
+    /* .mini_project_carousel_parent{
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap:45px;
+     
+    } */
+
+
+    .mini_project_carousel_parent {
+        height: auto;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 2%;
+        justify-content: center;
+    }
+    
+}
