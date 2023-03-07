@@ -122,11 +122,10 @@
 
     .mini_project_card_parent {
         width: 45%;
-        height: 353px;
-        left: 239px;
-        top: 164px;
+        height: 270px;
+
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         border: 2px solid rgba(228, 234, 255, 0.05);
         filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22));
@@ -141,7 +140,7 @@
         justify-content: flex-start;
         flex-direction: column;
         width: 90%;
-        height: 95%;
+        height: auto;
         gap: 10px;
     }
 
@@ -149,7 +148,7 @@
 
     .mini_project_card_image_container {
         height: 45%;
-        max-height: 233px;
+        max-height: 175px;
         width: 95%;
         border-radius: 5px;
         display: flex;
