@@ -1,11 +1,15 @@
-.project_overlay_parent{
-    position: absolute;
+.project_overlay_parent {
+
     background-color: black;
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: "fixed";
+    overflow-x: hidden;
+    position: fixed;
+    overflow-y: auto;
+    height: 100vh;
 }
 .bg_image_container{
     position: absolute;

@@ -1,0 +1,41 @@
+.home_scroll_button{
+    height: 324px;
+    width: 26px;
+    color: white;
+    border-radius: 10px;
+    background-color: rgba(4, 18, 39, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    font-family: 'Modern Prestige DEMO';
+    text-align: center;
+    cursor: pointer;
+    transition: all .15s ease-in-out;
+    border: 0px solid white;
+      
+}
+
+
+.home_scroll_button_icon{
+    font-size: 24px;
+}
+
+.home_scroll_button:hover{
+    background-color: white;
+}
+
+
+.home_scroll_button:hover .home_scroll_button_icon{
+    color: black;
+}
+
+
+@media only screen and (max-width:1050px){
+
+    .home_scroll_button{
+        display: none;
+    }
+
+}

@@ -3,17 +3,30 @@
     height: 120px;
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    width: 70%;
+    justify-content: center;
+    width: 100%;
 
 }
 
 
 .nav_bar_contents{
-    width: 313px;
+    width: 70%;
     height: 30px;
     /* left: 189px;
     top: 44px; */
     display: flex;
     gap: 15px;
+    justify-content: space-between;
 }
+
+.nav_bar_left_items{
+    display: flex;
+    gap: 15px;
+}
+
+.nav_bar_right_items{
+    display: flex;
+    gap: 15px;
+    
+}
+
