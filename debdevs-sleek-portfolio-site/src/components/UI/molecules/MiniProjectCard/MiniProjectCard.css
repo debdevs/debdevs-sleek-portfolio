@@ -5,13 +5,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(228, 234, 255, 0.05);
+    border: 1px solid rgba(228, 234, 255, 0.05);
     /* BLUE_SHADOW */
     filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22));
     border-radius: 5px;
     cursor: pointer;
     transition: all.5s ease-in-out;
 }
+
+.mini_project_card_parent:hover{
+
+    filter: drop-shadow(0px 4px 45px rgba(12, 210, 237, .45));
+    border: 1px solid rgba(228, 234, 255, .7);
+
+
+}
+
+
+
+
+
+
 .mini_project_card_contents{
     display: flex;
     align-items: center;
@@ -101,12 +115,7 @@
     display: none;
 
 }
-.mini_project_card_parent:hover{
 
-    filter: drop-shadow(0px 4px 45px rgba(12, 210, 237, .45));
-    transform: scale(1.02);
-
-}
 
 @media only screen and (max-width:690px){
 
