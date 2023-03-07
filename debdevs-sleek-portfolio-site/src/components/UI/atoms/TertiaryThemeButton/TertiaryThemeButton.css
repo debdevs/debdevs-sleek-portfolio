@@ -2,10 +2,7 @@
 
     box-sizing: border-box;
     cursor: pointer;
-    /* Auto layout */
-   
     height: 40px;
-
     font-family: 'Qualion';
     font-size: 15px;
     line-height: 24px;
@@ -15,9 +12,6 @@
     background: linear-gradient(256.31deg, rgba(12, 75, 237, 0.05) -6.18%, rgba(12, 210, 237, 0.05) 113.91%);
     border: 0.5px solid rgba(22, 115, 255, 0.05);
     border-radius: 3px;
-
-    
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,3 +32,5 @@
   
     
 }
+
+
