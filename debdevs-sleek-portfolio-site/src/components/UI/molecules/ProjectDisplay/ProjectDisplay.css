@@ -31,10 +31,21 @@
     border-radius: 5px;
     object-fit: cover;
     overflow: hidden;
+  
+    cursor: pointer;
 }
+
+/* .project_display_card_image_container:hover .project_display_card_image{
+    transform: scale(1.025);
+    opacity: .5;
+
+} */
+
 .project_display_card_image{
     width: auto;
     height: inherit;
+
+   
     
 }
 .project_display_card_shadow{
