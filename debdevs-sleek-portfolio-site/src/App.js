@@ -7,8 +7,8 @@ import sanityClient from "./client"
 import { useContext } from 'react';
 import { HomeContext } from './HomeContext.js'
 import { motion, AnimatePresence } from 'framer-motion';
-
 import ProjectOverlay from './components/templates/ProjectOverlay/ProjectOverlay';
+import ContactOverlay from './components/templates/ContactOverlay/ContactOverlay';
 function App() {
   const [projects, setProjects] = useState([]);
   let data1 = useEffect(() => {
@@ -78,6 +78,7 @@ function App() {
   const [isActive, setIsActive] = useState(false);
   const [ isData, setIsData ] = useState(false);
   const [ isOpen, setIsOpen ] = useState(false);
+  const [ contactOpen, setContactOpen ] = useState(false);
   function setClose(){
     if (setIsOpen == true){
       setIsOpen(false)
@@ -90,7 +91,8 @@ function App() {
       isActive,
       setIsActive,
       isData, setIsData,
-      isOpen, setIsOpen 
+      isOpen, setIsOpen, 
+      contactOpen, setContactOpen 
 
     }}
   >
@@ -105,6 +107,20 @@ function App() {
     }
    
     </AnimatePresence>   
+
+   
+
+      <AnimatePresence initial={false} className = "overlay_holder">
+
+      {contactOpen == true?  
+      <ContactOverlay project={isData} button_function = {() => setContactOpen(false)}/> 
+      : 
+      null
+      }
+
+      </AnimatePresence>   
+
+    
     </div>
     
     </HomeContext.Provider>

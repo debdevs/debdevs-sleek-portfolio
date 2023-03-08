@@ -2,7 +2,29 @@ import React from 'react'
 import './Navbar.css'
 import NavigationButton from '../../atoms/NavigationButton/NavigationButton'
 import {AiOutlineGithub, AiOutlineLinkedin, AiFillLinkedin} from 'react-icons/ai'
-const Navbar = () => {
+import { useContext } from 'react'
+import { HomeContext } from '../../../../HomeContext'
+
+
+
+const Navbar = ({contact_function}) => {
+  const { contactOpen, setContactOpen } = useContext(HomeContext);
+
+
+
+  
+function contactFunction() {
+       
+  console.log('You clicked a overlay.');
+
+  setContactOpen(true)
+
+
+  
+}
+
+
+
   return (
     <div className='nav_bar'>
         <div className='nav_bar_contents'>
@@ -15,7 +37,7 @@ const Navbar = () => {
           
           </a>
         
-        <NavigationButton text = 'Contact'/>
+        <NavigationButton button_function = {()=>{contactFunction()}} text = 'Contact'/>
 
           </div>
           <div className='nav_bar_right_items'>
