@@ -10,6 +10,7 @@ import ProjectOverlayButton from '../../UI/atoms/ProjectOverlayButton/ProjectOve
 import myConfiguredSanityClient from '../../../client'
 import imageUrlBuilder from '@sanity/image-url'
 import { ReactSVG } from "react-svg";
+import ExitButton from '../../UI/atoms/ExitButton/ExitButton';
 const builder = imageUrlBuilder(myConfiguredSanityClient)
 
 function urlFor(source) {
@@ -128,7 +129,8 @@ const ProjectOverlay = ({project, display_value, button_function}) => {
             
             {console.log(project.overview[0].children[0].text)}
 
-    <div className='project_overlay_close_button' onClick={button_function}><AiFillCloseCircle/></div>
+    {/* <div className='project_overlay_close_button' onClick={button_function}><AiFillCloseCircle/></div> */}
+    <ExitButton button_function={button_function}/>
   </div>
   
   </motion.div>

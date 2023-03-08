@@ -1,0 +1,28 @@
+.exit_button{
+    position: absolute;
+
+    height: 40px;
+    width: 40px;
+    /* right:30%;
+    top: 75px; */
+
+    color: white;
+    background-color: transparent;
+    border: 3px dotted white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exit_button:hover{
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+.exit_button_icon{
+    font-size: 20px;
+}

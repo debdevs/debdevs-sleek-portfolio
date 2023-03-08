@@ -3,6 +3,7 @@ import './ContactOverlay.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import { AiOutlineMail } from 'react-icons/ai';
 import {BsBoxArrowUpRight} from 'react-icons/bs'
+import ExitButton from '../../UI/atoms/ExitButton/ExitButton';
 const ContactOverlay = ({button_function}) => {
 
 
@@ -22,9 +23,8 @@ const ContactOverlay = ({button_function}) => {
     }}
     transition={{ duration: .3 }}
   >
-<button className='exit_button' onClick={button_function}>
-    X
-</button>
+    <ExitButton button_function={button_function}/>
+
 <div className='detail_parent'>
     <div className='detail_top_items'>
     <span>Email:</span> debdevs97@gmail.com
