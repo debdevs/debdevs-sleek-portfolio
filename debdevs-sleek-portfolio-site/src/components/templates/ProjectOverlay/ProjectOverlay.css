@@ -131,6 +131,11 @@
     top: 95px;
 }
 @media only screen and (max-width:1050px){
+
+    .project_overlay_contents .exit_button {
+        top: 35px;
+        right: 30px;
+    }
     .project_overlay_contents{
         flex-direction: column;
         gap: 5%;

@@ -25,7 +25,7 @@ const ContactOverlay = ({button_function}) => {
   >
     <ExitButton button_function={button_function}/>
 
-<div className='detail_parent'>
+<div className='detail_parent' onClick={() => window.location = 'mailto:debdevs97@gmail.com'}>
     <div className='detail_top_items'>
     <span>Email:</span> debdevs97@gmail.com
     <AiOutlineMail className='button_icon'/>
