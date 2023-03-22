@@ -1,0 +1,66 @@
+.base_hero_parent{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 20;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.base_hero_parent .exit_button{
+    right: 30%;
+    top: 15%;
+}
+
+.base_hero_contents_parent{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+    transition: all.5s ease-in-out;
+}
+
+.base_hero_contents_parent:hover{
+    opacity: .5;
+    cursor: pointer;
+}
+.base_hero_contents_top_items{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Qualion";
+
+}
+.base_hero_contents_top_items span{
+
+    font-weight: 900;
+}
+
+
+.base_hero_contents_top_items .button_icon{
+    color: white;
+    height: 50px;
+    width: 50px;
+}
+
+
+.center_icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+.rounded_line{
+    height: 2.5px;
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+}
