@@ -1,6 +1,6 @@
 .paragraph_text{
-
-    width: 436px;
+    width: 100%;
+    max-width: 436px;
     height: 140px;
     left: 803px;
     top: 333px;
