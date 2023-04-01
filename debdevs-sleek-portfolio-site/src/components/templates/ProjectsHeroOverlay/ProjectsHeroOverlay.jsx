@@ -10,6 +10,7 @@ import TechStackArray from '../../UI/atoms/TechStackArray/TechStackArray';
 import TertiaryThemeButton from '../../UI/atoms/TertiaryThemeButton/TertiaryThemeButton';
 import ProjectsGallery from '../../UI/organisms/ProjectsGallery/ProjectsGallery';
 import SortGroup from '../../UI/molecules/SortGroup/SortGroup';
+import FilterGroup from '../../UI/molecules/FilterGroup/FilterGroup';
 const ProjectsHeroOverlay = ({projects_data, tech = [0,1], button_function}) => {
 
 
@@ -42,32 +43,8 @@ const ProjectsHeroOverlay = ({projects_data, tech = [0,1], button_function}) => 
       </div>
       <div className='projects_button_box'>
         <SortGroup/>
-      {/* <TertiaryThemeButton text='Sort By' icon ={<AiOutlineSortDescending className='button_icon'/>}/>
-        <div className='sort_button_modal'>
-          <option value="Date">Most Recent</option>
-          <option value="popularity">Most Popular</option>
-        </div> */}
   <div className='button_with_modal'>
-  <TertiaryThemeButton text='Filter By' icon ={<AiOutlineFilter className='button_icon'/>}/>
-      <div className='filter_button_modal'>
-
-<div>
-  <input type="checkbox" id="sausage" name="topping" value="sausage"/>
-  <label for="sausage">Web Development</label>
-</div>
-
-<div>
-  <input type="checkbox" id="sausage" name="topping" value="sausage"/>
-  <label for="sausage">Video Editing</label>
-</div>
-
-<div>
-  <input type="checkbox" id="design" name="video" value="design"/>
-  <label for="design">Design</label>
-</div>
-
-</div>
-
+  <FilterGroup/>
 
 
   </div>
