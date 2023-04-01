@@ -9,6 +9,7 @@ import ProjectTextsInfoBox from '../../UI/atoms/ProjectTextsInfoBox/ProjectTexts
 import TechStackArray from '../../UI/atoms/TechStackArray/TechStackArray';
 import TertiaryThemeButton from '../../UI/atoms/TertiaryThemeButton/TertiaryThemeButton';
 import ProjectsGallery from '../../UI/organisms/ProjectsGallery/ProjectsGallery';
+import SortGroup from '../../UI/molecules/SortGroup/SortGroup';
 const ProjectsHeroOverlay = ({projects_data, tech = [0,1], button_function}) => {
 
 
@@ -40,11 +41,12 @@ const ProjectsHeroOverlay = ({projects_data, tech = [0,1], button_function}) => 
             
       </div>
       <div className='projects_button_box'>
-      <TertiaryThemeButton text='Sort By' icon ={<AiOutlineSortDescending className='button_icon'/>}/>
+        <SortGroup/>
+      {/* <TertiaryThemeButton text='Sort By' icon ={<AiOutlineSortDescending className='button_icon'/>}/>
         <div className='sort_button_modal'>
           <option value="Date">Most Recent</option>
           <option value="popularity">Most Popular</option>
-        </div>
+        </div> */}
   <div className='button_with_modal'>
   <TertiaryThemeButton text='Filter By' icon ={<AiOutlineFilter className='button_icon'/>}/>
       <div className='filter_button_modal'>
