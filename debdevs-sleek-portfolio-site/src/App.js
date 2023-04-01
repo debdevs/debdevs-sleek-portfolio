@@ -9,6 +9,10 @@ import { HomeContext } from './HomeContext.js'
 import { motion, AnimatePresence } from 'framer-motion';
 import ProjectOverlay from './components/templates/ProjectOverlay/ProjectOverlay';
 import ContactOverlay from './components/templates/ContactOverlay/ContactOverlay';
+import BaseHeroOverlay from './components/templates/BaseHeroOverlay/BaseHeroOverlay';
+import ProjectsHeroOverlay from './components/templates/ProjectsHeroOverlay/ProjectsHeroOverlay';
+import ProcessHeroOverlay from './components/templates/ProcessHeroOverlay/ProcessHeroOverlay';
+
 function App() {
   const [projects, setProjects] = useState([]);
   let data1 = useEffect(() => {
@@ -100,7 +104,8 @@ function App() {
 
       <Navbar/>
       <HomeHero projects_data={projects} tech_data = {tech} />
-
+      {/* <ProcessHeroOverlay/> */}
+      <ProjectsHeroOverlay tech={tech}/>
       <AnimatePresence initial={false} className = "overlay_holder">
 
       {isOpen == true?  <ProjectOverlay project={isData} button_function = {() => setIsOpen(false)}/> : null
@@ -119,7 +124,7 @@ function App() {
       }
 
       </AnimatePresence>   
-
+  
     
     </div>
     

@@ -12,7 +12,7 @@ const ProcessHeroOverlay = ({button_function}) => {
 
     <motion.div
     
-    className="base_hero_parent"
+    className="process_hero_parent"
     initial={{  translateY: 10, scaleX: 1, opacity: 0 }}
     animate={{ translateY: 0, scaleX: 1, opacity: 1 }}
     exit={{
@@ -23,16 +23,17 @@ const ProcessHeroOverlay = ({button_function}) => {
     }}
     transition={{ duration: .3 }}
   >
+    
     <ExitButton button_function={button_function}/>
+    <div className='process_hero_contents_parent'>
+      
+    <div className='process_hero_contents_top_items'>
 
-<div className='base_hero_contents_parent' onClick={() => window.location = 'mailto:debdevs97@gmail.com'}>
-    <div className='base_hero_contents_top_items'>
-    <span>Email:</span> debdevs97@gmail.com
-    <AiOutlineMail className='button_icon'/>
+
     </div>
     
-    <BsBoxArrowUpRight className='center_icon'/>
-    <div className='rounded_line'/>
+ 
+
 </div>
 
 

@@ -1,9 +1,9 @@
-.base_hero_parent{
+.process_hero_parent{
     height: 100vh;
     width: 100vw;
     background-color: black;
     z-index: 20;
-    position: fixed;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,12 +11,12 @@
     
 
 }
-.base_hero_parent .exit_button{
-    right: 30%;
-    top: 15%;
+.process_hero_parent .exit_button{
+    /* right: 30%;
+    top: 15%; */
 }
 
-.base_hero_contents_parent{
+.process_hero_contents_parent{
     color: white;
     display: flex;
     align-items: center;
@@ -26,11 +26,11 @@
     transition: all.5s ease-in-out;
 }
 
-.base_hero_contents_parent:hover{
+.process_hero_contents_parent:hover{
     opacity: .5;
     cursor: pointer;
 }
-.base_hero_contents_top_items{
+.process_hero_contents_top_items{
     color: white;
     display: flex;
     align-items: center;
@@ -39,13 +39,13 @@
     font-family: "Qualion";
 
 }
-.base_hero_contents_top_items span{
+.process_hero_contents_top_items span{
 
     font-weight: 900;
 }
 
 
-.base_hero_contents_top_items .button_icon{
+.process_hero_contents_top_items .button_icon{
     color: white;
     height: 50px;
     width: 50px;

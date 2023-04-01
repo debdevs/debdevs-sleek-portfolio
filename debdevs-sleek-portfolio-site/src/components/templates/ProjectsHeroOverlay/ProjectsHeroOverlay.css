@@ -1,0 +1,93 @@
+.projects_hero_parent{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    z-index: 20;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.projects_hero_parent .exit_button{
+    right: 30%;
+    
+}
+
+.projects_hero_contents_parent{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 20%;
+    transition: all.5s ease-in-out;
+}
+
+.projects_hero_contents_parent:hover{
+    /* opacity: .5;
+    cursor: pointer; */
+}
+.projects_hero_contents_top_items{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Qualion";
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.projects_tech_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 13px;
+}
+
+.projects_tech_container .tech_stack_array_container{
+    width: auto;
+    gap: 7px;
+}
+.projects_tech_container .tech_image_parent{
+    width: 20px;
+    height: 20px;
+}
+
+
+.projects_hero_contents_top_items .project_texts_info_box_parent .paragraph_text{
+    text-align: center;
+    height: auto;
+}
+
+
+.projects_hero_contents_top_items span{
+
+    font-weight: 900;
+}
+
+.projects_button_box{
+    display: flex;
+    gap: 22px;
+}
+.projects_hero_contents_top_items .button_icon{
+
+}
+
+
+.center_icon{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    display: none;
+}
+.rounded_line{
+    height: 2.5px;
+    border-radius: 15px;
+    background-color: white;
+    width: 100%;
+}
