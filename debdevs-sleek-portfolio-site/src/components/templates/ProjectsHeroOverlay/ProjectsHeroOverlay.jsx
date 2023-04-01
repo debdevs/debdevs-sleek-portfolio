@@ -41,26 +41,35 @@ const ProjectsHeroOverlay = ({projects_data, tech = [0,1], button_function}) => 
       </div>
       <div className='projects_button_box'>
       <TertiaryThemeButton text='Sort By' icon ={<AiOutlineSortDescending className='button_icon'/>}/>
-      
-      <TertiaryThemeButton text='Filter By' icon ={<AiOutlineFilter className='button_icon'/>}/>
-      <div className='sort_button_modal'>
-
-        <div>
-          <input type="checkbox" id="sausage" name="topping" value="sausage"/>
-          <label for="sausage">Web Development</label>
+        <div className='sort_button_modal'>
+          <option value="Date">Most Recent</option>
+          <option value="popularity">Most Popular</option>
         </div>
+  <div className='button_with_modal'>
+  <TertiaryThemeButton text='Filter By' icon ={<AiOutlineFilter className='button_icon'/>}/>
+      <div className='filter_button_modal'>
 
-        <div>
-          <input type="checkbox" id="sausage" name="topping" value="sausage"/>
-          <label for="sausage">Video Editing</label>
-        </div>
+<div>
+  <input type="checkbox" id="sausage" name="topping" value="sausage"/>
+  <label for="sausage">Web Development</label>
+</div>
 
-        <div>
-          <input type="checkbox" id="design" name="video" value="design"/>
-          <label for="design">Design</label>
-        </div>
+<div>
+  <input type="checkbox" id="sausage" name="topping" value="sausage"/>
+  <label for="sausage">Video Editing</label>
+</div>
 
-      </div>
+<div>
+  <input type="checkbox" id="design" name="video" value="design"/>
+  <label for="design">Design</label>
+</div>
+
+</div>
+
+
+
+  </div>
+
       </div>
       <div className='lower_items'>
         <ProjectsGallery projects_input={projects_data} />

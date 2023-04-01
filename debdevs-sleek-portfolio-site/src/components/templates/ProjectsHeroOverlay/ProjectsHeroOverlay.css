@@ -112,3 +112,25 @@
     flex-direction: column;
     gap: 10px;
 }
+
+
+.filter_button_modal {
+    height: 200px;
+    width: 200px;
+    padding-inline: 15px;
+    background-color: black;
+    position: absolute;
+
+    z-index: 15;
+    background: linear-gradient(256.31deg, rgb(2, 6, 17) -6.18%, rgb(1, 9, 10) 113.91%);
+    border: 0.5px solid rgba(22, 115, 255, 0.05);
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: 'Qualion';
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
