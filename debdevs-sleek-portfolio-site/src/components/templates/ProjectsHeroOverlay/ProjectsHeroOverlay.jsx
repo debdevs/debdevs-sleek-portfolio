@@ -8,7 +8,8 @@ import ExitButton from '../../UI/atoms/ExitButton/ExitButton';
 import ProjectTextsInfoBox from '../../UI/atoms/ProjectTextsInfoBox/ProjectTextsInfoBox';
 import TechStackArray from '../../UI/atoms/TechStackArray/TechStackArray';
 import TertiaryThemeButton from '../../UI/atoms/TertiaryThemeButton/TertiaryThemeButton';
-const ProjectsHeroOverlay = ({tech = [0,1], button_function}) => {
+import ProjectsGallery from '../../UI/organisms/ProjectsGallery/ProjectsGallery';
+const ProjectsHeroOverlay = ({projects_data, tech = [0,1], button_function}) => {
 
 
 
@@ -36,13 +37,34 @@ const ProjectsHeroOverlay = ({tech = [0,1], button_function}) => {
       <div className='projects_tech_container'>
               <h3 className='project_display_accent_header'>Technologies Used:</h3>
              <TechStackArray image = {tech}/>
-              {tech.image}
+            
       </div>
       <div className='projects_button_box'>
       <TertiaryThemeButton text='Sort By' icon ={<AiOutlineSortDescending className='button_icon'/>}/>
-      <TertiaryThemeButton text='Filter By' icon ={<AiOutlineFilter className='button_icon'/>}/>
-      </div>
       
+      <TertiaryThemeButton text='Filter By' icon ={<AiOutlineFilter className='button_icon'/>}/>
+      <div className='sort_button_modal'>
+
+        <div>
+          <input type="checkbox" id="sausage" name="topping" value="sausage"/>
+          <label for="sausage">Web Development</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="sausage" name="topping" value="sausage"/>
+          <label for="sausage">Video Editing</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="design" name="video" value="design"/>
+          <label for="design">Design</label>
+        </div>
+
+      </div>
+      </div>
+      <div className='lower_items'>
+        <ProjectsGallery projects_input={projects_data} />
+      </div>
     </div>
     
  

@@ -105,7 +105,7 @@ function App() {
       <Navbar/>
       <HomeHero projects_data={projects} tech_data = {tech} />
       {/* <ProcessHeroOverlay/> */}
-      <ProjectsHeroOverlay tech={tech}/>
+      <ProjectsHeroOverlay projects_data={projects} tech={tech}/>
       <AnimatePresence initial={false} className = "overlay_holder">
 
       {isOpen == true?  <ProjectOverlay project={isData} button_function = {() => setIsOpen(false)}/> : null

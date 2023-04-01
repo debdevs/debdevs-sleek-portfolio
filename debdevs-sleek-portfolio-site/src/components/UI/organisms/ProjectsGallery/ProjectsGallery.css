@@ -1,8 +1,8 @@
-.project_carousel_parent{
-    height: 80vh;
-    overflow-y: scroll;
+.project_gallery_parent{
+ 
+   
     display: flex;
-    flex-direction: column;
+
     gap:45px;
  
 }
@@ -11,7 +11,7 @@
 
 
 @media only screen and (max-width:1050px){
-    /* .project_carousel_parent{
+    /* .project_gallery_parent{
         height: auto;
         width: auto;
         display: flex;
@@ -21,7 +21,7 @@
     } */
 
 
-    .project_carousel_parent {
+    .project_gallery_parent {
         height: auto;
         width: auto;
         display: flex;
