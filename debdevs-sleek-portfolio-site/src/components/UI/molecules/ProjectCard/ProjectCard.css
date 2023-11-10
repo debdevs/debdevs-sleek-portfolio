@@ -12,6 +12,8 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all.5s ease-in-out;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 .project_card_contents{
     display: flex;
@@ -19,7 +21,7 @@
     justify-content: center;
     flex-direction: column;
     width: 90%;
-    height: 95%;
+  
     gap: 10px;
 
 }
@@ -119,8 +121,8 @@ opacity: .7;
 
 
     .project_card_parent {
-        width: 85%;
-        height: 353px;
+        width: 90%;
+        height: 259px;
         left: 239px;
         top: 164px;
         display: flex;
@@ -146,8 +148,8 @@ opacity: .7;
 
 
     .project_card_image_container {
-        height: 45%;
-        max-height: 233px;
+        height: 100%;
+        max-height: 171px;
         width: 95%;
         border-radius: 5px;
         display: flex;
@@ -171,13 +173,13 @@ opacity: .7;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     width: 95%;
     gap: 15%;
 }
 
 .project_title {
-    text-align: center;
+    text-align: left;
     font-family: 'Qualion';
     font-style: normal;
     font-weight: 400;
@@ -196,6 +198,7 @@ opacity: .7;
     letter-spacing: 0.005em;
     text-align: center;
     color: #CDE0F1;
+    display: none;
 }
 
 

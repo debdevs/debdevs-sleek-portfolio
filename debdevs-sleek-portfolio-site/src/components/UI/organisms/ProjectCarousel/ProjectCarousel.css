@@ -1,5 +1,6 @@
 .project_carousel_parent{
     height: 80vh;
+    width: 25vw;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -50,4 +51,21 @@
         justify-content: center;
     }
     
+}
+
+
+@media only screen and (max-width:690px){
+
+
+
+  .project_carousel_parent {
+      height: auto;
+      width: auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 25px;
+      justify-content: center;
+  }
+  
 }

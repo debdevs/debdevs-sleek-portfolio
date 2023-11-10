@@ -30,6 +30,8 @@
         overflow-x: hidden;
         flex-direction: column-reverse;
         margin-top: 15px;
+        height: 100vh;
+        gap: 15px;
     }
 
     .home_hero_right_items{

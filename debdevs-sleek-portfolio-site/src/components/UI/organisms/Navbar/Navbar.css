@@ -44,10 +44,11 @@
     
     .nav_bar_contents{
 
+        justify-content: center;
     }
     
     .nav_bar_left_items{
-        display: none;
+   
     }
     
     .nav_bar_right_items{

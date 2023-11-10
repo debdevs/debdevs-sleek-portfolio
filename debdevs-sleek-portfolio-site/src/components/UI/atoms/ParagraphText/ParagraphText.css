@@ -22,5 +22,14 @@
 @media only screen and (max-width:1050px){
     .paragraph_text{
         text-align: center;
+      
+    }
+}
+
+@media only screen and (max-width:690px){
+    .paragraph_text{
+        text-align: center;
+        font-size: 14px;
+        width: 85%;
     }
 }
