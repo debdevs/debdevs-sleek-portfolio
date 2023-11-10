@@ -17,3 +17,15 @@
     font-family: "ModernPrestige";
     color: white;
 }
+
+@media only screen and (max-width:690px){
+
+    .main_header{
+        max-width: 418px;
+        width: 100%;
+        font-size:45px;
+    
+    }
+
+
+}

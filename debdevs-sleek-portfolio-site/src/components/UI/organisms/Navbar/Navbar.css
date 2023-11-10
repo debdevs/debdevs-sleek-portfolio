@@ -30,3 +30,30 @@
     
 }
 
+@media only screen and (max-width:480px){
+    .nav_bar{
+        position: absolute;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    
+    }
+    
+    
+    .nav_bar_contents{
+
+    }
+    
+    .nav_bar_left_items{
+        display: none;
+    }
+    
+    .nav_bar_right_items{
+        
+        display: none;
+    }
+    
+    
+}

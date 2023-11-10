@@ -1,6 +1,6 @@
 import React from 'react'
 import "./BylineText.css"
-const BylineText = ({text = "Frontend Developer ● Animator ● Visual designer"}) => {
+const BylineText = ({text = "UI/UX Engineer ● Animator ● Visual designer"}) => {
   return (
     <p className='byline_text'>{text}</p>
   )

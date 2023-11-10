@@ -1,7 +1,7 @@
 .project_overlay_parent {
 
     background-color: black;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +147,8 @@
         justify-content: center;
         align-items: center;
         height: 450px;
-        width: 416px;
+        width: 100%;
+        max-width: 416px;
         left: 20px;
         top: 20px;
         border-radius: 0px;

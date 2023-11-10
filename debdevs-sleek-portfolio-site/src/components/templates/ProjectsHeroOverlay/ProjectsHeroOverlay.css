@@ -114,3 +114,14 @@
     flex-direction: column;
     gap: 10px;
 }
+
+
+@media only screen and (max-width:480px){
+
+    .projects_hero_parent{
+display: none;
+        
+    
+    }
+
+}

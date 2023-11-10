@@ -28,7 +28,7 @@
     .mini_project_carousel_parent {
         height: auto;
         width: auto;
-        display: flex;
+        display: none;
         flex-direction: row;
         gap: 2%;
         justify-content: center;
