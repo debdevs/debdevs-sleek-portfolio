@@ -1,0 +1,72 @@
+.cs_number_list_object {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 329.5px;
+}
+.cs_number_list_header_with_icon {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.cs_number_list_header_with_icon .cs_number_list_header_text {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Qualion;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+.cs_number_list_paragraph {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 112px;
+}
+.cs_number_list_header_text {
+  color: white;
+}
+
+.cs_number_list_list > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 52px;
+}
+
+.number_icon_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dotted_circle_icon {
+}
+.dotted_circle_number {
+  position: absolute;
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: "ImperialScriptRegular";
+  font-size: 36px;
+  width: inherit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}

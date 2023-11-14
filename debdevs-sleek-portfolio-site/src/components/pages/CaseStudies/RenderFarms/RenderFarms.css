@@ -1,0 +1,152 @@
+.cs_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25vh;
+  height: 2095px;
+  gap: 17px;
+}
+.case_study_image_container{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.case_study_image{
+  width: 100%;
+  height: auto;
+  padding-bottom: 20%;
+
+}
+.cs_central_paragraph {
+  width: 100%;
+  max-width: 995.771px;
+  color: #fff;
+  text-align: center;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* padding-top: 17px;
+  margin-bottom:65px; */
+}
+
+.cs_central_paragraph span {
+  color: #ff3d00;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.case_study_image_container {
+  border-radius: 5px;
+  border: 2px solid #ff7798;
+  width: 1035px;
+  height: 314px;
+  flex-shrink: 0;
+  box-shadow: 0px 13.53066px 118.39324px 0px rgba(0, 0, 0, 0.35) inset,
+    0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.cs_lower_items_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cs_list_items_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.separator_container {
+  margin-top: 36px;
+  margin-bottom: 36px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+
+.separator_icon{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  width: 100%;
+}
+.separator_icon * {
+  position: absolute;
+ 
+}
+.primary_section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 141px;
+}
+.primary_section_left_items_list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 34px;
+  margin-left: 112px;
+}
+
+
+.primary_section_right_items {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 132px;
+}
+.primary_section_right_items_list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-top: 45px;
+}
+.primary_section_right_items_list_ul {
+  width: 362.055px;
+  list-style-type: circle;
+  padding-left: 68px;
+}
+.primary_section_right_items_list_ul > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.cs_list_object_secondary_version{
+  margin-top: 63px;
+  margin-bottom:130px;
+}
+@media only screen and (max-width: 1035px) {
+  .cs_content {
+    width: 90%;
+  }
+  .case_study_image_container {
+    width: 90%;
+  }
+  .case_study_image{
+    width: auto;
+    height: 100%;
+    padding-bottom: 20%;
+  
+  }
+  .separator_icon {
+    overflow: hidden;
+    width: 90vw;
+    height: 30px;
+    position: absolute;
+}
+  .cs_list_items_row {
+    flex-direction: column;
+  }
+}

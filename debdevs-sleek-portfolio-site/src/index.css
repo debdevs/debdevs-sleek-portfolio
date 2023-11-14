@@ -34,3 +34,10 @@ code {
     
     }
   
+    @font-face {
+      font-family: "ImperialScriptRegular";
+      src: local("ImperialScriptRegular"),
+        url("./assets/fonts/ImperialScript-Regular.ttf") format("truetype");
+      
+      }
+    

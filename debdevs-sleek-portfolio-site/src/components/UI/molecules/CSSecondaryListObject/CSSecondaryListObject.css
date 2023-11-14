@@ -1,0 +1,51 @@
+.cs_secondary_list_object {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  width: 100%;
+  max-width: 329.5px;
+}
+.cs_secondary_list_header_with_icon {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+.cs_secondary_list_header_with_icon h1 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Qualion;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+}
+.cs_secondary_list_paragraph {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 397.056px;
+  text-align: left;
+  padding-left: 52px;
+}
+.cs_secondary_list_header_text {
+  color: white;
+}
+
+.cs_secondary_list_list > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 52px;
+}

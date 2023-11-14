@@ -83,7 +83,10 @@ table {
 	font-family: "MBFLigioneRegular";
    
    }
-  
+   .alternate_heading_mp1 {
+	font-family: "ImperialScriptRegular";
+   
+   }
  .overlay_holder{
 	position: absolute;
 	left: 0px;

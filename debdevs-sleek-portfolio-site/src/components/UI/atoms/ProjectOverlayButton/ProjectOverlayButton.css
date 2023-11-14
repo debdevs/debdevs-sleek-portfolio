@@ -1,10 +1,8 @@
 .project_overlay_button{
-    display: flex;
+    display: inline-flex;
+    padding: 4px 10px 4px 19px;
     align-items: center;
-    justify-content: center;
-    padding: 3px 19px 3px 19px;
     gap: 10px;
-
  
  
     color: white;
@@ -18,11 +16,22 @@
 
     position: relative;
 
-    height: 30px;
+    height: 32px;
 
     font-family: 'Qualion';
-    background: linear-gradient(256.31deg, rgba(12, 75, 237, 0.15) -6.18%, rgba(12, 210, 237, 0.15) 113.91%);
-    border-radius: 23.0682px;
+    border-radius: 35px;
+    border: 1px solid #195170;
+    background: linear-gradient(256deg, rgba(12, 75, 237, 0.15) -6.18%, rgba(12, 210, 237, 0.15) 113.91%);
+
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Qualion;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
 }
 
 
@@ -41,13 +50,19 @@
     color: black;
     height: 21px;
     width: 21px;
-    padding-top: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
 }
 
 
 .project_overlay_button:hover .button_icon div svg *{
 
     fill: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 @media only screen and (max-width:690px){
 

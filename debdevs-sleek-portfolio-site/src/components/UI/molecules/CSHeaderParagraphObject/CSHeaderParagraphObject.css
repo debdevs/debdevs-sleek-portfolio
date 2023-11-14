@@ -1,0 +1,52 @@
+.cs_header_paragraph_object {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 26.54px;
+  max-width: 509.555px;
+}
+.cs_header_paragraph_header_with_icon {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.cs_header_paragraph_header_text {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  text-align: left;
+  font-family: Qualion;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110.714%; /* 35.428px */
+  letter-spacing: 0.96px;
+  
+}
+.cs_header_paragraph_paragraph {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  width: 100%;
+  max-width: 509.555px;
+}
+.cs_header_paragraph_header_text {
+  color: white;
+}
+
+.cs_header_paragraph_list > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 52px;
+}
