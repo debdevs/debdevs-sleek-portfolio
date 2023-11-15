@@ -1,0 +1,120 @@
+.cs_dotted_list_object {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 329.5px;
+  
+}
+.cs_dotted_list_header_with_icon {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cs_dotted_list_header_with_icon h1 {
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Qualion;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: 5.5px;
+}
+.cs_dotted_list_paragraph {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 52px;
+}
+.cs_dotted_list_header_text {
+  color: white;
+}
+
+.cs_dotted_list_list > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 52px;
+}
+
+.separator_icon_menu{
+  display: flex;
+  width: 15%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  overflow-x: hidden;
+ height: 30px;
+  position: absolute;
+}
+.separator_icon_menu * {
+  position: absolute;
+}
+
+
+
+/* .cs_dotted_list_object_secondary_version {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cs_dotted_list_object_secondary_version .cs_dotted_list_header_with_icon {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  align-items: center;
+}
+.cs_dotted_list_object_secondary_version .cs_dotted_list_header_with_icon h1 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Qualion;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-bottom: 5.5px;
+}
+.cs_dotted_list_object_secondary_version .cs_dotted_list_paragraph {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 18.35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 1035px;
+  text-align: left;
+  padding-left: 52px;
+}
+.cs_dotted_list_object_secondary_version .cs_dotted_list_header_text {
+  color: white;
+}
+
+.cs_dotted_list_object_secondary_version .cs_dotted_list_list > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+
+  text-align: left;
+  padding-left: 52px;
+} */

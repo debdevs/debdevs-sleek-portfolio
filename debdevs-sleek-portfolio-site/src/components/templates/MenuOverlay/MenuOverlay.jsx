@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import ExitButton from "../../UI/atoms/ExitButton/ExitButton";
+import CSDottedListObject from "../../UI/molecules/CSDottedListObject/CSDottedListObject";
+import separator_icon from "../../../../src/assets/svgs/SeparatorLine.svg";
+import { ReactSVG } from "react-svg";
 const MenuOverlay = ({ button_function }) => {
   return (
     <motion.div
@@ -25,11 +28,14 @@ const MenuOverlay = ({ button_function }) => {
         onClick={() => (window.location = "mailto:debdevs97@gmail.com")}
       >
         <div className="menu_content_left_items">
-          werwertgydhfj
-          <AiOutlineMail className="button_icon" />
+       
         </div>
         <div className="menu_content_right_items">
-          <AiOutlineMail className="button_icon" />
+
+          <CSDottedListObject header="Case Studies" />
+          <CSDottedListObject header="All Projects" />
+          <CSDottedListObject header="About Me" />
+      
         </div>
       </div>
     </motion.div>
