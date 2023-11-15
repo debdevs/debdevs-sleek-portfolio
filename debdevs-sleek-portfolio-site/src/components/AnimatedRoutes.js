@@ -8,6 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import RenderFarms from "./pages/CaseStudies/RenderFarms/RenderFarms";
 import ProjectOverlay from "./templates/ProjectOverlay/ProjectOverlay.jsx";
 import ContactOverlay from "./templates/ContactOverlay/ContactOverlay.jsx";
+import CaseStudiesPage from "./pages/CaseStudies/CaseStudiesPage/CaseStudiesPage.jsx";
 const AnimatedRoutes = () => {
   const location = useLocation();
   const {         
@@ -24,6 +25,7 @@ const AnimatedRoutes = () => {
     <AnimatePresence>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
+        <Route path="/case-studies" element={<CaseStudiesPage />} />
         <Route path="/case-studies/renderfarms" element={<RenderFarms />} />
       </Routes>
       {/* <AnimatePresence initial={false} className="overlay_holder">

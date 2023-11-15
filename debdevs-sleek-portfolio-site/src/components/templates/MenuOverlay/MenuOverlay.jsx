@@ -25,17 +25,16 @@ const MenuOverlay = ({ button_function }) => {
 
       <div
         className="menu_content_parent"
-        onClick={() => (window.location = "mailto:debdevs97@gmail.com")}
+   
       >
-        <div className="menu_content_left_items">
-       
-        </div>
+        <div className="menu_content_left_items"></div>
         <div className="menu_content_right_items">
+          <a href="/case-studies/renderfarms">
+            <CSDottedListObject header="Case Studies" />
+          </a>
 
-          <CSDottedListObject header="Case Studies" />
           <CSDottedListObject header="All Projects" />
           <CSDottedListObject header="About Me" />
-      
         </div>
       </div>
     </motion.div>

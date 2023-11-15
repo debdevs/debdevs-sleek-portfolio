@@ -11,7 +11,7 @@ import {
 } from "react-icons/ai";
 import { useContext } from "react";
 import { HomeContext } from "../../../../HomeContext";
-
+import { useState, useEffect } from "react";
 const Navbar = ({ contact_function }) => {
   const { contactOpen, setContactOpen } = useContext(HomeContext);
   const { menuOpen, setMenuOpen } = useContext(HomeContext);
@@ -27,6 +27,25 @@ const Navbar = ({ contact_function }) => {
     setMenuOpen(true);
   }
 
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsVisible(window.innerWidth >= 1035);
+    };
+
+    // Initial check
+    handleResize();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="nav_bar">
       <div className="nav_bar_contents">
@@ -37,21 +56,23 @@ const Navbar = ({ contact_function }) => {
               icon={<AiOutlineHome className="button_icon" />}
             />
           </a>
-          <a href="https://github.com/debdevs">
+          {isVisible ? (
+            <a href="https://github.com/debdevs">
+              <NavigationButton
+                text="Github"
+                icon={<AiOutlineGithub className="button_icon" />}
+              />
+            </a>
+          ) : null}
+          {isVisible ? (
             <NavigationButton
-              text="Github"
-              icon={<AiOutlineGithub className="button_icon" />}
+              button_function={() => {
+                contactFunction();
+              }}
+              text="Contact"
+              icon={<AiOutlineMail className="button_icon" />}
             />
-          </a>
-
-          <NavigationButton
-            button_function={() => {
-              contactFunction();
-            }}
-            text="Contact"
-            icon={<AiOutlineMail className="button_icon" />}
-          />
-
+          ) : null}
           <NavigationButton
             button_function={() => {
               menuFunction();

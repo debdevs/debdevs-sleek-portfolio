@@ -16,6 +16,7 @@ import ProjectOverlay from "./components/templates/ProjectOverlay/ProjectOverlay
 import ContactOverlay from "./components/templates/ContactOverlay/ContactOverlay.jsx";
 import { motion, AnimatePresence } from "framer-motion";
 import MenuOverlay from "./components/templates/MenuOverlay/MenuOverlay.jsx";
+import Navbar from "./components/UI/organisms/Navbar/Navbar.jsx";
 const App = () => {
   const [projects, setProjects] = useState([]);
   let data1 = useEffect(() => {
@@ -109,9 +110,10 @@ const App = () => {
         tech,
         projects,
       }}
+      className = "App"
     >
       {/* <div className="cs_number_list_paragraph">{isOpen + "hello"}</div> */}
-
+<Navbar/>
       <BrowserRouter>
         <AnimatePresence initial={false} className="overlay_holder">
           {contactOpen == true ? (
@@ -140,7 +142,7 @@ const App = () => {
         </AnimatePresence>
         <AnimatedRoutes />
 
-        <ProjectsHeroOverlay projects_data={projects} tech={tech} />
+        {/* <ProjectsHeroOverlay projects_data={projects} tech={tech} /> */}
       </BrowserRouter>
     </HomeContext.Provider>
   );

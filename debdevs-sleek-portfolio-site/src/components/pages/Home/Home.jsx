@@ -34,7 +34,7 @@ function Home({projects_data=null, tech_data = null }) {
       <Navbar/>
       <HomeHero projects_data={projects} tech_data = {tech} />
 
-    
+      <ProjectsHeroOverlay projects_data={projects} tech={tech} />
     </div>
 
  

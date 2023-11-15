@@ -22,6 +22,11 @@
   line-height: normal;
   letter-spacing: 0.6px;
   margin-bottom: 5.5px;
+  transition: all .4s ease;
+}
+
+.cs_dotted_list_object:hover .cs_dotted_list_header_with_icon .cs_dotted_list_header_text{
+  color: blue;
 }
 .cs_dotted_list_paragraph {
   color: #fff;

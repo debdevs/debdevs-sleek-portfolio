@@ -15,7 +15,6 @@ const RenderFarms = () => {
   return (
     <div className="App">
       <Navbar />
-
       <motion.div
         className="cs_content"
         initial={{ translateY: 10, scaleX: 1, opacity: 0 }}
@@ -26,15 +25,16 @@ const RenderFarms = () => {
           opacity: 0,
           transition: { type: "linear", stiffness: 50 },
         }}
-        transition={{ duration: 0.7, delay: .2}}
+        transition={{ duration: 0.7, delay: 0.2 }}
       >
         <MainHeader text="Renderfarms" />
         <p className="cs_central_paragraph">
           I took the helm for designing every aspect of this project. From
-          branding to illustration and interaction. With the input from project
-          stakeholders and collaboration of the lead frontend developer, we
-          created a product that generated significant revenue for Terminal Labs
-          & to this day serves as their <span>flagship</span> product
+          branding to illustration, UI Design and interaction. With the input
+          from project stakeholders and collaboration of the lead frontend
+          developer, we created a product that generated significant revenue for
+          Terminal Labs & to this day serves as their <span>flagship</span>{" "}
+          product
         </p>
         <div className="case_study_image_container">
           <img className="case_study_image" src={RFBanner} />
