@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import MainHeader from "../../../UI/atoms/MainHeader/MainHeader";
 import Navbar from "../../../UI/organisms/Navbar/Navbar";
 import "./CaseStudiesPage.css";
@@ -10,11 +10,13 @@ import CSSmallListObject from "../../../UI/molecules/CSSmallListObject/CSSmallLi
 import CSHeaderParagraphObject from "../../../UI/molecules/CSHeaderParagraphObject/CSHeaderParagraphObject";
 import CSSecondaryListObject from "../../../UI/molecules/CSSecondaryListObject/CSSecondaryListObject";
 import RFBanner from "../../../../assets/images/RFBannerSized.png";
+import CSProductCard from "../../../UI/molecules/CSProductCard/CSProductCard";
 import { motion, AnimatePresence } from "framer-motion";
+
+import rf_image from "../../../../assets/images/RFBannerSized.png";
 const CaseStudiesPage = () => {
   return (
     <div className="App">
-      <Navbar />
       <motion.div
         className="csp_content"
         initial={{ translateY: 10, scaleX: 1, opacity: 0 }}
@@ -27,11 +29,14 @@ const CaseStudiesPage = () => {
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-
-  
+        <MainHeader text="Case Studies" />
+        <div className="csp_cards_grid">
+            <CSProductCard image = {rf_image} link="/case-studies/RenderFarms" header = "RenderFarms" subtext = "An SAAS Web Application"/>
+            <CSProductCard image = "" link="/case-studies/RenderFarms" header = "Showman Video" subtext = "An SAAS Web Application (React PWA)"/>
+        </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default CaseStudiesPage
+export default CaseStudiesPage;

@@ -110,9 +110,10 @@ const App = () => {
         tech,
         projects,
       }}
-      className = "App"
+      
     >
       {/* <div className="cs_number_list_paragraph">{isOpen + "hello"}</div> */}
+      <div className="App">
 <Navbar/>
       <BrowserRouter>
         <AnimatePresence initial={false} className="overlay_holder">
@@ -144,7 +145,9 @@ const App = () => {
 
         {/* <ProjectsHeroOverlay projects_data={projects} tech={tech} /> */}
       </BrowserRouter>
+      </div>
     </HomeContext.Provider>
+    
   );
 };
 

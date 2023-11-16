@@ -29,7 +29,7 @@ const MenuOverlay = ({ button_function }) => {
       >
         <div className="menu_content_left_items"></div>
         <div className="menu_content_right_items">
-          <a href="/case-studies/renderfarms">
+          <a href="/case-studies/">
             <CSDottedListObject header="Case Studies" />
           </a>
 

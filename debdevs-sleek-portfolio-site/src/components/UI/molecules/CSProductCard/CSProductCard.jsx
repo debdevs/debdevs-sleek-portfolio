@@ -1,9 +1,31 @@
-import React from 'react'
-
-const CSProductCard = () => {
+import React from "react";
+import "./CSProductCard.css";
+import outlined_background from "../../../../../src/assets/svgs/CaseStudyCardBorder.svg";
+import { ReactSVG } from "react-svg";
+import ProjectDisplay from "../ProjectDisplay/ProjectDisplay";
+import project_image from "../../../../assets/images/RFBannerSized.png";
+const CSProductCard = ({ main_image = {project_image}, link = '/', header1 = 'RenderFarms',  header= 'RenderFarms', subtext = 'A SAAS web application'}) => {
   return (
-    <div>CSProductCard</div>
-  )
-}
+    <a href = {link}>
 
-export default CSProductCard
+ 
+    <div className="csp_product_card_container">
+      <ReactSVG className="outlined_background" src={outlined_background} />
+      <div className="csp_card_content">
+        <div className="csp_product_card_image_container">
+          <img src={project_image} />
+        </div>
+        <div className="csp_lower_items">
+          <div className="csp_left">
+            <h1 className="csp_card_text">{header}</h1>
+            <h1 className="csp_card_paragraph">{subtext}</h1>
+          </div>
+          <div className="csp_right"></div>
+        </div>
+      </div>
+    </div>
+    </a>
+  );
+};
+
+export default CSProductCard;

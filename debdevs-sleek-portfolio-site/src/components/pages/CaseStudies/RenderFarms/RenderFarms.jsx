@@ -1,4 +1,5 @@
 import React from "react";
+import '../../../../App.css'
 import MainHeader from "../../../UI/atoms/MainHeader/MainHeader";
 import Navbar from "../../../UI/organisms/Navbar/Navbar";
 import "./RenderFarms.css";
@@ -14,7 +15,6 @@ import { motion, AnimatePresence } from "framer-motion";
 const RenderFarms = () => {
   return (
     <div className="App">
-      <Navbar />
       <motion.div
         className="cs_content"
         initial={{ translateY: 10, scaleX: 1, opacity: 0 }}

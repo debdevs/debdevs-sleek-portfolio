@@ -3,119 +3,217 @@
   display: flex;
   flex-direction: column;
   align-items: center;
- 
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	text-decoration: none;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
-	overflow-x: hidden;
-	background-color: black;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  line-height: 1;
+  overflow-x: hidden;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-:root{
-
-  --accent-color-1: #0C4BED;
-  --accent-color-2: #0CD2ED;
-  --accent-color-3: #1673FF;
-  --theme-gradient-1: linear-gradient(256.31deg, var(--accent-color-1)-6.18%, var(--accent-color-2) 113.91%);
-  --theme-gradient-2: linear-gradient(111.03deg, var(--accent-color-1) 15.71%, var(--accent-color-2)198.24%);
+:root {
+  --accent-color-1: #0c4bed;
+  --accent-color-2: #0cd2ed;
+  --accent-color-3: #1673ff;
+  --theme-gradient-1: linear-gradient(
+    256.31deg,
+    var(--accent-color-1)-6.18%,
+    var(--accent-color-2) 113.91%
+  );
+  --theme-gradient-2: linear-gradient(
+    111.03deg,
+    var(--accent-color-1) 15.71%,
+    var(--accent-color-2) 198.24%
+  );
 }
-
 
 .large_heading_mp {
   font-family: "ModernPrestige";
- 
- }
+}
 
- .alternate_heading_mp {
-	font-family: "Qualion";
-   
-   }
+.alternate_heading_mp {
+  font-family: "Qualion";
+}
 
-   .alternate_heading_mp {
-	font-family: "MBFLigioneRegular";
-   
-   }
-   .alternate_heading_mp1 {
-	font-family: "ImperialScriptRegular";
-   
-   }
- .overlay_holder{
-	position: absolute;
-	left: 0px;
- }
+.alternate_heading_mp {
+  font-family: "MBFLigioneRegular";
+}
+.alternate_heading_mp1 {
+  font-family: "ImperialScriptRegular";
+}
+.overlay_holder {
+  position: absolute;
+  left: 0px;
+}
+.csp_card_text {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.09px;
+}
 
+.csp_card_paragraph{
+	color: #CDE0F1;
+font-family: Qualion;
+font-size: 12px;
+font-style: normal;
+font-weight: 350;
+line-height: normal;
+letter-spacing: 0.06px;
+}
 /* width */
 ::-webkit-scrollbar {
-	width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-	background: #131313; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-	background: #2a2828; 
-	border: 2px solid grey;
-	border-radius: 15px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-	background: #555; 
-	border: 2px solid grey;
-  }
+  width: 10px;
+}
 
- @media only screen and (max-width: 1200px){
+/* Track */
+::-webkit-scrollbar-track {
+  background: #131313;
+}
 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2a2828;
+  border: 2px solid grey;
+  border-radius: 15px;
+}
 
- }
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border: 2px solid grey;
+}
+
+@media only screen and (max-width: 1200px) {
+}
