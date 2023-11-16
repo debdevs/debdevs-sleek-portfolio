@@ -4,7 +4,8 @@ import outlined_background from "../../../../../src/assets/svgs/CaseStudyCardBor
 import { ReactSVG } from "react-svg";
 import ProjectDisplay from "../ProjectDisplay/ProjectDisplay";
 import project_image from "../../../../assets/images/RFBannerSized.png";
-const CSProductCard = ({ main_image = {project_image}, link = '/', header1 = 'RenderFarms',  header= 'RenderFarms', subtext = 'A SAAS web application'}) => {
+import project_image_2 from "../../../../assets/images/ShowmanTemplatesDesktop.png";
+const CSProductCard = ({ border_color = "FFF", main_image = project_image, link = '/', header1 = 'RenderFarms',  header= 'RenderFarms', subtext = 'A SAAS web application'}) => {
   return (
     <a href = {link}>
 
@@ -12,8 +13,8 @@ const CSProductCard = ({ main_image = {project_image}, link = '/', header1 = 'Re
     <div className="csp_product_card_container">
       <ReactSVG className="outlined_background" src={outlined_background} />
       <div className="csp_card_content">
-        <div className="csp_product_card_image_container">
-          <img src={project_image} />
+        <div className="csp_product_card_image_container" style={{ border: `2px solid ${border_color}` }}>
+          <img src={main_image} />
         </div>
         <div className="csp_lower_items">
           <div className="csp_left">
