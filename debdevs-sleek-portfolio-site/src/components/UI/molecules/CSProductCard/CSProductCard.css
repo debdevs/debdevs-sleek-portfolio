@@ -52,11 +52,12 @@
 .csp_product_card_image_container{
     overflow-x: hidden;
     border-radius: 15px;
+    height: 191.963px;
 border: 1.223px solid #FF7798;
 
 box-shadow: 0px 8.27194px 72.37949px 0px rgba(0, 0, 0, 0.35) inset, 0px 2.44539px 2.44539px 0px rgba(0, 0, 0, 0.25);
 }
 .csp_product_card_image_container img {
   
-  width: 100%;
+  width: 105%;
 }

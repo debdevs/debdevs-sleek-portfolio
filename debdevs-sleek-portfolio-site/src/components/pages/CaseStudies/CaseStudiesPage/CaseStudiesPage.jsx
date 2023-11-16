@@ -32,9 +32,10 @@ const CaseStudiesPage = () => {
       >
         <MainHeader text="Case Studies" />
         <div className="csp_cards_grid">
+          
             <CSProductCard border_color = "#FF7798" main_image = {rf_image} link="/case-studies/RenderFarms" header = "RenderFarms" subtext = "An SAAS Web Application"/>
             <CSProductCard border_color = "#9A17EA" main_image = {showman_image} link="/case-studies/RenderFarms" header = "Showman Video" subtext = "An SAAS Web Application (React PWA)"/>
-            <CSProductCard image = "" link="/case-studies/RenderFarms" header = "Showman Video" subtext = "An SAAS Web Application (React PWA)"/>
+            <CSProductCard border_color = "#2F9A41" main_image = {showman_image} link="/case-studies/RenderFarms" header = "Terminal Labs" subtext = "An SAAS Web Application (React PWA)"/>
         </div>
       </motion.div>
     </div>
