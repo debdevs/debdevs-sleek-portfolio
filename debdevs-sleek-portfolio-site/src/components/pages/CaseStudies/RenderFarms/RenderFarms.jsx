@@ -31,7 +31,7 @@ const RenderFarms = () => {
         <p className="cs_central_paragraph">
           I took the helm for designing every aspect of this project. From
           branding to illustration, UI Design and interaction. With the input
-          from project stakeholders and collaboration of the lead frontend
+          from project stakeholders, and collaboration of the lead frontend
           developer, we created a product that generated significant revenue for
           Terminal Labs & to this day serves as their <span>flagship</span>{" "}
           product
