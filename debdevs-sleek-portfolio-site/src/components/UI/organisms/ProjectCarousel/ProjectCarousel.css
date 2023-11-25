@@ -1,6 +1,9 @@
 .project_carousel_parent{
     height: 80vh;
-    width: 25vw;
+    min-width: 25vw;
+    width: 100%;
+    align-items: flex-end;
+    padding-right: 15px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;

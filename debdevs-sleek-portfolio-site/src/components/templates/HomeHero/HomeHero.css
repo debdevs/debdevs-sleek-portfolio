@@ -24,12 +24,19 @@
   flex-direction: column;
   gap: 45px;
 }
+
+.home_hero_left_items{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
 @media only screen and (max-width: 1050px) {
   .home_hero_contents {
     overflow-x: hidden;
     flex-direction: column-reverse;
     margin-top: 15px;
     height: 100vh;
+    min-width: 100%;
     gap: 15px;
   }
 
