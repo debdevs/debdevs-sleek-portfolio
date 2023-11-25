@@ -16,11 +16,13 @@
     align-items: center;
     justify-content: center;
     color:white;
-    gap: 5px;
+    gap: 10px;
     transition: all.5s ease-in-out;
 }
 
-
+.tertiary_theme_button span{
+    margin-top: -3px;
+}
 .tertiary_theme_button:hover{
     background: white;
     color: black;

@@ -11,7 +11,7 @@
     line-height: 24px;
     padding-bottom: 3px;
     
-    background: linear-gradient(256.31deg, #0C4BED -6.18%, #0CD2ED 113.91%);
+    background: var(--theme-gradient-3);
     border: 0.5px solid #1673FF;
     border-radius: 35px;
 
@@ -24,6 +24,9 @@
 }
 
 
+.secondary_theme_button span{
+    margin-top: -3px;
+}
 .secondary_theme_button:hover{
     background: white;
     color: black;

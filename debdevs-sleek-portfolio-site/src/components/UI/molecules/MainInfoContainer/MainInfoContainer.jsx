@@ -4,6 +4,7 @@ import TextsInfoBox from '../../atoms/TextsInfoBox/TextsInfoBox'
 import SecondaryThemeButton from '../../atoms/SecondaryThemeButton/SecondaryThemeButton'
 import TechStackArray from '../../atoms/TechStackArray/TechStackArray'
 import TertiaryThemeButton from '../../atoms/TertiaryThemeButton/TertiaryThemeButton'
+import { BsHdd, BsHddNetwork } from 'react-icons/bs'
 const MainInfoContainer = ({image_data}) => {
   return (
     <div className='main_info_container_parent'>
@@ -15,7 +16,7 @@ const MainInfoContainer = ({image_data}) => {
        <div className='main_info_button_rows'>
 
        <SecondaryThemeButton/>
-        <TertiaryThemeButton/>
+        <TertiaryThemeButton text='Work' icon ={<BsHddNetwork/>} />
 
        </div>
 

@@ -4,7 +4,7 @@ import {AiOutlineFileText} from 'react-icons/ai'
 const SecondaryThemeButton = ({text = 'Resume',icon = <AiOutlineFileText className='button_icon'/>}) => {
   return (
     <button className='secondary_theme_button'>
-      {text}
+      <span>{text}</span>
       {icon}
     </button>
   )

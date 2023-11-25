@@ -30,7 +30,7 @@ function Home({ projects_data = null, tech_data = null }) {
   return (
     <div className="App">
       <HomeHero projects_data={projects} tech_data={tech} />
-      <ProjectsHeroOverlay projects_data={projects} tech={tech} />
+      {/* <ProjectsHeroOverlay projects_data={projects} tech={tech} /> */}
     </div>
   );
 }
