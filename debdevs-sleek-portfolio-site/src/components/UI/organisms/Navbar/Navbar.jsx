@@ -8,7 +8,9 @@ import {
   AiOutlineHome,
   AiOutlineMenu,
   AiOutlineMail,
+  AiOutlineFileText,
 } from "react-icons/ai";
+import { GiArchiveResearch } from "react-icons/gi";
 import { useContext } from "react";
 import { HomeContext } from "../../../../HomeContext";
 import { useState, useEffect } from "react";
@@ -57,10 +59,10 @@ const Navbar = ({ contact_function }) => {
             />
           </a>
           {isVisible ? (
-            <a href="https://github.com/debdevs">
+            <a href="/case-studies">
               <NavigationButton
-                text="Github"
-                icon={<AiOutlineGithub className="button_icon" />}
+                text="Case Studies"
+                icon={<GiArchiveResearch className="button_icon" />}
               />
             </a>
           ) : null}
@@ -83,10 +85,33 @@ const Navbar = ({ contact_function }) => {
           />
         </div>
         <div className="nav_bar_right_items">
+          <a>
+            {isVisible ? (
+              <a href="https://github.com/debdevs">
+                <NavigationButton
+                  style_type="secondary"
+                  text=""
+                  icon={<AiOutlineGithub className="button_icon" />}
+                />
+              </a>
+            ) : null}
+          </a>
+          <a>
+            {isVisible ? (
+              <a href="https://www.linkedin.com/in/deborah-daniels-34707a24b/">
+                <NavigationButton
+                  style_type="secondary"
+                  text=""
+                  icon={<AiOutlineLinkedin className="button_icon" />}
+                />
+              </a>
+            ) : null}
+          </a>
           <a href="https://www.linkedin.com/in/deborah-daniels-34707a24b/">
+            
             <NavigationButton
-              text="LinkedIn"
-              icon={<AiOutlineLinkedin className="button_icon" />}
+              text="Resume"
+              icon={<AiOutlineFileText className="button_icon" />}
               button_class_name="navigation_button_reverse"
             />
           </a>

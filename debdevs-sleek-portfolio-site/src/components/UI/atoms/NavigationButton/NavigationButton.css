@@ -64,6 +64,34 @@
     min-height: 40px;
 }
 
+
+.navigation_button_reverse_secondary{
+    display: inline-flex;
+    flex-direction: reverse;
+    padding: 8px 0px 8px 0px;
+    align-items: center;
+    gap: 9px;
+    color: white;
+    cursor: pointer;
+    transition: all.25s ease-in-out;
+    border: 0px solid white;
+    text-align: center;
+    border-radius: 35px;
+    border: 1px solid rgba(74, 94, 126, 0.35);
+    background: linear-gradient(256deg, rgba(12, 75, 237, 0.05) -6.18%, rgba(12, 210, 237, 0.05) 113.91%);
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    min-height: 40px;   
+}
+
+
+
 .navigation_button_reverse >*{
     leading-trim: both;
     text-edge: cap;
