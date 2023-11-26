@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import MainHeader from "../../UI/atoms/MainHeader/MainHeader";
 import Navbar from "../../UI/organisms/Navbar/Navbar";
 import "./Work.css";
@@ -11,11 +11,12 @@ import CSHeaderParagraphObject from "../../UI/molecules/CSHeaderParagraphObject/
 import CSSecondaryListObject from "../../UI/molecules/CSSecondaryListObject/CSSecondaryListObject";
 import RFBanner from "../../../assets/images/RFBannerSized.png";
 import { motion, AnimatePresence } from "framer-motion";
-
+import WHObject from "../../UI/molecules/WHObject/WHObject";
+import viddyoze_image from "../../../assets/images/viddyoze_logo.png";
+import fpo_image from "../../../assets/images/fpo_logo.png";
 const Work = () => {
   return (
     <div className="App">
-     
       <motion.div
         className="wrk_content"
         initial={{ translateY: 10, scaleX: 1, opacity: 0 }}
@@ -28,11 +29,25 @@ const Work = () => {
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-
-  
+        <MainHeader text="Work History" />
+        <div className="wrk_cards">
+          <WHObject title="UI/UX Engineer" />
+          <WHObject
+            image={viddyoze_image}
+            header="Viddyoze"
+            time="Feb 2023-May 2023"
+            title="Technical Animator"
+          />
+          <WHObject
+            image={fpo_image}
+            header="FloorPlanOnline"
+            time="Feb 2023-May 2023"
+            title="Visual Design & Tech Consultant"
+          />
+        </div>
       </motion.div>
     </div>
-  )
-}
+  );
+};
 
-export default Work
+export default Work;

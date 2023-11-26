@@ -1,0 +1,15 @@
+.wrk_content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25vh;
+    width: 100vw;
+}
+.wrk_cards{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5vh;
+    width: 100vw;
+    gap: 22px;
+}
