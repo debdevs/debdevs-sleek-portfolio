@@ -13,6 +13,7 @@ const ProjectCard = ({
   click_data,
   click_function,
   project_source,
+  card_type = "basic"
 }) => {
   function clickHandle({ input }) {
     console.log("You clicked submit.");
@@ -41,12 +42,13 @@ const ProjectCard = ({
     <div
       className="project_card_parent"
       onClick={click_function}
-      style={{ filter: `drop-shadow(0px 4px 35px ${rgbaColor})` }}
+      // style={{ filter: `drop-shadow(0px 4px 35px ${rgbaColor})` }}
+      style={card_type == 'basic' ? {filter: `drop-shadow(0px 4px 35px ${rgbaColor})` }: {border: "0px solid" + project_source?.color, width:'100%', maxWidth:'489.74px' , filter: `drop-shadow(0px 4px 35px ${rgbaColor})`}}
     >
       <div className="project_card_contents">
         <div
           className="project_card_image_container"
-          style={{ border: "1px solid" + project_source?.color }}
+          style={card_type == 'basic' ? {border: "1px solid" + project_source?.color }: {border: "1px solid" + project_source?.color, width:'100%' }}
         >
           <img src={image_source}></img>
         </div>
