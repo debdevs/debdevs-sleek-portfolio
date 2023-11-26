@@ -107,6 +107,8 @@
 
 .bs_arrow{
     margin-top:3.5px;
+    color: white;
+    font-size: 25px;
 }
 .right_items{
     align-self: center;

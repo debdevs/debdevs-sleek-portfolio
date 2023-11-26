@@ -22,7 +22,14 @@ const MainInfoContainer = ({ image_data }) => {
           <SecondaryThemeButton />
         </a>
 
-        <TertiaryThemeButton text="Work" icon={<BsHddNetwork />} />
+        <a
+          href="/work"
+         
+        >
+           <TertiaryThemeButton text="Work" icon={<BsHddNetwork />} />
+        </a>
+
+       
       </div>
     </div>
   );
