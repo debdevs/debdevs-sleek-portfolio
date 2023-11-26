@@ -16,7 +16,7 @@ const MainInfoContainer = ({ image_data }) => {
       </div>
       <div className="main_info_button_rows">
         <a
-          href="src/assets/documents/Deborah_Daniels_Resume.pdf"
+          href="/Deborah_Daniels_Resume.pdf"
           download="Deborah_Daniels_Resume.pdf"
         >
           <SecondaryThemeButton />
