@@ -12,10 +12,25 @@ import CSSecondaryListObject from "../../../UI/molecules/CSSecondaryListObject/C
 import RFBanner from "../../../../assets/images/RFBannerSized.png";
 import CSProductCard from "../../../UI/molecules/CSProductCard/CSProductCard";
 import { motion, AnimatePresence } from "framer-motion";
-
+import { useContext } from "react";
+import { HomeContext } from "../../../../HomeContext.js";
 import rf_image from "../../../../assets/images/RFBannerSized.png";
 import showman_image from "../../../../assets/images/ShowmanTemplatesDesktop.png";
+import ProjectCard from "../../../UI/molecules/ProjectCard/ProjectCard";
+
+
+import myConfiguredSanityClient from '../../../../client'
+import imageUrlBuilder from '@sanity/image-url'
+
+const builder = imageUrlBuilder(myConfiguredSanityClient)
+
+function urlFor(source) {
+  return builder.image(source)
+}
+
+
 const CaseStudiesPage = () => {
+  const { projects } = useContext(HomeContext);
   return (
     <div className="App">
       <motion.div
@@ -32,10 +47,27 @@ const CaseStudiesPage = () => {
       >
         <MainHeader text="Case Studies" />
         <div className="csp_cards_grid">
-          
-            <CSProductCard border_color = "#FF7798" main_image = {rf_image} link="/case-studies/RenderFarms" header = "RenderFarms" subtext = "An SAAS Web Application"/>
+        { 
+    Object.keys(projects).map((item, i) => (
+
+            <ProjectCard 
+            project_title={projects[item].title}
+            image_source = {urlFor(projects[item].poster).url()}
+            project_description = {projects[item].shortDescription}
+            project_technology_stack_array = {projects[item]?.techStackItems}
+            click_data =  {projects[item]}
+            // click_function = {() => clickFunction(projects[item])}
+            project_source={projects[item]}
+            
+           
+            
+            />
+
+    ))
+}  
+            {/* <CSProductCard border_color = "#FF7798" main_image = {rf_image} link="/case-studies/RenderFarms" header = "RenderFarms" subtext = "An SAAS Web Application"/>
             <CSProductCard border_color = "#9A17EA" main_image = {showman_image} link="/case-studies/RenderFarms" header = "Showman Video" subtext = "An SAAS Web Application (React PWA)"/>
-            <CSProductCard border_color = "#2F9A41" main_image = {showman_image} link="/case-studies/RenderFarms" header = "Terminal Labs" subtext = "An SAAS Web Application (React PWA)"/>
+            <CSProductCard border_color = "#2F9A41" main_image = {showman_image} link="/case-studies/RenderFarms" header = "Terminal Labs" subtext = "An SAAS Web Application (React PWA)"/> */}
         </div>
       </motion.div>
     </div>

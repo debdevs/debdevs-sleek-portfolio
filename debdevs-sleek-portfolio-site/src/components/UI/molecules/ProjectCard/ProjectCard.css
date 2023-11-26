@@ -1,6 +1,6 @@
 .project_card_parent{
     width: 420.74px;
-    height: 353px;
+    max-height: 353px;
     left: 239px;
     top: 164px;
     display: flex;
