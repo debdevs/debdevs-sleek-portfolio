@@ -40,7 +40,7 @@
     color: black;
 }
 
-.button_icon{
+.project_overlay_button .button_icon{
     display: flex;
     align-items: center;
     justify-content: center;

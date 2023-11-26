@@ -3,6 +3,8 @@ import "./ProjectCard.css";
 import react_logo from "../../../../logo512.png";
 import MainThemeButton from "../../atoms/MainThemeButton/MainThemeButton";
 import TechStackArray from "../../atoms/TechStackArray/TechStackArray";
+import { ReactSVG } from "react-svg";
+import bs_arrow from "../../../../../src/assets/svgs/BsArrowReturnRight.svg";
 const ProjectCard = ({
   project_title = "1-DECISION",
   image_source = react_logo,
@@ -50,8 +52,13 @@ const ProjectCard = ({
         </div>
         <div className="lower_items">
           <div className="left_items">
+       
             <div className="top_items_row">
+              <div className="top_left_items">
+              <ReactSVG className="bs_arrow" src={bs_arrow} />
               <h1 className="project_title">{project_title}</h1>
+              </div>
+
               <TechStackArray image={project_technology_stack_array} />
             </div>
 

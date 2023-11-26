@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
   
     gap: 10px;
 
@@ -62,7 +62,8 @@
     justify-content: space-between;
     flex-direction: row-reverse;
     flex-direction: row;
-    width: 95%;
+    width: 98%;
+    margin-top: 2%;
 }
 
 .project_title{
@@ -85,7 +86,13 @@
     letter-spacing: 0.005em;
     text-align: left;
     color: #CDE0F1;
-    
+
+    padding-left: 35px;    
+}
+
+.top_left_items{
+    display: flex;
+    gap: 10px;
 }
 .left_items{
     align-self: center;
@@ -95,7 +102,11 @@
     flex-direction: column;
     height: 100%;  
     width: 100%;
-    gap: 10px;
+    gap: 2px;
+}
+
+.bs_arrow{
+    margin-top:3.5px;
 }
 .right_items{
     align-self: center;
@@ -156,8 +167,9 @@ opacity: .7;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
+ 
         width: 90%;
-        height: 95%;
+        height: 98%;
         gap: 10px;
     }
 
