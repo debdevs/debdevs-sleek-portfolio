@@ -23,7 +23,7 @@
 .project_display_card_image_container{
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: flex-start; 
     box-sizing: border-box;
     position: absolute;
     width: 379px;
@@ -43,8 +43,8 @@
 } */
 
 .project_display_card_image{
-    width: auto;
-    height: inherit;   
+    width: 100%;
+    height: auto;   
     transform: scale(1);
     transition: transform .35s ease-in-out, opacity .35s ease-in-out;
     /* transition: opacity .15s ease-in-out; */

@@ -170,7 +170,7 @@
     .project_display_card_image_container {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         box-sizing: border-box;
         position: absolute;
         width: 25%;
@@ -185,8 +185,8 @@
 
 
     .project_display_card_image {
-        width: auto;
-        height: 100%;
+        width: 100%;
+        height: auto;
     }
 
     .project_display_card_shadow {
