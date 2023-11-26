@@ -107,14 +107,18 @@ const Navbar = ({ contact_function }) => {
               </a>
             ) : null}
           </a>
-          <a href="https://www.linkedin.com/in/deborah-daniels-34707a24b/">
-            
+
+
+          <a
+          href="/Deborah_Daniels_2023_Resume.pdf"
+          download="Deborah_Daniels_2023_Resume.pdf"
+        >
             <NavigationButton
               text="Resume"
               icon={<AiOutlineFileText className="button_icon" />}
               button_class_name="navigation_button_reverse"
             />
-          </a>
+        </a>
         </div>
       </div>
     </div>
