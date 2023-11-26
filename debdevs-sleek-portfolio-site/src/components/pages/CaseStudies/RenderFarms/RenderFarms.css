@@ -6,11 +6,6 @@
   height: 2095px;
   gap: 17px;
 }
-.case_study_image_container{
-  overflow: hidden;
-  width: 100%;
-  height: auto;
-}
 
 .case_study_image{
   width: 100%;
@@ -41,7 +36,10 @@
   line-height: normal;
 }
 .case_study_image_container {
-  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
   border: 2px solid #ff7798;
   width: 1035px;
   height: 314px;

@@ -36,7 +36,7 @@
 .project_card_image_container{
     height: 178px;
     width: 400.74px;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -45,7 +45,7 @@
     /* BLUE_SHADOW */
 
     /* filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22)); */
-    border-radius: 5px;
+
     transition: all.5s ease-in-out;
 }
 
@@ -81,7 +81,7 @@
     font-family: 'Qualion';
     font-style: normal;
     font-weight: 350;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.005em;
     text-align: left;
@@ -155,8 +155,7 @@ opacity: .7;
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 2px solid rgba(228, 234, 255, 0.05);
-        filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22));
+
         border-radius: 5px;
         cursor: pointer;
     }
@@ -179,14 +178,12 @@ opacity: .7;
         height: 100%;
         max-height: 171px;
         width: 95%;
-        border-radius: 5px;
+        border-radius: 15px;
         display: flex;
        
         justify-content: center;
         overflow: hidden;
         
-        /* filter: drop-shadow(0px 4px 35px rgba(12, 210, 237, 0.22)); */
-        border-radius: 5px;
     }
 
 
@@ -221,7 +218,7 @@ opacity: .7;
     font-family: 'Qualion';
     font-style: normal;
     font-weight: 350;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 19px;
     letter-spacing: 0.005em;
     text-align: center;

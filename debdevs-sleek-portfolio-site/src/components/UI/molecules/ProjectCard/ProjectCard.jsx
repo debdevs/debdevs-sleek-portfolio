@@ -56,7 +56,7 @@ const ProjectCard = ({
             <div className="top_items_row">
               <div className="top_left_items">
               <ReactSVG className="bs_arrow" src={bs_arrow} />
-              <h1 className="project_title">{project_title}</h1>
+              <h1 className="project_title" style={{ color: project_source?.color }}>{project_title}</h1>
               </div>
 
               <TechStackArray image={project_technology_stack_array} />
