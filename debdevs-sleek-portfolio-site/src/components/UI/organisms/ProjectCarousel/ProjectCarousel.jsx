@@ -22,7 +22,7 @@ function clickFunction(input) {
     setIsData(input);
     setIsOpen(true);
     console.log(input);
-    console.log(input.roleDescriptionSections[0].children[1]);
+    // console.log(input.roleDescriptionSections[0].children[1]);
     console.log(input.overview[0].children[0].text)
 
     
@@ -47,6 +47,8 @@ let project_array = Array.from(projects_input)
             project_technology_stack_array = {projects_input[item]?.techStackItems}
             click_data =  {projects_input[item]}
             click_function = {() => clickFunction(projects_input[item])}
+            project_source={projects_input[item]}
+            
            
             
             />
