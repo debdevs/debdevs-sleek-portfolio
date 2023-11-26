@@ -27,7 +27,12 @@
 
 }
 
-
+.top_items_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 .project_card_image_container{
     height: 178px;
     width: 400.74px;
@@ -55,6 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: row-reverse;
     flex-direction: row;
     width: 95%;
 }
@@ -81,7 +87,16 @@
     color: #CDE0F1;
     
 }
-
+.left_items{
+    align-self: center;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;  
+    width: 100%;
+    gap: 10px;
+}
 .right_items{
     align-self: center;
     display: flex;

@@ -1,6 +1,6 @@
 .project_overlay_button{
     display: inline-flex;
-    padding: 4px 10px 4px 19px;
+    /* padding: 4px 10px 4px 19px; */
     align-items: center;
     gap: 10px;
  
@@ -44,6 +44,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 5px;
 }
 
 .button_icon div svg{
