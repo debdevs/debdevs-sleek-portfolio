@@ -10,6 +10,7 @@ import ProjectOverlay from "./templates/ProjectOverlay/ProjectOverlay.jsx";
 import ContactOverlay from "./templates/ContactOverlay/ContactOverlay.jsx";
 import CaseStudiesPage from "./pages/CaseStudies/CaseStudiesPage/CaseStudiesPage.jsx";
 import Work from "./pages/Work/Work.jsx";
+import ShowmanVideo from "./pages/CaseStudies/ShowmanVideo/ShowmanVideo.jsx";
 const AnimatedRoutes = () => {
   const location = useLocation();
   const {         
@@ -28,6 +29,7 @@ const AnimatedRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/case-studies" element={<CaseStudiesPage />} />
         <Route path="/case-studies/renderfarms" element={<RenderFarms />} />
+        <Route path="/case-studies/showmanvideo" element={<ShowmanVideo />} />
         <Route path="/work" element={<Work />} />
       </Routes>
       {/* <AnimatePresence initial={false} className="overlay_holder">

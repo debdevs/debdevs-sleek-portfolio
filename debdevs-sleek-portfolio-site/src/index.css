@@ -26,7 +26,12 @@ code {
     url("./assets/fonts/Qualion-Regular.ttf") format("truetype");
   
   }
-
+  @font-face {
+    font-family: "Imprima";
+    src: local("Imprima"),
+      url("./assets/fonts/Imprima-Regular.ttf") format("truetype");
+    
+    }
   @font-face {
     font-family: "MBFLigioneRegular";
     src: local("MBFLigioneRegular"),

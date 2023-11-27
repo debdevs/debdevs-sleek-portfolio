@@ -196,6 +196,16 @@ font-weight: 350;
 line-height: normal;
 letter-spacing: 0.06px;
 }
+
+.accent_text{
+  color: #7FA5BA;
+text-align: center;
+font-family: Imprima;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
