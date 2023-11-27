@@ -123,4 +123,17 @@
     width: 100%;
     align-items: center;
   }
+
+  .cs_list_list > * {
+    color: #fff;
+    font-family: Qualion;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 100%;
+    max-width: 279px;
+    text-align: center;
+    padding-left: 0px;
+  }
 }
