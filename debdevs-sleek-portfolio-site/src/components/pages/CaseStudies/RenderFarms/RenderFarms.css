@@ -39,7 +39,7 @@
   overflow: hidden;
   width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 35px;
   border: 2px solid #ff7798;
   width: 1035px;
   height: 314px;
@@ -146,5 +146,7 @@
 }
   .cs_list_items_row {
     flex-direction: column;
+    align-items: center;
+    gap: 35px;
   }
 }

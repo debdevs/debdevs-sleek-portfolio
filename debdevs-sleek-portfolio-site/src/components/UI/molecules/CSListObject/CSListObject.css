@@ -1,108 +1,126 @@
 .cs_list_object {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 329.5px;
-
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 329.5px;
 }
-.cs_list_header_with_icon{
-display: flex;
-gap: 22px;
-align-items: center;
+.cs_list_header_with_icon {
+  display: flex;
+  gap: 22px;
+  align-items: center;
 }
-.cs_list_header_with_icon h1{
-    color: #fff;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Qualion;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.72px;
-    margin-bottom: 5.5px;
+.cs_list_header_with_icon h1 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Qualion;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-bottom: 5.5px;
 }
-.cs_list_paragraph{
-    color: #FFF;
-    font-family: Qualion;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    width: 100%;
-    max-width: 279px;
-    text-align: left;
-    padding-left: 52px;
+.cs_list_paragraph {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 52px;
 }
-.cs_list_header_text{
-    color: white;
-}
-
-.cs_list_list >* {
-    color: #FFF;
-    font-family: Qualion;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    width: 100%;
-    max-width: 279px;
-    text-align: left;
-    padding-left: 52px;
+.cs_list_header_text {
+  color: white;
 }
 
-
-
+.cs_list_list > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 279px;
+  text-align: left;
+  padding-left: 52px;
+}
 
 .cs_list_object_secondary_version {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.cs_list_object_secondary_version .cs_list_header_with_icon {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+.cs_list_object_secondary_version .cs_list_header_with_icon h1 {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Qualion;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.72px;
+  margin-bottom: 5.5px;
+}
+.cs_list_object_secondary_version .cs_list_paragraph {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 18.35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  max-width: 1035px;
+  text-align: left;
+  padding-left: 52px;
+}
+.cs_list_object_secondary_version .cs_list_header_text {
+  color: white;
+}
+
+.cs_list_object_secondary_version .cs_list_list > * {
+  color: #fff;
+  font-family: Qualion;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+
+  text-align: left;
+  padding-left: 52px;
+}
+
+@media only screen and (max-width: 1035px) {
+  .cs_list_object_secondary_version .cs_list_paragraph {
+    width: 100%;
+    max-width: 90%;
+    align-items: center;
+    text-align: center;
+    padding-left: 0px;
+  }
+
+  .cs_list_header_with_icon {
+    display: flex;
+    gap: 22px;
+    justify-content: center;
+    margin-right: 32px;
+  }
+
+  .cs_list_object_secondary_version {
     display: flex;
     flex-direction: column;
     width: 100%;
-  
-
-}
-.cs_list_object_secondary_version .cs_list_header_with_icon{
-display: flex;
-gap: 22px;
-align-items: center;
-}
-.cs_list_object_secondary_version .cs_list_header_with_icon h1{
-    color: #fff;
-    leading-trim: both;
-    text-edge: cap;
-    font-family: Qualion;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.72px;
-    margin-bottom: 5.5px;
-}
-.cs_list_object_secondary_version .cs_list_paragraph{
-    color: #FFF;
-    font-family: Qualion;
-    font-size: 18.35px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    width: 100%;
-    max-width: 1035px;
-    text-align: left;
-    padding-left: 52px;
-}
-.cs_list_object_secondary_version .cs_list_header_text{
-    color: white;
-}
-
-.cs_list_object_secondary_version .cs_list_list >* {
-    color: #FFF;
-    font-family: Qualion;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal; 
-    width: 100%;
-    
-    text-align: left;
-    padding-left: 52px;
+    align-items: center;
+  }
 }

@@ -10,7 +10,7 @@ import { ReactSVG } from "react-svg";
 import CSSmallListObject from "../../../UI/molecules/CSSmallListObject/CSSmallListObject";
 import CSHeaderParagraphObject from "../../../UI/molecules/CSHeaderParagraphObject/CSHeaderParagraphObject";
 import CSSecondaryListObject from "../../../UI/molecules/CSSecondaryListObject/CSSecondaryListObject";
-import RFBanner from "../../../../assets/images/RFBannerSized.png";
+import RFBanner from "../../../../assets/images/RF_MTG.png";
 import { motion, AnimatePresence } from "framer-motion";
 const RenderFarms = () => {
   return (
