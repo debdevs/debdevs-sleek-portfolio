@@ -46,7 +46,7 @@ const CaseStudiesPage = () => {
         <MainHeader text="Case Studies" />
         <div className="csp_cards_grid">
           {Object.keys(projects).map((item, i) => (
-            <a href={"/case-studies/" + projects[item].title}>
+            <a href={"/case-studies/" + projects[item].title.replace(/ /g, '')}>
               <ProjectCard
                 project_title={projects[item].title}
                 image_source={urlFor(projects[item].poster).url()}

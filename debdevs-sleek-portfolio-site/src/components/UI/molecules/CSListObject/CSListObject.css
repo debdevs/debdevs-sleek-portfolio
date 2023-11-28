@@ -20,6 +20,7 @@
   line-height: normal;
   letter-spacing: 0.72px;
   margin-bottom: 5.5px;
+  text-wrap: nowrap;
 }
 .cs_list_paragraph {
   color: #fff;
@@ -29,7 +30,7 @@
   font-weight: 400;
   line-height: normal;
   width: 100%;
-  max-width: 279px;
+  max-width: 90%;
   text-align: left;
   padding-left: 52px;
 }
@@ -80,7 +81,7 @@
   font-weight: 400;
   line-height: normal;
   width: 100%;
-  max-width: 1035px;
+  /* max-width: 1035px; */
   text-align: left;
   padding-left: 52px;
 }
@@ -132,7 +133,7 @@
     font-weight: 400;
     line-height: normal;
     width: 100%;
-    max-width: 279px;
+    /* max-width: 279px; */
     text-align: center;
     padding-left: 0px;
   }

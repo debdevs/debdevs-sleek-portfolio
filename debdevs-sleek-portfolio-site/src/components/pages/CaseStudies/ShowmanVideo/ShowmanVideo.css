@@ -7,11 +7,10 @@
   gap: 17px;
 }
 
-.case_study_image{
+.case_study_image {
   width: 100%;
   height: auto;
   padding-bottom: 20%;
-
 }
 .cs_central_paragraph {
   width: 100%;
@@ -36,18 +35,32 @@
   font-weight: 400;
   line-height: normal;
 }
-.role_parent{
+
+.list_text_with_image {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  max-width: 1035px;
+  gap: 35px;
+}
+.role_parent {
   display: flex;
   flex-direction: column;
   gap: 13px;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-.role_list_items{
+.role_list_items {
   display: flex;
   justify-content: center;
-text-wrap: nowrap;
-  gap:16px;
+  text-wrap: nowrap;
+  gap: 16px;
+}
+.list_items_container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
 }
 .case_study_image_container {
   overflow: hidden;
@@ -61,10 +74,98 @@ text-wrap: nowrap;
   box-shadow: 0px 13.53066px 118.39324px 0px rgba(0, 0, 0, 0.35) inset,
     0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.cs_lower_items_container {
+.primary_section_shm .cs_lower_items_container {
   width: 100%;
+  max-width: 1035px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  width:100%;
+}
+
+.grid-container .cs_list_object{
+  max-width: 500px;
+}
+.grid-container .styled_image_display_container_small{
+  height: 191.96px!important;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0%;
+}
+.desc_image_row .styled_image_display_container_small{
+  height: 191.96px!important;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0%;
+  width: 38%;
+}
+.desc_image_row .styled_image_display_container_small:nth-child(2) {
+  height: 191.96px!important;
+  display: flex;
+  width: 16%;
+  align-items: center;
+  padding-bottom: 0%;
+}
+.grid-container .styled_image_display {
+  width: 100%;
+  height: auto;
+  padding-bottom: 0%;
+}
+s
+.grid-item {
+  background-color: #eaeaea06;
+  padding: 20px;
+  text-align: center;
+}
+
+.top-item {
+  grid-column: span 1; /* Each top item spans one column */
+  
+}
+
+.span-bottom {
+  grid-column: span 1; /* Each bottom item spans one column */
+ 
+}
+
+.top-item:nth-child(1) {
+  grid-column: 1 / span 2; /* First top item spans two columns */
+}
+
+.top-item:nth-child(2) {
+  grid-column: 3 / span 2; /* Second top item spans two columns starting from column 3 */
+}
+
+.desc_container{
+  display: flex;
+  align-items:  flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 85px;
+  margin-top: 85px;
+  padding-bottom: 85px;
+  width: 1035px;
+}
+
+
+
+
+.desc_image_row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 28px;
+  max-width: 1035px;
+}
+
+.grid_container{
+  
 }
 .cs_list_items_row {
   width: 100%;
@@ -79,11 +180,9 @@ text-wrap: nowrap;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
 }
 
-
-.separator_icon{
+.separator_icon {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -92,37 +191,53 @@ text-wrap: nowrap;
 }
 .separator_icon * {
   position: absolute;
- 
 }
-.primary_section {
+.primary_section_shm {
   display: flex;
+  width: 100%;
+  max-width: 1035px;
   flex-wrap: wrap;
-  gap: 141px;
+  gap: 46px;
+  padding-top: 35px;
+}
+.grid_list {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 30px;
+  grid-row-gap: 90px;
+  padding-bottom: 75px;
+  padding-top: 45px;
 }
 
-.cs_list_object_secondary_version{
+.grid_list .cs_list_object{
+  max-width: 100%;
+}
+.cs_list_object_secondary_version {
   margin-top: 63px;
-  margin-bottom:130px;
+  margin-bottom: 130px;
 }
 @media only screen and (max-width: 1035px) {
+  .role_list_items {
+    flex-wrap: wrap;
+  }
   .cs_content {
     width: 90%;
   }
   .case_study_image_container {
     width: 90vw;
   }
-  .case_study_image{
+  .case_study_image {
     width: auto;
     height: 100%;
     padding-bottom: 20%;
-  
   }
   .separator_icon {
     overflow: hidden;
     width: 90vw;
     height: 30px;
     position: absolute;
-}
+  }
   .cs_list_items_row {
     flex-direction: column;
     align-items: center;

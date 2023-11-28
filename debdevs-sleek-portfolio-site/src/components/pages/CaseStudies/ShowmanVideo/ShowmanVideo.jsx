@@ -11,6 +11,14 @@ import CSSmallListObject from "../../../UI/molecules/CSSmallListObject/CSSmallLi
 import CSHeaderParagraphObject from "../../../UI/molecules/CSHeaderParagraphObject/CSHeaderParagraphObject";
 import CSSecondaryListObject from "../../../UI/molecules/CSSecondaryListObject/CSSecondaryListObject";
 import SHMBanner from "../../../../assets/images/SHM_MTG.png";
+import SHM1 from "../../../../assets/images/SHM_MTG_IMG_1.png";
+import SHM_Branding1 from "../../../../assets/images/ShowmanBranding1.png";
+import SHM_Branding2 from "../../../../assets/images/ShowmanBranding2.png";
+import SHM_Branding3 from "../../../../assets/images/ShowmanBranding3.png";
+import SHM_Branding4 from "../../../../assets/images/ShowmanBranding4.png";
+import SHM_Branding5 from "../../../../assets/images/ShowmanBranding5.png";
+import SHM_Desktop from "../../../../assets/images/ShowmanTemplatesDesktop.png";
+import SHM_Wireframe from "../../../../assets/images/ShowmanTemplatesDesktopWireframe.png";
 import { motion, AnimatePresence, color } from "framer-motion";
 import StyledImageDisplay from "../../../UI/molecules/StyledImageDisplay/StyledImageDisplay";
 import RoleList from "../../../UI/molecules/RoleList/RoleList";
@@ -51,12 +59,55 @@ const ShowmanVideo = () => {
           border_color={main_color}
           image_source={SHMBanner}
         />
-        <CSListObject
-          class_name="cs_list_object_secondary_version"
-          header="Goals & Insights"
-          paragraph="Showman's business goal is to generate and deliver videos on the cloud to a multitude of users"
-        />
-        <StyledImageDisplay container_height="131px" container_width="313px" border_color={main_color}/>
+        <div className="list_items_container">
+          <div className="list_text_with_image">
+            <CSListObject
+              class_name="cs_list_object_secondary_version"
+              header="Goals & Insights"
+              paragraph="Showman's business goal is to generate and deliver videos on the cloud to a multitude of users"
+            />
+            <StyledImageDisplay
+              image_source={SHM1}
+              container_height="131px"
+              container_width="313px"
+              border_color={main_color}
+              main_style="small"
+            />
+          </div>
+          <div className="list_text_with_image">
+            <CSListObject
+              class_name="cs_list_object_secondary_version"
+              header="Discussion & Feedback"
+              paragraph="A typical rendering farm wil have a features such as visible render progress, file uploads, and clear delineation of feature sets. I posited that we remain with a familiar layout, but add modern twists. My supervisor had only one request: 
+
+              Add color
+              
+              "
+            />
+            <StyledImageDisplay
+              image_source={SHM1}
+              container_height="131px"
+              container_width="313px"
+              border_color={main_color}
+              main_style="small"
+            />
+          </div>
+          <div className="list_text_with_image">
+            <CSListObject
+              class_name="cs_list_object_secondary_version"
+              header="Research & Analysis"
+              paragraph="I researched potential competitors to examine their pain points and product presentation."
+            />
+            <StyledImageDisplay
+              image_source={SHM1}
+              container_height="131px"
+              container_width="313px"
+              border_color={main_color}
+              main_style="small"
+            />
+          </div>
+        </div>
+
         <div className="cs_lower_items_container">
           <div className="cs_list_items_row">
             <CSListObject
@@ -73,7 +124,139 @@ const ShowmanVideo = () => {
             <ReactSVG className="separator_icon" src={separator_icon} />
           </div>
 
-          <div className="primary_section"></div>
+          <div className="primary_section_shm">
+            <h1 className="large_desc_header">
+              Problem, Brand Vision & Goal Identification
+            </h1>
+            <div className="grid_list">
+              <CSListObject
+                header="Initial Problem"
+                paragraph="Showman is attempting to break into the market of video creation software & apps. Many competitors on the market have good UI/UX, but tend to be to be locked into either mobile or desktop layout. "
+              />
+              <CSListObject
+                header="Brand Vision"
+                paragraph="The goal for this project was to have a western-style video creation tool "
+              />
+              <CSListObject
+                header="Research Methodology"
+                paragraph="The goal for this project was to have a western-style implementation of various concepts. "
+              />
+              <CSListObject
+                header="Features to visually implement"
+                paragraph="Basic features for this type of software would include an interface for users to make edits to their templates "
+              />
+            </div>
+            <h1 className="large_desc_header">Design Process</h1>
+            <div class="grid-container">
+              <div class="grid-item top-item">
+                {" "}
+                <CSListObject
+                  header="Branding"
+                  paragraph="Meant to embody the golden age of animation and add a 20’s western feel with a neo-90’s twist. For this product, being distinguishing is at the forefront of the product goals"
+                />
+              </div>
+              <div class="grid-item top-item">
+                {" "}
+                <StyledImageDisplay
+                  image_source={SHM_Branding5}
+                  container_height="131px"
+                  container_width="313px"
+                  border_color={main_color}
+                  main_style="small"
+                />
+              </div>
+              <div class="grid-item span-bottom">
+                {" "}
+                <StyledImageDisplay
+                  image_source={SHM_Branding1}
+                  container_height="131px"
+                  container_width="313px"
+                  border_color={main_color}
+                  main_style="small"
+                />
+              </div>
+              <div class="grid-item span-bottom">
+                {" "}
+                <StyledImageDisplay
+                  image_source={SHM_Branding2}
+                  container_height="131px"
+                  container_width="313px"
+                  border_color={main_color}
+                  main_style="small"
+                />
+              </div>
+              <div class="grid-item span-bottom">
+                {" "}
+                <StyledImageDisplay
+                  image_source={SHM_Branding3}
+                  container_height="131px"
+                  container_width="313px"
+                  border_color={main_color}
+                  main_style="small"
+                />
+              </div>
+            </div>
+            <div>
+              <div className="desc_container">
+                <CSListObject
+                  header="Wireframing"
+                  paragraph="Initial wireframing focused on base features & presentation."
+                />
+                <div className="desc_image_row">
+                  <StyledImageDisplay
+                    image_source={SHM_Wireframe}
+                    container_height="131px"
+                    container_width="313px"
+                    border_color={main_color}
+                    main_style="small"
+                  />
+                  <StyledImageDisplay
+                    image_source={SHM_Wireframe}
+                    container_height="131px"
+                    container_width="313px"
+                    border_color={main_color}
+                    main_style="small"
+                  />
+                  <StyledImageDisplay
+                    image_source={SHM_Wireframe}
+                    container_height="131px"
+                    container_width="313px"
+                    border_color={main_color}
+                    main_style="small"
+                  />
+                </div>
+              </div>
+              <div className="desc_container">
+                <CSListObject
+                  header="UI Design"
+                  paragraph="I developed the color scheme in line with the branding. Purple became the primary color, used to visually reinforce the brand vision of creativity, luxury, & intrigue"
+                />
+                <div className="desc_image_row">
+                  <StyledImageDisplay
+                    image_source={SHM_Desktop}
+                    container_height="131px"
+                    container_width="313px"
+                    border_color={main_color}
+                    main_style="small"
+                  />
+                  <StyledImageDisplay
+                    image_source={SHM_Desktop}
+                    container_height="131px"
+                    container_width="313px"
+                    border_color={main_color}
+                    main_style="small"
+                  />
+                  <StyledImageDisplay
+                    image_source={SHM_Desktop}
+                    container_height="131px"
+                    container_width="313px"
+                    border_color={main_color}
+                    main_style="small"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </motion.div>
     </div>

@@ -26,6 +26,18 @@
   }
 
 
+  .styled_image_display_container_small {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    border-radius: 35px;
+    border: 1px solid #ff7798;
+    width: 313px;
+    height: 131px;
+    flex-shrink: 0;
+    box-shadow: 0px 13.53066px 118.39324px 0px rgba(0, 0, 0, 0.35) inset,
+      0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
 
 
 
@@ -38,6 +50,9 @@
     .styled_image_display_container {
       width: 90vw;
     }
+    .styled_image_display_container_small {
+        width: 20vw;
+      }
     .styled_image_display{
       width: auto;
       height: 100%;
