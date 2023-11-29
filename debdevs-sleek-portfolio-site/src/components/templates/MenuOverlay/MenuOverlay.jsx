@@ -33,8 +33,8 @@ const MenuOverlay = ({ button_function }) => {
             <CSDottedListObject header="Case Studies" />
           </a>
 
-          <CSDottedListObject header="All Projects" />
-          <CSDottedListObject header="About Me" />
+          {/* <CSDottedListObject header="All Projects" />
+          <CSDottedListObject header="About Me" /> */}
         </div>
       </div>
     </motion.div>
