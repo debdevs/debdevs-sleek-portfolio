@@ -49,6 +49,7 @@
 }
 .cs_lower_items_container {
   width: 100%;
+  max-width: 1035px;
   display: flex;
   flex-direction: column;
 }

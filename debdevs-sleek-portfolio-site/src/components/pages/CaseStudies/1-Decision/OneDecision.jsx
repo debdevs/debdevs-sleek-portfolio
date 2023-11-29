@@ -2,7 +2,7 @@ import React from "react";
 import "../../../../App.css";
 import MainHeader from "../../../UI/atoms/MainHeader/MainHeader";
 import Navbar from "../../../UI/organisms/Navbar/Navbar";
-import "./ShowmanVideo.css";
+import "./OneDecision.css";
 import CSListObject from "../../../UI/molecules/CSListObject/CSListObject";
 import CSNumberListObject from "../../../UI/molecules/CSNumberListObject/CSNumberListObject";
 import separator_icon from "../../../../../src/assets/svgs/SeparatorLine.svg";
@@ -24,7 +24,7 @@ import SHM_Wireframe from "../../../../assets/images/ShowmanTemplatesDesktopWire
 import { motion, AnimatePresence, color } from "framer-motion";
 import StyledImageDisplay from "../../../UI/molecules/StyledImageDisplay/StyledImageDisplay";
 import RoleList from "../../../UI/molecules/RoleList/RoleList";
-const ShowmanVideo = () => {
+const OneDecision = () => {
   let main_color = "#A259FF";
   return (
     <div className="App">
@@ -80,9 +80,9 @@ const ShowmanVideo = () => {
             <CSListObject
               class_name="cs_list_object_secondary_version"
               header="Discussion & Feedback"
-              paragraph=" 
+              paragraph="
 
-              Primary discussion revolved around how Showman would fit into the market & who its users would be.
+              Add color
               
               "
             />
@@ -268,4 +268,4 @@ const ShowmanVideo = () => {
   );
 };
 
-export default ShowmanVideo;
+export default OneDecision;

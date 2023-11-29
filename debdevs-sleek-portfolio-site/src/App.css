@@ -218,6 +218,11 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
 }
+
+.padded{
+  padding-top: 75px;
+  padding-bottom: 175px;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

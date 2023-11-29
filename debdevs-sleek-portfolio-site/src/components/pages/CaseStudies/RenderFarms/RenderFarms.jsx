@@ -39,6 +39,8 @@ const RenderFarms = () => {
         <div className="case_study_image_container">
           <img className="case_study_image" src={RFBanner} />
         </div>
+
+        <div className="cs_lower_items_container">
         <CSListObject
           class_name="cs_list_object_secondary_version"
           header="Background"
@@ -46,7 +48,6 @@ const RenderFarms = () => {
 
               Because of my experience using these types of software, I was able to immediately provide extensive input from the perspective of a user. This led to the rapid design and production of deliverables and iterations."
         />
-        <div className="cs_lower_items_container">
           <div className="cs_list_items_row">
             <CSListObject
               header="Objective"
@@ -96,6 +97,9 @@ const RenderFarms = () => {
               </div>
             </div>
           </div>
+          <h1 className="large_desc_header padded">
+              More Information Coming Soon
+            </h1>
         </div>
       </motion.div>
     </div>
