@@ -141,7 +141,7 @@ const ShowmanVideo = () => {
               />
               <CSListObject
                 header="Research Methodology"
-                paragraph="The goal for this project was to have a western-style implementation of various concepts. "
+                paragraph="I researched competitor products and developed various target personas of users who would like to use a Video Template SAAS and what their goals & feelings were towards a new product"
               />
               <CSListObject
                 header="Features to visually implement"

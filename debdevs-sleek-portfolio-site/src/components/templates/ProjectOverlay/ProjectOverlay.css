@@ -33,9 +33,11 @@
     justify-content: center;
     align-items: center;
     width:80vw;
-    height: 80vh;
+
     gap:15%;
     gap:102px;
+    padding-top: 275px;
+    padding-bottom: 175px;
 }
 .project_display_card_right_items{
     display: flex;
@@ -140,6 +142,8 @@
     .project_overlay_contents{
         flex-direction: column;
         gap: 5%;
+        gap: 35px;
+        padding-top: 20vh;
     }
 
     .project_display_card_parent {

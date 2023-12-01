@@ -220,9 +220,23 @@ letter-spacing: 1.08px;
 }
 
 .padded{
-  padding-top: 75px;
+
   padding-bottom: 175px;
 }
+
+.popup-active {
+  overflow: hidden;
+}
+
+.home_hero_section.popup-active {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 125px;
+  overflow: hidden;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
