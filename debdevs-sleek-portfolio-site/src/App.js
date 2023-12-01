@@ -17,7 +17,7 @@ import ContactOverlay from "./components/templates/ContactOverlay/ContactOverlay
 import { motion, AnimatePresence } from "framer-motion";
 import MenuOverlay from "./components/templates/MenuOverlay/MenuOverlay.jsx";
 import Navbar from "./components/UI/organisms/Navbar/Navbar.jsx";
-import ReactGA from 'react-ga-4';
+import ReactGA from 'react-ga';
 const App = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
