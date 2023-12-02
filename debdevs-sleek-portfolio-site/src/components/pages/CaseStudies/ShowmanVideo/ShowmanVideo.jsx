@@ -260,7 +260,7 @@ const ShowmanVideo = () => {
             </div>
           </div>
           <h1 className="large_desc_header padded">
-              Additoinal Information Coming Soon
+              Additional Information Coming Soon
             </h1>
         </div>
       </motion.div>

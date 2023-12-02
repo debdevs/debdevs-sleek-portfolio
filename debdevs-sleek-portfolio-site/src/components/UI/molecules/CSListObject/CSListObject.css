@@ -103,6 +103,20 @@
 }
 
 @media only screen and (max-width: 1035px) {
+
+
+  .cs_list_object {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .cs_list_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .cs_list_object_secondary_version .cs_list_paragraph {
     width: 100%;
     max-width: 90%;
@@ -115,7 +129,7 @@
     display: flex;
     gap: 22px;
     justify-content: center;
-    margin-right: 32px;
+    margin-right: 52px;
   }
 
   .cs_list_object_secondary_version {
