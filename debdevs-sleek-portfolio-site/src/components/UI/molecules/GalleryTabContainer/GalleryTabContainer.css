@@ -1,0 +1,11 @@
+.gallery_tab_container {
+  display: flex;
+  padding-right: 64px;
+  padding-left: 64px;
+ 
+  gap: 33px;
+  justify-content: space-between;
+  border-radius: 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}

@@ -1,6 +1,6 @@
 import React from 'react'
 import './AccentHeader.css'
-const AccentHeader = ({text = "Deborah Daniels", margin_left = '-15px'}) => {
+const AccentHeader = ({text = "Deborah Daniels", margin_left = '0px'}) => {
   return (
     <h1 className='accent_header' style={{ marginLeft: margin_left }}>
         {text}

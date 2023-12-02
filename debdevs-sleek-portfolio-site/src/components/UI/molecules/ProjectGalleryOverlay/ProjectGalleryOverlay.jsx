@@ -4,7 +4,7 @@ import Navbar from "../../../UI/organisms/Navbar/Navbar";
 import "./ProjectGalleryOverlay.css";
 import CSListObject from "../../../UI/molecules/CSListObject/CSListObject";
 import CSNumberListObject from "../../../UI/molecules/CSNumberListObject/CSNumberListObject";
-import separator_icon from "../../../../../src/assets/svgs/SeparatorLine.svg";
+import separator_icon from "../../../../../src/assets/svgs/DottedBulletIcon.svg";
 import { ReactSVG } from "react-svg";
 import CSSmallListObject from "../../../UI/molecules/CSSmallListObject/CSSmallListObject";
 import CSHeaderParagraphObject from "../../../UI/molecules/CSHeaderParagraphObject/CSHeaderParagraphObject";
@@ -15,7 +15,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import AccentHeader from "../../atoms/AccentHeader/AccentHeader";
 import ExitButton from "../../atoms/ExitButton/ExitButton";
 import StyledImageDisplay from "../StyledImageDisplay/StyledImageDisplay";
-const ProjectGalleryOverlay = ({close_function, main_theme_color = "FFF"}) => {
+import GalleryTab from "../../atoms/GalleryTab/GalleryTab";
+import GalleryTabContainer from "../GalleryTabContainer/GalleryTabContainer";
+const ProjectGalleryOverlay = ({
+  close_function,
+  main_theme_color = "FFF",
+}) => {
   return (
     <div className="gallery_overlay">
       <motion.div
@@ -31,14 +36,29 @@ const ProjectGalleryOverlay = ({close_function, main_theme_color = "FFF"}) => {
         transition={{ duration: 0.7, delay: 0.2 }}
       >
         <div className="gallery_left_items">
-          <AccentHeader text="PROJECT GALLERY" />
+          <div className="gallery_left_top_items">
+            <AccentHeader text="PROJECT GALLERY" />
+            <div className="header_with_icon">
+              <div className="icon_container">
+                <ReactSVG className="rhombus_icon" src={separator_icon} />
+              </div>
 
-          <MainHeader text="Showman Video" />
+              <MainHeader text="Showman Video" />
+              
+            </div>
+
+            <GalleryTabContainer />
+            <CSListObject
+              class_name="cs_list_object_secondary_version"
+              header="Branding - Initial Wireframe"
+              paragraph="I researched potential competitors to examine their pain points and product presentation."
+            />
+          </div>
         </div>
         <div className="gallery_right_items">
-          <StyledImageDisplay border_color={main_theme_color}/>
+          <StyledImageDisplay border_color={main_theme_color} />
         </div>
-        <ExitButton button_function={close_function}/>
+        <ExitButton button_function={close_function} />
       </motion.div>
     </div>
   );

@@ -28,7 +28,17 @@
     width: 50%;
     height: 100%;
 }
+.gallery_left_top_items{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 16px;
+}
 
+.gallery_left_top_items >*{
+    text-align: left;
+}
 .gallery_content .gallery_right_items{
     width: 50%;
     height: 100%;
@@ -37,4 +47,17 @@
 .gallery_content .styled_image_display_container{
     width: 100%;
     max-width: 573px;
+}
+
+.header_with_icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-left: -35px;
+
+}
+
+.icon_container >*{
+    width: 26.45px;
 }

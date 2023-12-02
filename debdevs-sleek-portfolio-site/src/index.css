@@ -33,6 +33,13 @@ code {
     url("./assets/fonts/Qualion-Regular.ttf") format("truetype");
   
   }
+
+  @font-face {
+    font-family: "QualionBook";
+    src: local("QualionBook"),
+      url("./assets/fonts/Qualion-Book.ttf") format("truetype");
+    
+    }
   @font-face {
     font-family: "Imprima";
     src: local("Imprima"),
