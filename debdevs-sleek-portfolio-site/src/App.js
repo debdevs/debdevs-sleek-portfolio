@@ -20,10 +20,40 @@ import Navbar from "./components/UI/organisms/Navbar/Navbar.jsx";
 import ReactGA from 'react-ga4';
 const App = () => {
   const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    ReactGA.initialize('G-D88MBC3H65');
-    ReactGA.pageview(window.location.pathname + window.location.search);
-  }, []);
+  // useEffect(() => {
+  //   ReactGA.initialize('G-D88MBC3H65');
+  //   ReactGA.send(window.location.pathname + window.location.search)
+  //   },[]);
+
+    useEffect(() => {
+      ReactGA.initialize([
+        {
+          trackingId: "G-D88MBC3H65",
+        },
+        {
+          trackingId: "your second GA measurement id",
+        },
+      ]);
+      
+      // Send pageview with a custom path
+      ReactGA.send({ hitType: "pageview", page: "/", title: "Home" });
+      
+    },[]);
+
+  // ReactGA.initialize([
+  //   {
+  //     trackingId: "G-D88MBC3H65",
+  //   },
+  //   {
+  //     trackingId: "your second GA measurement id",
+  //   },
+  // ]);
+  
+  // // Send pageview with a custom path
+  // ReactGA.send({ hitType: "pageview", page: "/", title: "Home" });
+  
+ 
+
 
   let data1 = useEffect(() => {
     sanityClient
