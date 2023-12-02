@@ -124,6 +124,7 @@ const App = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [contactOpen, setContactOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
   function setClose() {
     if (setIsOpen == true) {
       setIsOpen(false);
@@ -143,6 +144,8 @@ const App = () => {
         setContactOpen,
         menuOpen,
         setMenuOpen,
+        galleryOpen, 
+        setGalleryOpen,
         tech,
         projects,
       }}

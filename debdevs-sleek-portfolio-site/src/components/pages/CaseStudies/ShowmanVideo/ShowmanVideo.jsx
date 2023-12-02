@@ -24,8 +24,12 @@ import SHM_Wireframe from "../../../../assets/images/ShowmanTemplatesDesktopWire
 import { motion, AnimatePresence, color } from "framer-motion";
 import StyledImageDisplay from "../../../UI/molecules/StyledImageDisplay/StyledImageDisplay";
 import RoleList from "../../../UI/molecules/RoleList/RoleList";
+import { HomeContext } from "../../../../HomeContext";
+import { useContext, useEffect } from "react";
+import ProjectGalleryOverlay from "../../../UI/molecules/ProjectGalleryOverlay/ProjectGalleryOverlay";
 const ShowmanVideo = () => {
   let main_color = "#A259FF";
+  const { galleryOpen, setGalleryOpen } = useContext(HomeContext);
   return (
     <div className="App">
       <motion.div
@@ -60,6 +64,9 @@ const ShowmanVideo = () => {
         <StyledImageDisplay
           border_color={main_color}
           image_source={SHMBanner}
+          button_function={() => {
+            setGalleryOpen(true);
+          }}
         />
         <div className="list_items_container">
           <div className="list_text_with_image">
@@ -260,10 +267,18 @@ const ShowmanVideo = () => {
             </div>
           </div>
           <h1 className="large_desc_header padded">
-              Additional Information Coming Soon
-            </h1>
+            Additional Information Coming Soon
+          </h1>
         </div>
       </motion.div>
+      {galleryOpen ? (
+        <ProjectGalleryOverlay
+        gallery_theme_color = {main_color}
+          close_function={() => {
+            setGalleryOpen(false);
+          }}
+        />
+      ) : null}
     </div>
   );
 };

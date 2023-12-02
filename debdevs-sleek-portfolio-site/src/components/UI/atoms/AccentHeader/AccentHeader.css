@@ -1,0 +1,23 @@
+.accent_header{
+    color: #FFF;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: 'QualionUltraThin';
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 151;
+    line-height: normal;
+}
+
+@media only screen and (max-width:690px){
+
+    .accent_header{
+        max-width: 418px;
+        width: 100%;
+        font-size:50px;
+        margin-right: 18px;
+    
+    }
+
+
+}

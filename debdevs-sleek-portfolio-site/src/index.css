@@ -21,6 +21,13 @@ code {
   }
 
 @font-face {
+  font-family: "QualionUltraThin";
+  src: local("Qualion-UltraThin"),
+    url("./assets/fonts/Qualion-UltraThin.ttf") format("truetype");
+  
+  }
+  
+@font-face {
   font-family: "Qualion";
   src: local("Qualion"),
     url("./assets/fonts/Qualion-Regular.ttf") format("truetype");
