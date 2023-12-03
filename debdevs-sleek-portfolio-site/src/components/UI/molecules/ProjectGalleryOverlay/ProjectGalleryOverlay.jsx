@@ -37,19 +37,23 @@ const ProjectGalleryOverlay = ({
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-        <div className="gallery_left_items">
+        <div className="gallery_top_items">
+        <AccentHeader text="PROJECT GALLERY" />
+        <div className="header_with_icon">
+          <div className="icon_container">
+            <ReactSVG className="rhombus_icon" src={separator_icon} />
+          </div>
+
+          <MainHeader text="Showman Video" />
+        </div>
+
+        <GalleryTabContainer />
+
+        </div>
+<div className="gallery_lower_items">
+
+<div className="gallery_left_items">
           <div className="gallery_left_top_items">
-            <AccentHeader text="PROJECT GALLERY" />
-            <div className="header_with_icon">
-              <div className="icon_container">
-                <ReactSVG className="rhombus_icon" src={separator_icon} />
-              </div>
-
-              <MainHeader text="Showman Video" />
-              
-            </div>
-
-            <GalleryTabContainer />
             <CSListObject
               class_name="cs_list_object_secondary_version"
               header="Branding - Initial Wireframe"
@@ -65,6 +69,10 @@ const ProjectGalleryOverlay = ({
         <div className="gallery_right_items">
           <StyledImageDisplay border_color={main_theme_color} />
         </div>
+
+
+</div>
+
         <ExitButton button_function={close_function} />
       </motion.div>
     </div>
