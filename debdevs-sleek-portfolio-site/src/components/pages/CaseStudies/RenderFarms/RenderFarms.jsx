@@ -15,6 +15,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import StyledImageDisplay from "../../../UI/molecules/StyledImageDisplay/StyledImageDisplay";
 import { HomeContext } from "../../../../HomeContext";
 import { useContext, useEffect } from "react";
+import RoleList from "../../../UI/molecules/RoleList/RoleList";
 const RenderFarms = () => {
   let main_color = "#ff7798";
   const { galleryOpen, setGalleryOpen } = useContext(HomeContext);
@@ -32,7 +33,7 @@ const RenderFarms = () => {
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-        <MainHeader text="Renderfarms" />
+        <MainHeader text="RenderFarms" />
         <p className="cs_central_paragraph">
           I took the helm for designing every aspect of this project. From
           branding to illustration, UI Design and interaction. With the input
@@ -41,6 +42,18 @@ const RenderFarms = () => {
           Terminal Labs & to this day serves as their <span>flagship</span>{" "}
           product
         </p>
+        <div className="role_parent">
+          <h1 className="accent_text">Role:</h1>
+          <div className="role_list_items">
+            <RoleList />
+            <RoleList header="UI/UX Design" />
+            <RoleList header="Technical Writing" />
+            <RoleList header="CSS Consulting" />
+            <RoleList header="Visual Design" />
+            <RoleList header="Branding" />
+          </div>
+        </div>
+
         <StyledImageDisplay
           border_color={main_color}
           image_source={RFBanner}

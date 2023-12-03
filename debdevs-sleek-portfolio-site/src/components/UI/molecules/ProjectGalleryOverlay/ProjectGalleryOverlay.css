@@ -29,6 +29,10 @@
     width: 60%;
     height: 100%;
 }
+
+.gallery_left_top_items  .navigation_button_reverse{
+    margin-left:52px;
+}
 .gallery_left_top_items{
     display: flex;
     flex-direction: column;

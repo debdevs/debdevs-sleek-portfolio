@@ -17,6 +17,8 @@ import ExitButton from "../../atoms/ExitButton/ExitButton";
 import StyledImageDisplay from "../StyledImageDisplay/StyledImageDisplay";
 import GalleryTab from "../../atoms/GalleryTab/GalleryTab";
 import GalleryTabContainer from "../GalleryTabContainer/GalleryTabContainer";
+import NavigationButton from "../../atoms/NavigationButton/NavigationButton";
+import { BsArrowRightShort } from "react-icons/bs";
 const ProjectGalleryOverlay = ({
   close_function,
   main_theme_color = "FFF",
@@ -52,6 +54,11 @@ const ProjectGalleryOverlay = ({
               class_name="cs_list_object_secondary_version"
               header="Branding - Initial Wireframe"
               paragraph="I researched potential competitors to examine their pain points and product presentation."
+            />
+            <NavigationButton
+              text="Next"
+              icon={<BsArrowRightShort className="button_icon" />}
+              button_class_name="navigation_button_reverse"
             />
           </div>
         </div>
