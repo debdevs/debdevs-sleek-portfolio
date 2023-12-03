@@ -23,6 +23,23 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'desctype',
+      title: 'Desctype',
+      type: 'string',
+      description: 'Definte what type of description to dipslay for frontend',
+    }),
+    defineField({
+      name: 'galleryTabTag',
+      title: 'GalleryTabTag',
+      type: 'string',
+      description: 'tag for description. Ie, Wireframing, UI Design, Etc.',
+    }),
+    defineField({
+      name: 'externalId',
+      title: 'External ID',
+      type: 'number',
+    }),
+    defineField({
       name: 'description',
       title: 'Description',
       type: 'blockContent',

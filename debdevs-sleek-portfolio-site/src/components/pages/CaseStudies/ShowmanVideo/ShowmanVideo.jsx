@@ -25,13 +25,39 @@ import { motion, AnimatePresence, color } from "framer-motion";
 import StyledImageDisplay from "../../../UI/molecules/StyledImageDisplay/StyledImageDisplay";
 import RoleList from "../../../UI/molecules/RoleList/RoleList";
 import { HomeContext } from "../../../../HomeContext";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import ProjectGalleryOverlay from "../../../UI/molecules/ProjectGalleryOverlay/ProjectGalleryOverlay";
+import myConfiguredSanityClient from "../../../../client";
+import imageUrlBuilder from "@sanity/image-url";
+import ProjectCard from "../../../UI/molecules/ProjectCard/ProjectCard";
+const builder = imageUrlBuilder(myConfiguredSanityClient);
+function urlFor(source) {
+  return builder.image(source);
+}
+
 const ShowmanVideo = () => {
   let main_color = "#A259FF";
   const { galleryOpen, setGalleryOpen } = useContext(HomeContext);
+  const { projects } = useContext(HomeContext);
+  const { isData, setIsData, projectSectionID, setProjectSectionID, projectTagTab, setProjectTagTab } = useContext(HomeContext);
+  const showmanVideoProject = Object.values(projects).find(
+    (project) => project.title === "Showman Video"
+  );
+  
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+
+
+  const goToNextImage = () => {
+    setProjectSectionID((projectSectionID) => (projectSectionID + 1) % showmanVideoProject?.projectDescriptionSections.length);
+  };
+
   return (
     <div className="App">
+      {console.log(showmanVideoProject)}
+      {console.log("testdesct")}
+      {console.log(showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text)}
       <motion.div
         className="cs_content"
         initial={{ translateY: 10, scaleX: 1, opacity: 0 }}
@@ -44,6 +70,24 @@ const ShowmanVideo = () => {
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
+        <h1 className="large_desc_header">
+        {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
+        {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
+        {/* {showmanVideoProject?.projectDescriptionSections[0].image} */}
+
+
+        {/* <ProjectCard
+          project_title={projects[item].title}
+          image_source={urlFor(projects[item].poster).url()}
+          project_description={projects[item].shortDescription}
+          project_technology_stack_array={projects[item]?.techStackItems}
+          click_data={projects[item]}
+          // click_function={() => clickFunction(projects[item])}
+          project_source={projects[item]}
+        /> */}
+  
+
+        </h1>
         <MainHeader text="Showman Video" />
         <p className="cs_central_paragraph">
           I consider this project my{" "}
@@ -276,6 +320,10 @@ const ShowmanVideo = () => {
       <AnimatePresence initial={false} className="overlay_holder">
         {galleryOpen ? (
           <ProjectGalleryOverlay
+          project = {showmanVideoProject}
+          project_section_id = {projectSectionID} 
+          project_tag_tab = {projectTagTab}
+          set_project_section_id={()=>{goToNextImage()}}
             gallery_theme_color={main_color}
             close_function={() => {
               setGalleryOpen(false);

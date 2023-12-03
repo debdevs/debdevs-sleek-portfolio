@@ -46,7 +46,7 @@
   .gallery_tab {
     max-width: 418px;
     width: 100%;
-    font-size: 50px;
+    /* font-size: 50px; */
     margin-right: 18px;
   }
 }

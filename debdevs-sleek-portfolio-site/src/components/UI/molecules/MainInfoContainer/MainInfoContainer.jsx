@@ -23,7 +23,7 @@ const MainInfoContainer = ({ image_data }) => {
         </a>
 
         <a
-          href="/work"
+          href="/case-studies"
          
         >
            <TertiaryThemeButton text="Work" icon={<BsHddNetwork />} />

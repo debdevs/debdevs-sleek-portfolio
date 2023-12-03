@@ -71,7 +71,11 @@ const App = () => {
             roleDescriptionSection->
           
           },
-                   
+          "projectDescriptionSections": projectDescriptionSections[]{
+            ...,
+            projectDescriptionSection->
+          
+          },        
           "buttonItems": buttonItems[]{
             
             ...,
@@ -125,6 +129,8 @@ const App = () => {
   const [contactOpen, setContactOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [galleryOpen, setGalleryOpen] = useState(false);
+  const [projectTagTab, setProjectTagTab] = useState("wireframing");
+  const [projectSectionID, setProjectSectionID] = useState(0);
   function setClose() {
     if (setIsOpen == true) {
       setIsOpen(false);
@@ -148,6 +154,11 @@ const App = () => {
         setGalleryOpen,
         tech,
         projects,
+        projectTagTab, 
+        setProjectTagTab,
+        projectSectionID, 
+        setProjectSectionID
+
       }}
       
     >

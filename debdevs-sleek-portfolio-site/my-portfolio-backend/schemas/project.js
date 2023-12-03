@@ -13,6 +13,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'gallerytags',
+      title: 'Gallerytags',
+      type: 'string',
+    }),
+    defineField({
       name: 'shortDescription',
       title: 'Short Description',
       type: 'string',
