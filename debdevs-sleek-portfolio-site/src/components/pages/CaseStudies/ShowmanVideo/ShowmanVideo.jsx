@@ -271,6 +271,7 @@ const ShowmanVideo = () => {
           </h1>
         </div>
       </motion.div>
+      <AnimatePresence initial={false} className="overlay_holder">
       {galleryOpen ? (
         <ProjectGalleryOverlay
         gallery_theme_color = {main_color}
@@ -279,6 +280,7 @@ const ShowmanVideo = () => {
           }}
         />
       ) : null}
+        </AnimatePresence>
     </div>
   );
 };

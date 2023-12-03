@@ -179,6 +179,7 @@ const App = () => {
               button_function={() => setMenuOpen(false)}
             />
           ) : null}
+          
         </AnimatePresence>
         <AnimatedRoutes />
 

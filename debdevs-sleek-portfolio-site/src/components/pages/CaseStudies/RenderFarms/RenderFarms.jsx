@@ -12,7 +12,12 @@ import CSHeaderParagraphObject from "../../../UI/molecules/CSHeaderParagraphObje
 import CSSecondaryListObject from "../../../UI/molecules/CSSecondaryListObject/CSSecondaryListObject";
 import RFBanner from "../../../../assets/images/RF_MTG.png";
 import { motion, AnimatePresence } from "framer-motion";
+import StyledImageDisplay from "../../../UI/molecules/StyledImageDisplay/StyledImageDisplay";
+import { HomeContext } from "../../../../HomeContext";
+import { useContext, useEffect } from "react";
 const RenderFarms = () => {
+  let main_color = "#ff7798";
+  const { galleryOpen, setGalleryOpen } = useContext(HomeContext);
   return (
     <div className="App">
       <motion.div
@@ -36,10 +41,13 @@ const RenderFarms = () => {
           Terminal Labs & to this day serves as their <span>flagship</span>{" "}
           product
         </p>
-        <div className="case_study_image_container">
-          <img className="case_study_image" src={RFBanner} />
-        </div>
-
+        <StyledImageDisplay
+          border_color={main_color}
+          image_source={RFBanner}
+          button_function={() => {
+            setGalleryOpen(true);
+          }}
+        />
         <div className="cs_lower_items_container">
         <CSListObject
           class_name="cs_list_object_secondary_version"
