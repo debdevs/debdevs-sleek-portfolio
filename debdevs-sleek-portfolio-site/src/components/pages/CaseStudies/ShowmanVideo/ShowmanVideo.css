@@ -332,4 +332,34 @@ s .grid-item {
   flex-direction: column;
   gap: 102px;
 }
+
+
+.desc_image_row .styled_image_display_container_small {
+  /* height: 191.96px !important; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 78%;
+}
+
+
+.styled_image_display {
+  width: 100%;
+  height: auto;
+  padding-bottom: 20%;
+}
+.main_display .styled_image_display {
+  width: auto;
+  height: 100%!important;
+  padding-bottom: 20%;
+}
+
+.desc_image_row .styled_image_display_container_small:nth-child(2) {
+  height: 191.96px !important;
+  display: flex;
+  width: 78%;
+  align-items: center;
+  padding-bottom: 0%;
+}
+
 }

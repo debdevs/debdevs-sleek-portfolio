@@ -60,14 +60,16 @@ const ShowmanVideo = () => {
             <RoleList header="React Development" />
           </div>
         </div>
+        <div className="main_display">
+          <StyledImageDisplay
+            border_color={main_color}
+            image_source={SHMBanner}
+            button_function={() => {
+              setGalleryOpen(true);
+            }}
+          />
+        </div>
 
-        <StyledImageDisplay
-          border_color={main_color}
-          image_source={SHMBanner}
-          button_function={() => {
-            setGalleryOpen(true);
-          }}
-        />
         <div className="list_items_container">
           <div className="list_text_with_image">
             <CSListObject
@@ -272,15 +274,15 @@ const ShowmanVideo = () => {
         </div>
       </motion.div>
       <AnimatePresence initial={false} className="overlay_holder">
-      {galleryOpen ? (
-        <ProjectGalleryOverlay
-        gallery_theme_color = {main_color}
-          close_function={() => {
-            setGalleryOpen(false);
-          }}
-        />
-      ) : null}
-        </AnimatePresence>
+        {galleryOpen ? (
+          <ProjectGalleryOverlay
+            gallery_theme_color={main_color}
+            close_function={() => {
+              setGalleryOpen(false);
+            }}
+          />
+        ) : null}
+      </AnimatePresence>
     </div>
   );
 };
