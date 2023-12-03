@@ -30,6 +30,7 @@ const GalleryTabContainer = () => {
       <GalleryTab text="Wireframing" />
       <GalleryTab text="UI Design" />
       <GalleryTab text="Interaction Design" />
+      <GalleryTab text="User Flows" />
     </motion.div>
   );
 };

@@ -243,4 +243,12 @@ s
     align-items: center;
     gap: 35px;
   }
+
+  .grid-container {
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 100%;
+    flex-direction: column;
+}
 }
