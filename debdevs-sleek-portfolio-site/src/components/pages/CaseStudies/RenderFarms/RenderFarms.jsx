@@ -1,5 +1,5 @@
 import React from "react";
-import '../../../../App.css'
+import "../../../../App.css";
 import MainHeader from "../../../UI/atoms/MainHeader/MainHeader";
 import Navbar from "../../../UI/organisms/Navbar/Navbar";
 import "./RenderFarms.css";
@@ -53,22 +53,24 @@ const RenderFarms = () => {
             <RoleList header="Branding" />
           </div>
         </div>
+        <div className="main_display">
+          <StyledImageDisplay
+            border_color={main_color}
+            image_source={RFBanner}
+            button_function={() => {
+              setGalleryOpen(true);
+            }}
+          />
+        </div>
 
-        <StyledImageDisplay
-          border_color={main_color}
-          image_source={RFBanner}
-          button_function={() => {
-            setGalleryOpen(true);
-          }}
-        />
         <div className="cs_lower_items_container">
-        <CSListObject
-          class_name="cs_list_object_secondary_version"
-          header="Background"
-          paragraph="I was selected for this project because of my domain expertise in the field of animation as well as my extensive design experience. 
+          <CSListObject
+            class_name="cs_list_object_secondary_version"
+            header="Background"
+            paragraph="I was selected for this project because of my domain expertise in the field of animation as well as my extensive design experience. 
 
               Because of my experience using these types of software, I was able to immediately provide extensive input from the perspective of a user. This led to the rapid design and production of deliverables and iterations."
-        />
+          />
           <div className="cs_list_items_row">
             <CSListObject
               header="Objective"
@@ -119,8 +121,8 @@ const RenderFarms = () => {
             </div>
           </div>
           <h1 className="large_desc_header padded">
-              More Information Coming Soon
-            </h1>
+            More Information Coming Soon
+          </h1>
         </div>
       </motion.div>
     </div>
