@@ -45,7 +45,7 @@ const CaseStudiesPage = () => {
       >
         <MainHeader text="Case Studies" />
         <div className="csp_cards_grid">
-          {Object.keys(projects).map((item, i) => (
+          {Object.keys(projects.sort((a, b) => a.externalId - b.externalId)).map((item, i) => (
             <a href={projects[item].title != '1-Decision' ? "/case-studies/" +  projects[item].title.replace(/ /g, ''): 'https://1-decision.com/'}>
               <ProjectCard
                 project_title={projects[item].title}
