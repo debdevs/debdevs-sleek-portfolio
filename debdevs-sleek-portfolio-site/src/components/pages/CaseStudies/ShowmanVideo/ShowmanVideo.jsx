@@ -57,6 +57,8 @@ const ShowmanVideo = () => {
     <div className="App">
       {console.log(showmanVideoProject)}
       {console.log("testdesct")}
+      {console.log(projects.sort((a, b) => a.externalId - b.externalId))}
+      {console.log("testdesctdif")}
       {console.log(showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text)}
       <motion.div
         className="cs_content"

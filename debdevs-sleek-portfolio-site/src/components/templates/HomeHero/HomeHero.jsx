@@ -28,7 +28,7 @@ const HomeHero = ({projects_data, tech_data}) => {
     >
        <div className='home_hero_contents'>
         <div className='home_hero_left_items'>
-          {projects_data ? <ProjectCarousel projects_input={projects_data}/>: console.log("carousel not displayed")}
+          {projects_data ? <ProjectCarousel projects_input={projects_data.sort((a, b) => a.externalId - b.externalId)}/>: console.log("carousel not displayed")}
  
         </div>
         <div className='home_hero_center_items'>
