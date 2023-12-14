@@ -234,7 +234,7 @@ const ShowmanVideo = () => {
                 {" "}
                 <CSListObject
                   header="Branding"
-                  paragraph="Meant to embody the golden age of animation and add a 20’s western feel with a neo-90’s twist. For this product, being distinguishing is at the forefront of the product goals"
+                  paragraph="Meant to embody the golden age of animation and add a 20’s western feel with a neo-90’s twist. For this product, being distinct is at the forefront of the product goals"
                 />
               </div>
               <div class="grid-item top-item">
