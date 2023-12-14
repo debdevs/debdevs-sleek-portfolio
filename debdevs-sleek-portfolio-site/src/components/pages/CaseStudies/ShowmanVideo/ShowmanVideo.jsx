@@ -30,6 +30,10 @@ import ProjectGalleryOverlay from "../../../UI/molecules/ProjectGalleryOverlay/P
 import myConfiguredSanityClient from "../../../../client";
 import imageUrlBuilder from "@sanity/image-url";
 import ProjectCard from "../../../UI/molecules/ProjectCard/ProjectCard";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
+
 const builder = imageUrlBuilder(myConfiguredSanityClient);
 function urlFor(source) {
   return builder.image(source);
@@ -39,18 +43,26 @@ const ShowmanVideo = () => {
   let main_color = "#A259FF";
   const { galleryOpen, setGalleryOpen } = useContext(HomeContext);
   const { projects } = useContext(HomeContext);
-  const { isData, setIsData, projectSectionID, setProjectSectionID, projectTagTab, setProjectTagTab } = useContext(HomeContext);
+  const {
+    isData,
+    setIsData,
+    projectSectionID,
+    setProjectSectionID,
+    projectTagTab,
+    setProjectTagTab,
+  } = useContext(HomeContext);
   const showmanVideoProject = Object.values(projects).find(
     (project) => project.title === "Showman Video"
   );
-  
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-
-
   const goToNextImage = () => {
-    setProjectSectionID((projectSectionID) => (projectSectionID + 1) % showmanVideoProject?.projectDescriptionSections.length);
+    setProjectSectionID(
+      (projectSectionID) =>
+        (projectSectionID + 1) %
+        showmanVideoProject?.projectDescriptionSections.length
+    );
   };
 
   return (
@@ -59,7 +71,10 @@ const ShowmanVideo = () => {
       {console.log("testdesct")}
       {console.log(projects.sort((a, b) => a.externalId - b.externalId))}
       {console.log("testdesctdif")}
-      {console.log(showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text)}
+      {console.log(
+        showmanVideoProject?.projectDescriptionSections[0]
+          .projectDescriptionSection.description[0].children[0].text
+      )}
       <motion.div
         className="cs_content"
         initial={{ translateY: 10, scaleX: 1, opacity: 0 }}
@@ -73,12 +88,11 @@ const ShowmanVideo = () => {
         transition={{ duration: 0.7, delay: 0.2 }}
       >
         <h1 className="large_desc_header">
-        {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
-        {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
-        {/* {showmanVideoProject?.projectDescriptionSections[0].image} */}
+          {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
+          {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
+          {/* {showmanVideoProject?.projectDescriptionSections[0].image} */}
 
-
-        {/* <ProjectCard
+          {/* <ProjectCard
           project_title={projects[item].title}
           image_source={urlFor(projects[item].poster).url()}
           project_description={projects[item].shortDescription}
@@ -87,8 +101,6 @@ const ShowmanVideo = () => {
           // click_function={() => clickFunction(projects[item])}
           project_source={projects[item]}
         /> */}
-  
-
         </h1>
         <MainHeader text="Showman Video" />
         <p className="cs_central_paragraph">
@@ -320,7 +332,7 @@ const ShowmanVideo = () => {
         </div>
       </motion.div>
       <AnimatePresence initial={false} className="overlay_holder">
-        {galleryOpen ? (
+        {/* {galleryOpen ? (
           <ProjectGalleryOverlay
           project = {showmanVideoProject}
           project_section_id = {projectSectionID} 
@@ -330,6 +342,15 @@ const ShowmanVideo = () => {
             close_function={() => {
               setGalleryOpen(false);
             }}
+          />
+        ) : null} */}
+
+        {galleryOpen ? (
+          <Lightbox
+            plugins={[Zoom]}
+            open={galleryOpen}
+            close={() => setGalleryOpen(false)}
+            slides={[{ src: SHMBanner }, { src: SHM_Desktop }]}
           />
         ) : null}
       </AnimatePresence>
