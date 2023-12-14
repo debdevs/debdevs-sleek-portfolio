@@ -65,6 +65,7 @@ const ShowmanVideo = () => {
     );
   };
 
+  const [currentImage, setCurrentImage] = useState(SHMBanner); 
   return (
     <div className="App">
       {console.log(showmanVideoProject)}
@@ -141,6 +142,10 @@ const ShowmanVideo = () => {
               container_width="313px"
               border_color={main_color}
               main_style="small"
+              button_function={() => {
+                setGalleryOpen(true);
+                setCurrentImage(SHM_Sample_1)
+              }}
             />
           </div>
           <div className="list_text_with_image">
@@ -159,6 +164,10 @@ const ShowmanVideo = () => {
               container_width="313px"
               border_color={main_color}
               main_style="small"
+              button_function={() => {
+                setGalleryOpen(true);
+                setCurrentImage(SHM_Sample_2)
+              }}
             />
           </div>
           <div className="list_text_with_image">
@@ -173,6 +182,10 @@ const ShowmanVideo = () => {
               container_width="313px"
               border_color={main_color}
               main_style="small"
+              button_function={() => {
+                setGalleryOpen(true);
+                setCurrentImage(SHM1)
+              }}
             />
           </div>
         </div>
@@ -232,6 +245,10 @@ const ShowmanVideo = () => {
                   container_width="313px"
                   border_color={main_color}
                   main_style="small"
+                  button_function={() => {
+                    setGalleryOpen(true);
+                    setCurrentImage(SHM_Branding5)
+                  }}
                 />
               </div>
               <div class="grid-item span-bottom">
@@ -242,6 +259,10 @@ const ShowmanVideo = () => {
                   container_width="313px"
                   border_color={main_color}
                   main_style="small"
+                  button_function={() => {
+                    setGalleryOpen(true);
+                    setCurrentImage(SHM_Branding1)
+                  }}
                 />
               </div>
               <div class="grid-item span-bottom">
@@ -252,6 +273,10 @@ const ShowmanVideo = () => {
                   container_width="313px"
                   border_color={main_color}
                   main_style="small"
+                  button_function={() => {
+                    setGalleryOpen(true);
+                    setCurrentImage(SHM_Branding2)
+                  }}
                 />
               </div>
               <div class="grid-item span-bottom">
@@ -262,6 +287,10 @@ const ShowmanVideo = () => {
                   container_width="313px"
                   border_color={main_color}
                   main_style="small"
+                  button_function={() => {
+                    setGalleryOpen(true);
+                    setCurrentImage(SHM_Branding3)
+                  }}
                 />
               </div>
             </div>
@@ -278,6 +307,10 @@ const ShowmanVideo = () => {
                     container_width="313px"
                     border_color={main_color}
                     main_style="small"
+                    button_function={() => {
+                      setGalleryOpen(true);
+                      setCurrentImage(SHM_Wireframe)
+                    }}
                   />
                   <StyledImageDisplay
                     image_source={SHM_Wireframe}
@@ -285,6 +318,10 @@ const ShowmanVideo = () => {
                     container_width="313px"
                     border_color={main_color}
                     main_style="small"
+                    button_function={() => {
+                      setGalleryOpen(true);
+                      setCurrentImage(SHM_Wireframe)
+                    }}
                   />
                   <StyledImageDisplay
                     image_source={SHM_Wireframe}
@@ -292,6 +329,10 @@ const ShowmanVideo = () => {
                     container_width="313px"
                     border_color={main_color}
                     main_style="small"
+                    button_function={() => {
+                      setGalleryOpen(true);
+                      setCurrentImage(SHM_Wireframe)
+                    }}
                   />
                 </div>
               </div>
@@ -307,6 +348,10 @@ const ShowmanVideo = () => {
                     container_width="313px"
                     border_color={main_color}
                     main_style="small"
+                    button_function={() => {
+                      setGalleryOpen(true);
+                      setCurrentImage(SHM_Desktop)
+                    }}
                   />
                   <StyledImageDisplay
                     image_source={SHM_Desktop}
@@ -314,6 +359,10 @@ const ShowmanVideo = () => {
                     container_width="313px"
                     border_color={main_color}
                     main_style="small"
+                    button_function={() => {
+                      setGalleryOpen(true);
+                      setCurrentImage(SHM_Desktop)
+                    }}
                   />
                   <StyledImageDisplay
                     image_source={SHM_Desktop}
@@ -321,6 +370,10 @@ const ShowmanVideo = () => {
                     container_width="313px"
                     border_color={main_color}
                     main_style="small"
+                    button_function={() => {
+                      setGalleryOpen(true);
+                      setCurrentImage(SHM_Desktop)
+                    }}
                   />
                 </div>
               </div>
@@ -349,8 +402,12 @@ const ShowmanVideo = () => {
           <Lightbox
             plugins={[Zoom]}
             open={galleryOpen}
-            close={() => setGalleryOpen(false)}
-            slides={[{ src: SHMBanner }, { src: SHM_Desktop }]}
+            // close={() => setGalleryOpen(false)}
+            close={() => {
+              setGalleryOpen(false);
+              setCurrentImage(SHMBanner)
+            }}
+            slides={[{ src: currentImage }, { src: SHM_Desktop }]}
           />
         ) : null}
       </AnimatePresence>
