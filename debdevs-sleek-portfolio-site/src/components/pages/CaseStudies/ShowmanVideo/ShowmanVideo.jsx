@@ -65,17 +65,18 @@ const ShowmanVideo = () => {
     );
   };
 
-  const [currentImage, setCurrentImage] = useState(SHMBanner); 
+  const [currentImage, setCurrentImage] = useState(SHMBanner);
   return (
     <div className="App">
       {console.log(showmanVideoProject)}
       {console.log("testdesct")}
       {console.log(projects.sort((a, b) => a.externalId - b.externalId))}
       {console.log("testdesctdif")}
+      {console.log(showmanVideoProject?.projectDescriptionSections)}
       {console.log(
-        showmanVideoProject?.projectDescriptionSections[0]
-          .projectDescriptionSection.description[0].children[0].text
+        showmanVideoProject?.projectDescriptionSections[2].description[0].children[0].text.toString()
       )}
+      {console.log(showmanVideoProject?.projectDescriptionSections[0]?.image)}
       <motion.div
         className="cs_content"
         initial={{ translateY: 10, scaleX: 1, opacity: 0 }}
@@ -88,20 +89,24 @@ const ShowmanVideo = () => {
         }}
         transition={{ duration: 0.7, delay: 0.2 }}
       >
-        <h1 className="large_desc_header">
-          {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
-          {/* {showmanVideoProject?.projectDescriptionSections[0].projectDescriptionSection.description[0].children[0].text} */}
-          {/* {showmanVideoProject?.projectDescriptionSections[0].image} */}
+        {/* {showmanVideoProject?.projectDescriptionSections[2]?.image ? (
+          <img
+            src={urlFor(
+              showmanVideoProject?.projectDescriptionSections[2]?.image
+            )?.url()}
+          ></img>
+        ) : null} */}
 
-          {/* <ProjectCard
-          project_title={projects[item].title}
-          image_source={urlFor(projects[item].poster).url()}
-          project_description={projects[item].shortDescription}
-          project_technology_stack_array={projects[item]?.techStackItems}
-          click_data={projects[item]}
-          // click_function={() => clickFunction(projects[item])}
-          project_source={projects[item]}
-        /> */}
+        <h1 className="large_desc_header">
+          {/* {showmanVideoProject?.projectDescriptionSections[0]?.name}
+{showmanVideoProject?.projectDescriptionSections[0]?.description[0]?.children[0]?.text?.toString()} */}
+
+          {/* {showmanVideoProject?.projectDescriptionSections.map((item, index) => (
+      <div key={index}>
+        <h1>{item.name}</h1>
+        <p>{item.description[0].children[0].text}</p>
+      </div>
+    ))} */}
         </h1>
         <MainHeader text="Showman Video" />
         <p className="cs_central_paragraph">
@@ -130,77 +135,57 @@ const ShowmanVideo = () => {
         </div>
 
         <div className="list_items_container">
-          <div className="list_text_with_image">
-            <CSListObject
-              class_name="cs_list_object_secondary_version"
-              header="Goals & Insights"
-              paragraph="Showman's business goal is to generate and deliver videos on the cloud to a multitude of users"
-            />
-            <StyledImageDisplay
-              image_source={SHM_Sample_1}
-              container_height="131px"
-              container_width="313px"
-              border_color={main_color}
-              main_style="small"
-              button_function={() => {
-                setGalleryOpen(true);
-                setCurrentImage(SHM_Sample_1)
-              }}
-            />
-          </div>
-          <div className="list_text_with_image">
-            <CSListObject
-              class_name="cs_list_object_secondary_version"
-              header="Discussion & Feedback"
-              paragraph=" 
 
-              Primary discussion revolved around how Showman would fit into the market & who its users would be.
-              
-              "
-            />
-            <StyledImageDisplay
-              image_source={SHM_Sample_2}
-              container_height="131px"
-              container_width="313px"
-              border_color={main_color}
-              main_style="small"
-              button_function={() => {
-                setGalleryOpen(true);
-                setCurrentImage(SHM_Sample_2)
-              }}
-            />
-          </div>
-          <div className="list_text_with_image">
-            <CSListObject
-              class_name="cs_list_object_secondary_version"
-              header="Research & Analysis"
-              paragraph="I researched potential competitors to examine their pain points and product presentation."
-            />
-            <StyledImageDisplay
-              image_source={SHM1}
-              container_height="131px"
-              container_width="313px"
-              border_color={main_color}
-              main_style="small"
-              button_function={() => {
-                setGalleryOpen(true);
-                setCurrentImage(SHM1)
-              }}
-            />
-          </div>
+
+          <div className="list_items_container">
+  {showmanVideoProject?.projectDescriptionSections.map((item, index) => (
+    item.image && item.tag == "initial" ? 
+    
+    <div className="list_text_with_image" key={index}>
+    <CSListObject
+      class_name="cs_list_object_secondary_version"
+      header={item.name}
+      paragraph={item?.description[0]?.children[0]?.text?.toString()}
+    />
+    <StyledImageDisplay
+      image_source={urlFor(item?.image)?.url()}
+      container_height="131px"
+      container_width="313px"
+      border_color={main_color}
+      main_style="small"
+      button_function={() => {
+        setGalleryOpen(true);
+        setCurrentImage(urlFor(item?.image)?.url());
+      }}
+    />
+  </div>
+    
+    
+    
+    : (
+null
+    )
+  ))}
+</div>
+
         </div>
 
         <div className="cs_lower_items_container">
           <div className="cs_list_items_row">
-            <CSListObject
-              header="Objective"
-              paragraph="Design a visually distinct App that generates and delivers videos to users over the cloud"
-            />
-            <CSListObject header="Responsibilities" paragraph={null} />
-            <CSListObject
-              header="Domain"
-              paragraph="Animation, Visual Design, Web Development"
-            />
+            {showmanVideoProject?.projectDescriptionSections.map(
+              (item, index) => (
+                <div className="" key={index}>
+                  {!item.image && item.tag == "initial_row" ? (
+                    <div>
+                      <CSListObject
+                        header={item.name}
+                        paragraph={item?.description[0]?.children[0]?.text?.toString().split("._.").map(element => `${element + '•' }`).join('\n\n') }
+                      />
+                    </div>
+                  ) : null}
+                </div>
+              )
+            )}
           </div>
           <div className="separator_container">
             <ReactSVG className="separator_icon" src={separator_icon} />
@@ -247,7 +232,7 @@ const ShowmanVideo = () => {
                   main_style="small"
                   button_function={() => {
                     setGalleryOpen(true);
-                    setCurrentImage(SHM_Branding5)
+                    setCurrentImage(SHM_Branding5);
                   }}
                 />
               </div>
@@ -261,7 +246,7 @@ const ShowmanVideo = () => {
                   main_style="small"
                   button_function={() => {
                     setGalleryOpen(true);
-                    setCurrentImage(SHM_Branding1)
+                    setCurrentImage(SHM_Branding1);
                   }}
                 />
               </div>
@@ -275,7 +260,7 @@ const ShowmanVideo = () => {
                   main_style="small"
                   button_function={() => {
                     setGalleryOpen(true);
-                    setCurrentImage(SHM_Branding2)
+                    setCurrentImage(SHM_Branding2);
                   }}
                 />
               </div>
@@ -289,7 +274,7 @@ const ShowmanVideo = () => {
                   main_style="small"
                   button_function={() => {
                     setGalleryOpen(true);
-                    setCurrentImage(SHM_Branding3)
+                    setCurrentImage(SHM_Branding3);
                   }}
                 />
               </div>
@@ -309,7 +294,7 @@ const ShowmanVideo = () => {
                     main_style="small"
                     button_function={() => {
                       setGalleryOpen(true);
-                      setCurrentImage(SHM_Wireframe)
+                      setCurrentImage(SHM_Wireframe);
                     }}
                   />
                   <StyledImageDisplay
@@ -320,7 +305,7 @@ const ShowmanVideo = () => {
                     main_style="small"
                     button_function={() => {
                       setGalleryOpen(true);
-                      setCurrentImage(SHM_Wireframe)
+                      setCurrentImage(SHM_Wireframe);
                     }}
                   />
                   <StyledImageDisplay
@@ -331,7 +316,7 @@ const ShowmanVideo = () => {
                     main_style="small"
                     button_function={() => {
                       setGalleryOpen(true);
-                      setCurrentImage(SHM_Wireframe)
+                      setCurrentImage(SHM_Wireframe);
                     }}
                   />
                 </div>
@@ -350,7 +335,7 @@ const ShowmanVideo = () => {
                     main_style="small"
                     button_function={() => {
                       setGalleryOpen(true);
-                      setCurrentImage(SHM_Desktop)
+                      setCurrentImage(SHM_Desktop);
                     }}
                   />
                   <StyledImageDisplay
@@ -361,7 +346,7 @@ const ShowmanVideo = () => {
                     main_style="small"
                     button_function={() => {
                       setGalleryOpen(true);
-                      setCurrentImage(SHM_Desktop)
+                      setCurrentImage(SHM_Desktop);
                     }}
                   />
                   <StyledImageDisplay
@@ -372,7 +357,7 @@ const ShowmanVideo = () => {
                     main_style="small"
                     button_function={() => {
                       setGalleryOpen(true);
-                      setCurrentImage(SHM_Desktop)
+                      setCurrentImage(SHM_Desktop);
                     }}
                   />
                 </div>
@@ -405,7 +390,7 @@ const ShowmanVideo = () => {
             // close={() => setGalleryOpen(false)}
             close={() => {
               setGalleryOpen(false);
-              setCurrentImage(SHMBanner)
+              setCurrentImage(SHMBanner);
             }}
             slides={[{ src: currentImage }, { src: SHM_Desktop }]}
           />

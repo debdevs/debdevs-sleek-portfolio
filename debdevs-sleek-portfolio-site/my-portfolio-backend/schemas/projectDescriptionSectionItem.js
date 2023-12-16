@@ -6,11 +6,27 @@ export default defineType({
   type: 'object',
   fields: [
 
+    // defineField({
+    //   name: 'projectDescriptionSection',
+    //   title: 'Desc',
+    //   type: 'reference',
+    //   to: [{type: 'projectDescriptionSection'}],
+    // }),
+
     defineField({
-      name: 'projectDescriptionSection',
-      title: 'Desc',
-      type: 'reference',
-      to: [{type: 'projectDescriptionSection'}],
+      name: 'name',
+      title: 'Name',
+      type: 'string',
+    }),
+    defineField({
+      name: 'layoutType',
+      title: 'Layout Type (row, column, row_no_image, column_no_image, standalone_row, standalone_column)',
+      type: 'string',
+    }),
+    defineField({
+      name: 'tag',
+      title: 'Tag',
+      type: 'string',
     }),
     defineField({
       name: 'externalId',
@@ -18,18 +34,32 @@ export default defineType({
       type: 'number',
     }),
 
-    defineField({
-      name: 'projectRoleDescription',
-      title: 'Project Role Description',
-      type: 'string',
-    }),
 
+    defineField({
+      name: 'description',
+      title: 'Description',
+      type: 'blockContent',
+    }),
+    defineField({
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'descriptionGallery',
+      title: 'DescriptionGallery',
+      type: 'array',
+      of: [{type: 'image'}],
+    }),
   ],
   preview: {
     select: {
-      subtitle: 'characterName',
-      title: 'projectDescriptionSection.name',
-      media: 'projectDescriptionSection.image',
+      subtitle: 'name',
+      title: 'name',
+      media: 'image',
     },
   },
 })

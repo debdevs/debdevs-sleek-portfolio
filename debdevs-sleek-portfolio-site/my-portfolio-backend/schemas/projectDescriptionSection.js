@@ -52,6 +52,7 @@ export default defineType({
         hotspot: true,
       },
     }),
+    
   ],
   preview: {
     select: {title: 'name', media: 'image'},
